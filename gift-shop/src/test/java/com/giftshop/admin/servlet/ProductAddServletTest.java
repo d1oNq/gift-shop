@@ -1,20 +1,14 @@
 package com.giftshop.admin.servlet;
 
-import com.giftshop.admin.servlet.ProductAddServlet;
 import com.giftshop.dao.ProductDAOImpl;
-import com.giftshop.entity.Product;
-import com.giftshop.log.GiftLogger;
 import org.junit.jupiter.api.*;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.mockito.*;
 
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
 import javax.servlet.http.Part;
-
 import java.io.IOException;
 
 import static org.mockito.ArgumentMatchers.*;
@@ -35,10 +29,54 @@ class ProductAddServletTest {
     private ProductDAOImpl productDAO;
     @Mock
     private Part part;
+    @Mock
+    private ServletConfig servletConfig;
+    @Mock
+    private ServletContext servletContext;
 
     @BeforeEach
-    void setUp() {
+    void setUp() throws ServletException {
         MockitoAnnotations.openMocks(this);
+        when(servletConfig.getServletContext()).thenReturn(servletContext);
+        servlet.init(servletConfig);
+    }
+
+    @Test
+    void testDoPostSuccess() throws ServletException, IOException {
+        when(request.getParameter("name")).thenReturn("Test Product");
+        when(request.getParameter("category")).thenReturn("Test Category");
+        when(request.getParameter("weight")).thenReturn("10");
+        when(request.getParameter("price")).thenReturn("50");
+        when(request.getParameter("status")).thenReturn("Active");
+        when(request.getPart("image")).thenReturn(part);
+        when(part.getSubmittedFileName()).thenReturn("test_image.jpg");
+        when(productDAO.addProduct(any())).thenReturn(true);
+        when(request.getSession()).thenReturn(session);
+        when(servletContext.getRealPath(anyString())).thenReturn("test/path");
+
+        servlet.doPost(request, response);
+
+        verify(session).setAttribute("successMsg", "Товар успішно добавлений");
+        verify(response).sendRedirect("admin/add_product.jsp");
+    }
+
+    @Test
+    void testDoPostFailure() throws ServletException, IOException {
+        when(request.getParameter("name")).thenReturn("Test Product");
+        when(request.getParameter("category")).thenReturn("Test Category");
+        when(request.getParameter("weight")).thenReturn("10");
+        when(request.getParameter("price")).thenReturn("50");
+        when(request.getParameter("status")).thenReturn("Active");
+        when(request.getPart("image")).thenReturn(part);
+        when(part.getSubmittedFileName()).thenReturn("test_image.jpg");
+        when(productDAO.addProduct(any())).thenReturn(false);
+        when(request.getSession()).thenReturn(session);
+        when(servletContext.getRealPath(anyString())).thenReturn("test/path");
+
+        servlet.doPost(request, response);
+
+        verify(session).setAttribute("failedMsg", "Щось пішло не так");
+        verify(response).sendRedirect("admin/add_product.jsp");
     }
 
     @Test
@@ -56,5 +94,7 @@ class ProductAddServletTest {
         Assertions.assertThrows(ServletException.class, () -> {
             servlet.doPost(request, response);
         });
+
+        verify(session, never()).setAttribute(anyString(), anyString());
     }
 }

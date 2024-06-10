@@ -1,12 +1,8 @@
 package com.giftshop.dao;
 
-import com.giftshop.dao.CartDAOImpl;
 import com.giftshop.entity.Cart;
-import com.giftshop.log.GiftLogger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.ArgumentCaptor;
-import org.mockito.Mockito;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,7 +11,6 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.*;
 
 public class CartDAOImplTest {

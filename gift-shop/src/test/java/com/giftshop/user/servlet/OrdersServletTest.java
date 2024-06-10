@@ -3,17 +3,13 @@ package com.giftshop.user.servlet;
 import com.giftshop.dao.CartDAOImpl;
 import com.giftshop.dao.OrdersDAOImpl;
 import com.giftshop.entity.Cart;
-import com.giftshop.entity.Orders;
-import com.giftshop.user.servlet.OrdersServlet;
 import org.junit.jupiter.api.*;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,7 +38,7 @@ class OrdersServletTest {
     }
 
     @Test
-    void testDoPostOrderSuccess() throws ServletException, IOException, Exception {
+    void testDoPostOrderSuccess() throws Exception {
         when(request.getParameter("id")).thenReturn("1");
         when(request.getParameter("name")).thenReturn("Test User");
         when(request.getParameter("email")).thenReturn("test@example.com");
@@ -67,7 +63,7 @@ class OrdersServletTest {
     }
 
     @Test
-    void testDoPostEmptyCart() throws ServletException, IOException, Exception {
+    void testDoPostEmptyCart() throws Exception {
         when(request.getParameter("id")).thenReturn("1");
 
         when(cartDAO.getProductByUser(1)).thenReturn(new ArrayList<>());
@@ -81,7 +77,7 @@ class OrdersServletTest {
     }
 
     @Test
-    void testDoPostNoPaymentMethodSelected() throws ServletException, IOException, Exception {
+    void testDoPostNoPaymentMethodSelected() throws Exception {
         when(request.getParameter("id")).thenReturn("1");
         when(request.getParameter("payment")).thenReturn("no-select");
 
@@ -96,7 +92,7 @@ class OrdersServletTest {
     }
 
     @Test
-    void testDoPostOrderFailed() throws ServletException, IOException, Exception {
+    void testDoPostOrderFailed() throws Exception {
         when(request.getParameter("id")).thenReturn("1");
         when(request.getParameter("name")).thenReturn("Test User");
         when(request.getParameter("email")).thenReturn("test@example.com");

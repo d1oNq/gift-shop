@@ -3,7 +3,6 @@ package com.giftshop.user.servlet;
 import com.giftshop.dao.UserDAOImpl;
 import com.giftshop.db.DBConnect;
 import com.giftshop.entity.User;
-import com.giftshop.user.servlet.LoginServlet;
 import org.junit.jupiter.api.*;
 import org.mockito.Mock;
 import org.mockito.MockedStatic;
@@ -12,10 +11,8 @@ import org.mockito.MockitoAnnotations;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.IOException;
 import java.sql.Connection;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 

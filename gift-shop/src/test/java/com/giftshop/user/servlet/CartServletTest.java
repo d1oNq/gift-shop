@@ -4,7 +4,6 @@ import com.giftshop.dao.CartDAOImpl;
 import com.giftshop.db.DBConnect;
 import com.giftshop.entity.Cart;
 import com.giftshop.entity.Product;
-import com.giftshop.user.servlet.CartServlet;
 import org.junit.jupiter.api.*;
 import org.mockito.Mock;
 import org.mockito.MockedStatic;
@@ -14,10 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import java.io.IOException;
 import java.sql.Connection;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 

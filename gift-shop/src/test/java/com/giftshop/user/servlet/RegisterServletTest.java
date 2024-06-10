@@ -2,7 +2,6 @@ package com.giftshop.user.servlet;
 
 import com.giftshop.dao.UserDAOImpl;
 import com.giftshop.entity.User;
-import com.giftshop.user.servlet.RegisterServlet;
 import org.junit.jupiter.api.*;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;

@@ -13,7 +13,6 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 
 class DBConnectTest {
-
     private MockedStatic<DriverManager> mockedDriverManager;
     private MockedStatic<GiftLogger> mockedGiftLogger;
 

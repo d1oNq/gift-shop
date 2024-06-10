@@ -91,14 +91,6 @@
       <version>5.12.0</version>
       <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-test</artifactId>
-      <version>6.1.8</version>
-      <scope>test</scope>
-    </dependency>
-
   </dependencies>
   <build>
     <finalName>gift-shop</finalName>

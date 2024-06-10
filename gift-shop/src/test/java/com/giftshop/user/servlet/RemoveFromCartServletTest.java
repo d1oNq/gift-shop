@@ -1,7 +1,6 @@
 package com.giftshop.user.servlet;
 
 import com.giftshop.dao.CartDAOImpl;
-import com.giftshop.user.servlet.RemoveFromCartServlet;
 import org.junit.jupiter.api.*;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
