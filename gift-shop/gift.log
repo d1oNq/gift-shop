@@ -1,0 +1,1839 @@
+2024-06-09 16:29:46,610 INFO GiftLogger initialized
+2024-06-09 16:29:46,629 INFO Database connection established successfully
+2024-06-09 16:29:46,629 INFO User login attempt: email=admin@giftshop.com
+2024-06-09 16:29:46,697 WARN No user found for the provided query: SELECT * FROM user WHERE email = ? AND password = ?
+2024-06-09 16:30:05,907 INFO Database connection established successfully
+2024-06-09 16:30:05,908 INFO Fetching all products.
+2024-06-09 16:30:05,910 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-09 16:30:08,901 INFO Database connection established successfully
+2024-06-09 16:30:08,901 INFO Fetching product by ID: 4
+2024-06-09 16:30:08,904 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 16:30:12,313 INFO Received a request to edit a product.
+2024-06-09 16:30:12,338 INFO Built product from request parameters: com.giftshop.entity.Product@296076f9
+2024-06-09 16:30:12,338 INFO Product details extracted from request: com.giftshop.entity.Product@296076f9
+2024-06-09 16:30:12,354 INFO Database connection established successfully
+2024-06-09 16:30:12,354 INFO Fetching product by ID: 4
+2024-06-09 16:30:12,355 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 16:30:12,355 INFO Image update status: false
+2024-06-09 16:30:12,356 INFO Product image remains the same: kitkatc.webp
+2024-06-09 16:30:12,356 INFO Updating product: com.giftshop.entity.Product@296076f9
+2024-06-09 16:30:12,361 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-09 16:30:12,362 INFO Product successfully updated.
+2024-06-09 16:30:12,392 INFO Database connection established successfully
+2024-06-09 16:30:12,392 INFO Fetching all products.
+2024-06-09 16:30:12,394 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-09 16:56:29,845 INFO Received a request to add a new product.
+2024-06-09 16:56:29,899 INFO Building product from request parameters.
+2024-06-09 16:56:29,899 INFO Product details extracted from request: com.giftshop.entity.Product@157b2edd
+2024-06-09 16:56:30,482 INFO Database connection established successfully
+2024-06-09 16:56:30,482 INFO Adding product: com.giftshop.entity.Product@157b2edd
+2024-06-09 16:56:30,512 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 16:56:30,512 INFO Product successfully added to the database.
+2024-06-09 16:56:30,514 INFO Product image written to: C:\Users\surzh\Desktop\gift-shop\src\main\webapp\product\Kinder.webp
+2024-06-09 16:56:30,514 INFO Product image saved successfully.
+2024-06-09 16:58:23,580 INFO Database connection established successfully
+2024-06-09 16:58:23,580 INFO User login attempt: email=vitalik@gmail.com
+2024-06-09 16:58:23,607 WARN No user found for the provided query: SELECT * FROM user WHERE email = ? AND password = ?
+2024-06-09 16:58:32,184 INFO Database connection established successfully
+2024-06-09 16:58:32,185 INFO User login attempt: email=vitalik@gmail.com
+2024-06-09 16:58:32,187 WARN No user found for the provided query: SELECT * FROM user WHERE email = ? AND password = ?
+2024-06-09 16:58:39,882 INFO Database connection established successfully
+2024-06-09 16:58:39,882 INFO User login attempt: email=vitalik@gmail.com
+2024-06-09 16:58:39,884 INFO User fetched successfully: com.giftshop.entity.User@14b41206
+2024-06-09 16:58:40,227 INFO Database connection established successfully
+2024-06-09 16:58:40,232 INFO Fetching products by category: Цукерки with limit: true
+2024-06-09 16:58:40,236 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 16:58:40,236 INFO Fetching products by category: Печиво with limit: true
+2024-06-09 16:58:40,238 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 16:58:40,238 INFO Fetching products by category: Подарункові Набори with limit: true
+2024-06-09 16:58:40,240 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 16:58:42,329 INFO Database connection established successfully
+2024-06-09 16:58:42,329 INFO Fetching product by ID: 8
+2024-06-09 16:58:42,333 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 16:58:42,351 INFO Database connection established successfully
+2024-06-09 16:58:42,351 INFO Adding to cart: com.giftshop.entity.Cart@524e8b5f
+2024-06-09 16:58:42,360 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-09 16:58:42,385 INFO Database connection established successfully
+2024-06-09 16:58:42,385 INFO Fetching products by category: Цукерки with limit: true
+2024-06-09 16:58:42,386 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 16:58:42,386 INFO Fetching products by category: Печиво with limit: true
+2024-06-09 16:58:42,388 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 16:58:42,388 INFO Fetching products by category: Подарункові Набори with limit: true
+2024-06-09 16:58:42,390 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 19:32:32,313 INFO Fetching orders for email: john@example.com
+2024-06-09 19:32:32,356 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-09 19:32:32,467 INFO Fetching all orders.
+2024-06-09 19:32:32,472 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-09 19:32:32,504 INFO Saving orders: [Orders{id=0, orderId='123', userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-09 19:32:32,507 INFO Orders saved successfully.
+2024-06-09 19:32:32,537 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 19:32:32,540 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-09 19:32:32,558 INFO Fetching products by category: Цукерки with limit: true
+2024-06-09 19:32:32,560 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 19:32:32,573 INFO Fetching all products.
+2024-06-09 19:32:32,575 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-09 19:32:32,584 INFO Searching products with keyword: Chocolate
+2024-06-09 19:32:32,588 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC
+2024-06-09 19:32:32,598 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 19:32:32,600 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 19:32:32,612 INFO Fetching product by ID: 1
+2024-06-09 19:34:38,375 INFO Fetching product by ID: 1
+2024-06-09 19:35:08,312 INFO Deleting product by ID: 1
+2024-06-09 19:35:08,332 INFO SQL update executed successfully: DELETE FROM product WHERE productId = ?
+2024-06-09 19:35:48,586 INFO Fetching orders for email: john@example.com
+2024-06-09 19:35:48,633 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-09 19:35:48,720 INFO Fetching all orders.
+2024-06-09 19:35:48,725 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-09 19:35:48,766 INFO Saving orders: [Orders{id=0, orderId='123', userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-09 19:35:48,768 INFO Orders saved successfully.
+2024-06-09 19:35:48,810 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 19:35:48,812 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-09 19:35:48,827 INFO Fetching products by category: Цукерки with limit: true
+2024-06-09 19:35:48,830 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 19:35:48,842 INFO Fetching all products.
+2024-06-09 19:35:48,848 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-09 19:35:48,862 INFO Searching products with keyword: Chocolate
+2024-06-09 19:35:48,865 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC
+2024-06-09 19:35:48,896 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 19:35:48,897 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 19:35:48,907 INFO Fetching product by ID: 1
+2024-06-09 19:38:57,704 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-09 19:38:57,730 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-09 19:38:57,790 INFO Registering user: User{id=0, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-09 19:38:57,792 INFO SQL update executed successfully: INSERT INTO user (name, email, password) VALUES (?, ?, ?)
+2024-06-09 19:38:57,803 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='123456789', address='null', city='null', zip='null'}
+2024-06-09 19:38:57,805 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-09 19:38:57,820 INFO User login attempt: email=john.doe@example.com
+2024-06-09 19:38:57,823 INFO User fetched successfully: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-09 19:38:57,846 INFO Checking if user exists with email: john.doe@example.com
+2024-06-09 19:38:57,848 WARN User already exists with email: john.doe@example.com
+2024-06-09 19:39:09,487 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 19:39:09,516 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-09 19:39:09,603 INFO Fetching products by category: Цукерки with limit: true
+2024-06-09 19:39:09,608 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 19:39:09,627 INFO Fetching all products.
+2024-06-09 19:39:09,630 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-09 19:39:09,649 INFO Searching products with keyword: Chocolate
+2024-06-09 19:39:09,653 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC
+2024-06-09 19:39:09,665 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 19:39:09,668 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 19:39:09,687 INFO Fetching product by ID: 1
+2024-06-09 19:39:30,502 INFO Fetching orders for email: john@example.com
+2024-06-09 19:39:30,529 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-09 19:39:30,609 INFO Fetching all orders.
+2024-06-09 19:39:30,613 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-09 19:39:30,648 INFO Saving orders: [Orders{id=0, orderId='123', userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-09 19:39:30,651 INFO Orders saved successfully.
+2024-06-09 19:39:41,499 INFO Fetching products for user ID: 1001
+2024-06-09 19:39:41,530 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-09 19:39:41,597 INFO Removing from cart - Product ID: 101, User ID: 1001, Cart ID: 1
+2024-06-09 19:39:41,599 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-09 19:39:41,655 INFO Adding to cart: Cart{cartId=1, productId=101, userId=1001, productName='Chocolate', category='Sweets', weight=0.5, price=10.0}
+2024-06-09 19:39:41,657 WARN SQL update failed: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-09 19:50:29,388 INFO Fetching products for user ID: 1
+2024-06-09 19:50:29,411 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-09 19:50:29,528 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-09 19:50:29,529 INFO SQL update executed successfully: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-09 19:50:29,566 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Test Product', category='Test Category', weight=1.0, price=10.0}
+2024-06-09 19:50:29,568 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-09 19:58:42,468 INFO Received request to add product to cart
+2024-06-09 19:58:42,508 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-09 19:58:43,473 INFO Database connection established successfully
+2024-06-09 19:58:43,474 INFO Fetching product by ID: 1
+2024-06-09 19:58:43,545 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 19:58:43,568 INFO Cart item created: Cart{cartId=0, productId=1, userId=1, productName='Kinder Surprise', category='Цукерки', weight=20.0, price=48.89}
+2024-06-09 19:58:43,641 INFO Database connection established successfully
+2024-06-09 19:58:43,643 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Kinder Surprise', category='Цукерки', weight=20.0, price=48.89}
+2024-06-09 19:58:43,653 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-09 19:58:43,655 INFO Product successfully added to cart
+2024-06-09 19:58:43,776 INFO Database connection established successfully
+2024-06-09 19:58:43,777 INFO Fetching product by ID: 1
+2024-06-09 19:58:43,780 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 19:58:43,780 INFO Cart item created: Cart{cartId=0, productId=1, userId=1, productName='Kinder Surprise', category='Цукерки', weight=20.0, price=48.89}
+2024-06-09 19:58:43,829 INFO Received request to add product to cart
+2024-06-09 19:58:43,830 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-09 19:58:43,866 INFO Database connection established successfully
+2024-06-09 19:58:43,866 INFO Fetching product by ID: 1
+2024-06-09 19:58:43,868 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 19:58:43,868 INFO Cart item created: Cart{cartId=0, productId=1, userId=1, productName='Kinder Surprise', category='Цукерки', weight=20.0, price=48.89}
+2024-06-09 19:58:43,903 INFO Database connection established successfully
+2024-06-09 19:58:43,903 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Kinder Surprise', category='Цукерки', weight=20.0, price=48.89}
+2024-06-09 19:58:43,909 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-09 19:58:43,910 INFO Product successfully added to cart
+2024-06-09 20:01:20,250 INFO Received request to add product to cart
+2024-06-09 20:01:20,287 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-09 20:01:21,175 INFO Database connection established successfully
+2024-06-09 20:01:21,176 INFO Fetching product by ID: 1
+2024-06-09 20:01:21,233 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 20:01:21,256 INFO Cart item created: Cart{cartId=0, productId=1, userId=1, productName='Kinder Surprise', category='Цукерки', weight=20.0, price=48.89}
+2024-06-09 20:01:21,320 INFO Database connection established successfully
+2024-06-09 20:01:21,324 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Kinder Surprise', category='Цукерки', weight=20.0, price=48.89}
+2024-06-09 20:01:21,333 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-09 20:01:21,333 INFO Product successfully added to cart
+2024-06-09 20:01:21,449 INFO Received request to add product to cart
+2024-06-09 20:01:21,449 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-09 20:01:21,488 INFO Database connection established successfully
+2024-06-09 20:01:21,489 INFO Fetching product by ID: 1
+2024-06-09 20:01:21,492 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 20:01:21,493 INFO Cart item created: Cart{cartId=0, productId=1, userId=1, productName='Kinder Surprise', category='Цукерки', weight=20.0, price=48.89}
+2024-06-09 20:01:21,529 INFO Database connection established successfully
+2024-06-09 20:01:21,529 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Kinder Surprise', category='Цукерки', weight=20.0, price=48.89}
+2024-06-09 20:01:21,536 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-09 20:01:21,536 INFO Product successfully added to cart
+2024-06-09 20:01:21,574 INFO Received request to add product to cart
+2024-06-09 20:01:21,575 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-09 20:01:21,612 INFO Database connection established successfully
+2024-06-09 20:01:21,613 INFO Fetching product by ID: 1
+2024-06-09 20:01:21,616 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 20:01:21,616 INFO Cart item created: Cart{cartId=0, productId=1, userId=1, productName='Kinder Surprise', category='Цукерки', weight=20.0, price=48.89}
+2024-06-09 20:01:21,658 INFO Database connection established successfully
+2024-06-09 20:01:21,658 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Kinder Surprise', category='Цукерки', weight=20.0, price=48.89}
+2024-06-09 20:01:21,664 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-09 20:01:21,665 INFO Product successfully added to cart
+2024-06-09 20:03:14,201 INFO Received login request
+2024-06-09 20:03:14,225 INFO Attempting login for email: admin@giftshop.com
+2024-06-09 20:03:14,227 INFO Admin login successful for email: admin@giftshop.com
+2024-06-09 20:03:14,227 INFO Admin logged in, redirecting to admin/home.jsp
+2024-06-09 20:03:14,364 INFO Received login request
+2024-06-09 20:03:14,365 INFO Attempting login for email: user@example.com
+2024-06-09 20:03:14,365 INFO User login attempt for email: user@example.com
+2024-06-09 20:03:15,194 INFO Database connection established successfully
+2024-06-09 20:03:15,195 INFO User login attempt: email=user@example.com
+2024-06-09 20:03:15,271 WARN No user found for the provided query: SELECT * FROM user WHERE email = ? AND password = ?
+2024-06-09 20:03:15,272 WARN Failed login attempt for email: user@example.com
+2024-06-09 20:03:15,378 INFO Received login request
+2024-06-09 20:03:15,379 INFO Attempting login for email: user@example.com
+2024-06-09 20:03:15,380 INFO User login attempt for email: user@example.com
+2024-06-09 20:03:15,443 INFO Database connection established successfully
+2024-06-09 20:03:15,443 INFO User login attempt: email=user@example.com
+2024-06-09 20:03:15,447 WARN No user found for the provided query: SELECT * FROM user WHERE email = ? AND password = ?
+2024-06-09 20:03:15,447 WARN Failed login attempt for email: user@example.com
+2024-06-09 20:03:15,475 INFO Received login request
+2024-06-09 20:03:15,476 INFO Attempting login for email: user@example.com
+2024-06-09 20:03:15,477 INFO User login attempt for email: user@example.com
+2024-06-09 20:03:15,514 INFO Database connection established successfully
+2024-06-09 20:03:15,514 INFO User login attempt: email=user@example.com
+2024-06-09 20:03:15,516 WARN No user found for the provided query: SELECT * FROM user WHERE email = ? AND password = ?
+2024-06-09 20:03:15,516 WARN Failed login attempt for email: user@example.com
+2024-06-09 20:04:28,635 INFO Received login request
+2024-06-09 20:04:28,653 INFO Attempting login for email: vitalik@gmail.com
+2024-06-09 20:04:28,653 INFO User login attempt for email: vitalik@gmail.com
+2024-06-09 20:04:29,528 INFO Database connection established successfully
+2024-06-09 20:04:29,529 INFO User login attempt: email=vitalik@gmail.com
+2024-06-09 20:04:29,633 INFO User fetched successfully: User{id=2, name='Vitalik S', email='vitalik@gmail.com', password='q123', phone='+380632491323', address='Скрипника 1', city='Львів', zip='79012'}
+2024-06-09 20:04:29,634 INFO User login successful for email: vitalik@gmail.com
+2024-06-09 20:06:12,360 INFO Logout request received
+2024-06-09 20:06:12,386 INFO User java.lang.Object@4dba773d logging out
+2024-06-09 20:06:12,388 INFO User successfully logged out
+2024-06-09 20:06:12,510 INFO Logout request received
+2024-06-09 20:06:12,511 ERROR Logout error: Session error
+2024-06-09 20:06:12,530 INFO Logout request received
+2024-06-09 20:06:12,530 WARN No user found in session during logout
+2024-06-09 20:08:04,786 INFO Database connection established successfully
+2024-06-09 20:08:04,956 INFO Database connection established successfully
+2024-06-09 20:08:05,013 INFO Database connection established successfully
+2024-06-09 20:08:05,066 INFO Database connection established successfully
+2024-06-09 20:09:50,836 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-09 20:09:51,700 INFO Database connection established successfully
+2024-06-09 20:09:51,701 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-09 20:09:51,725 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-09 20:09:51,726 ERROR Failed to remove product from cart
+2024-06-09 20:09:51,805 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-09 20:09:51,864 INFO Database connection established successfully
+2024-06-09 20:09:51,865 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-09 20:09:51,866 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-09 20:09:51,867 ERROR Failed to remove product from cart
+2024-06-09 20:09:51,890 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-09 20:09:51,922 INFO Database connection established successfully
+2024-06-09 20:09:51,922 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-09 20:09:51,924 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-09 20:09:51,924 ERROR Failed to remove product from cart
+2024-06-09 20:09:51,938 ERROR Invalid parameter format for removing product from cart
+2024-06-09 20:12:34,505 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Test Product', category='Test Category', weight=1.0, price=10.0}
+2024-06-09 20:12:34,532 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-09 20:12:34,595 INFO Fetching products for user ID: 1
+2024-06-09 20:12:34,599 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-09 20:12:34,643 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-09 20:12:34,645 INFO SQL update executed successfully: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-09 20:13:09,690 INFO Fetching products for user ID: 1
+2024-06-09 20:13:09,724 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-09 20:16:33,707 INFO Fetching orders for email: john@example.com
+2024-06-09 20:16:33,752 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-09 20:16:33,848 INFO Fetching all orders.
+2024-06-09 20:16:33,850 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-09 20:16:33,881 INFO Saving orders: [Orders{id=0, orderId='123', userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-09 20:16:33,883 INFO Orders saved successfully.
+2024-06-09 20:16:33,965 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 20:16:33,966 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-09 20:16:33,981 INFO Fetching products by category: Цукерки with limit: true
+2024-06-09 20:16:33,985 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 20:16:33,997 INFO Fetching all products.
+2024-06-09 20:16:33,999 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-09 20:16:34,011 INFO Searching products with keyword: Chocolate
+2024-06-09 20:16:34,014 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC
+2024-06-09 20:16:34,025 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 20:16:34,027 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 20:16:34,036 INFO Fetching product by ID: 1
+2024-06-09 20:21:21,625 INFO Fetching product by ID: 1
+2024-06-09 20:24:10,177 INFO Fetching product by ID: 1
+2024-06-09 20:24:10,232 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 20:25:51,789 INFO Fetching orders for email: john@example.com
+2024-06-09 20:25:51,838 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-09 20:25:51,944 INFO Fetching all orders.
+2024-06-09 20:25:51,949 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-09 20:25:51,984 INFO Saving orders: [Orders{id=0, orderId='123', userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-09 20:25:51,987 INFO Orders saved successfully.
+2024-06-09 20:25:52,064 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 20:25:52,066 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-09 20:25:52,082 INFO Fetching products by category: Цукерки with limit: true
+2024-06-09 20:25:52,085 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 20:25:52,097 INFO Fetching all products.
+2024-06-09 20:25:52,099 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-09 20:25:52,108 INFO Searching products with keyword: Chocolate
+2024-06-09 20:25:52,111 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC
+2024-06-09 20:25:52,121 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 20:25:52,123 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 20:25:52,134 INFO Fetching product by ID: 1
+2024-06-09 20:25:52,138 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 20:25:52,147 INFO Deleting product by ID: 1
+2024-06-09 20:25:52,149 INFO SQL update executed successfully: DELETE FROM product WHERE productId = ?
+2024-06-09 20:25:52,210 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-09 20:25:52,211 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-09 20:25:52,220 INFO Registering user: User{id=0, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-09 20:25:52,222 INFO SQL update executed successfully: INSERT INTO user (name, email, password) VALUES (?, ?, ?)
+2024-06-09 20:25:52,228 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='123456789', address='null', city='null', zip='null'}
+2024-06-09 20:25:52,230 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-09 20:25:52,240 INFO User login attempt: email=john.doe@example.com
+2024-06-09 20:25:52,242 INFO User fetched successfully: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-09 20:25:52,253 INFO Checking if user exists with email: john.doe@example.com
+2024-06-09 20:25:52,254 WARN User already exists with email: john.doe@example.com
+2024-06-09 20:27:01,597 INFO Fetching orders for email: john@example.com
+2024-06-09 20:27:01,638 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-09 20:27:01,764 INFO Fetching all orders.
+2024-06-09 20:27:01,769 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-09 20:27:01,807 INFO Saving orders: [Orders{id=0, orderId='123', userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-09 20:27:01,810 INFO Orders saved successfully.
+2024-06-09 20:27:01,875 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 20:27:01,877 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-09 20:27:01,895 INFO Fetching products by category: Цукерки with limit: true
+2024-06-09 20:27:01,898 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 20:27:01,909 INFO Fetching all products.
+2024-06-09 20:27:01,912 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-09 20:27:01,923 INFO Searching products with keyword: Chocolate
+2024-06-09 20:27:01,925 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC
+2024-06-09 20:27:01,935 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 20:27:01,937 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 20:27:01,946 INFO Fetching product by ID: 1
+2024-06-09 20:27:01,949 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 20:27:01,960 INFO Deleting product by ID: 1
+2024-06-09 20:27:01,960 INFO SQL update executed successfully: DELETE FROM product WHERE productId = ?
+2024-06-09 20:27:01,988 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-09 20:27:01,989 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-09 20:27:01,996 INFO Registering user: User{id=0, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-09 20:27:01,997 INFO SQL update executed successfully: INSERT INTO user (name, email, password) VALUES (?, ?, ?)
+2024-06-09 20:27:02,005 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='123456789', address='null', city='null', zip='null'}
+2024-06-09 20:27:02,007 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-09 20:27:02,016 INFO User login attempt: email=john.doe@example.com
+2024-06-09 20:27:02,020 INFO User fetched successfully: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-09 20:27:02,027 INFO Checking if user exists with email: john.doe@example.com
+2024-06-09 20:27:02,029 WARN User already exists with email: john.doe@example.com
+2024-06-09 20:30:07,128 INFO Fetching orders for email: john@example.com
+2024-06-09 20:30:07,173 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-09 20:30:07,280 INFO Fetching all orders.
+2024-06-09 20:30:07,286 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-09 20:30:07,324 INFO Saving orders: [Orders{id=0, orderId='123', userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-09 20:30:07,326 INFO Orders saved successfully.
+2024-06-09 20:30:07,400 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 20:30:07,402 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-09 20:30:07,418 INFO Fetching products by category: Цукерки with limit: true
+2024-06-09 20:30:07,422 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 20:30:07,435 INFO Fetching all products.
+2024-06-09 20:30:07,437 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-09 20:30:07,452 INFO Searching products with keyword: Chocolate
+2024-06-09 20:30:07,455 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC
+2024-06-09 20:30:07,467 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 20:30:07,469 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 20:30:07,483 INFO Fetching product by ID: 1
+2024-06-09 20:30:07,485 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 20:30:07,497 INFO Deleting product by ID: 1
+2024-06-09 20:30:07,498 INFO SQL update executed successfully: DELETE FROM product WHERE productId = ?
+2024-06-09 20:30:07,545 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-09 20:30:07,547 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-09 20:30:07,553 INFO Registering user: User{id=0, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-09 20:30:07,555 INFO SQL update executed successfully: INSERT INTO user (name, email, password) VALUES (?, ?, ?)
+2024-06-09 20:30:07,563 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='123456789', address='null', city='null', zip='null'}
+2024-06-09 20:30:07,564 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-09 20:30:07,575 INFO User login attempt: email=john.doe@example.com
+2024-06-09 20:30:07,578 INFO User fetched successfully: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-09 20:30:07,586 INFO Checking if user exists with email: john.doe@example.com
+2024-06-09 20:30:07,587 WARN User already exists with email: john.doe@example.com
+2024-06-09 20:47:31,551 INFO Database connection established successfully
+2024-06-09 20:47:31,650 INFO Database connection established successfully
+2024-06-09 20:58:00,654 INFO Received a request to add a new product.
+2024-06-09 20:58:00,692 INFO Building product from request parameters.
+2024-06-09 20:58:00,718 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='TestCategory', weight='1', price='10', status='Available', photo='test.jpg'}
+2024-06-09 20:58:01,651 INFO Database connection established successfully
+2024-06-09 20:58:01,653 INFO Adding product: Product{productId=0, productName='Test Product', category='TestCategory', weight='1', price='10', status='Available', photo='test.jpg'}
+2024-06-09 20:58:01,696 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 20:58:01,696 INFO Product successfully added to the database.
+2024-06-09 20:58:01,697 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-09 20:58:01,751 INFO Received a request to add a new product.
+2024-06-09 20:58:01,753 INFO Building product from request parameters.
+2024-06-09 20:58:01,753 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='TestCategory', weight='1', price='10', status='Available', photo='test.jpg'}
+2024-06-09 20:58:01,820 INFO Database connection established successfully
+2024-06-09 20:58:01,821 INFO Adding product: Product{productId=0, productName='Test Product', category='TestCategory', weight='1', price='10', status='Available', photo='test.jpg'}
+2024-06-09 20:58:01,829 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 20:58:01,829 INFO Product successfully added to the database.
+2024-06-09 20:58:01,829 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-09 20:58:40,575 INFO Received a request to add a new product.
+2024-06-09 20:58:40,628 ERROR Error occurred while adding product: Cannot invoke "javax.servlet.http.Part.getSubmittedFileName()" because "imagePart" is null
+2024-06-09 20:58:40,725 INFO Received a request to add a new product.
+2024-06-09 20:58:40,727 ERROR Error occurred while adding product: Cannot invoke "javax.servlet.http.Part.getSubmittedFileName()" because "imagePart" is null
+2024-06-09 21:00:17,829 INFO Registration request received
+2024-06-09 21:00:17,860 INFO Created user from request: test@example.com
+2024-06-09 21:00:18,618 INFO Database connection established successfully
+2024-06-09 21:00:18,618 INFO Checking if user exists with email: test@example.com
+2024-06-09 21:00:18,719 INFO No user exists with email: test@example.com
+2024-06-09 21:00:18,720 INFO Email is unique: test@example.com
+2024-06-09 21:00:18,743 INFO Registering user: User{id=0, name='Test User', email='test@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-09 21:00:18,752 INFO SQL update executed successfully: INSERT INTO user (name, email, password) VALUES (?, ?, ?)
+2024-06-09 21:00:18,752 INFO User registered successfully: test@example.com
+2024-06-09 21:00:18,879 INFO Registration request received
+2024-06-09 21:00:18,880 INFO Created user from request: test@example.com
+2024-06-09 21:00:18,939 INFO Database connection established successfully
+2024-06-09 21:00:18,940 INFO Checking if user exists with email: test@example.com
+2024-06-09 21:00:18,943 WARN User already exists with email: test@example.com
+2024-06-09 21:00:18,943 WARN User already exists with email: test@example.com
+2024-06-09 21:00:18,965 INFO Registration request received
+2024-06-09 21:00:18,966 INFO Created user from request: test@example.com
+2024-06-09 21:00:18,967 WARN User did not agree to the privacy policy
+2024-06-09 21:00:18,987 INFO Registration request received
+2024-06-09 21:00:18,989 INFO Created user from request: test@example.com
+2024-06-09 21:00:19,033 INFO Database connection established successfully
+2024-06-09 21:00:19,033 INFO Checking if user exists with email: test@example.com
+2024-06-09 21:00:19,037 WARN User already exists with email: test@example.com
+2024-06-09 21:00:19,037 WARN User already exists with email: test@example.com
+2024-06-09 21:01:46,274 INFO Registration request received
+2024-06-09 21:01:46,308 INFO Created user from request: test@example.com
+2024-06-09 21:01:47,113 INFO Database connection established successfully
+2024-06-09 21:01:47,114 INFO Checking if user exists with email: test@example.com
+2024-06-09 21:01:47,197 WARN User already exists with email: test@example.com
+2024-06-09 21:01:47,198 WARN User already exists with email: test@example.com
+2024-06-09 21:01:47,333 INFO Registration request received
+2024-06-09 21:01:47,334 INFO Created user from request: test@example.com
+2024-06-09 21:01:47,395 INFO Database connection established successfully
+2024-06-09 21:01:47,395 INFO Checking if user exists with email: test@example.com
+2024-06-09 21:01:47,398 WARN User already exists with email: test@example.com
+2024-06-09 21:01:47,399 WARN User already exists with email: test@example.com
+2024-06-09 21:01:47,418 INFO Registration request received
+2024-06-09 21:01:47,419 INFO Created user from request: test@example.com
+2024-06-09 21:01:47,419 WARN User did not agree to the privacy policy
+2024-06-09 21:01:47,435 INFO Registration request received
+2024-06-09 21:01:47,436 INFO Created user from request: test@example.com
+2024-06-09 21:01:47,476 INFO Database connection established successfully
+2024-06-09 21:01:47,477 INFO Checking if user exists with email: test@example.com
+2024-06-09 21:01:47,482 WARN User already exists with email: test@example.com
+2024-06-09 21:01:47,482 WARN User already exists with email: test@example.com
+2024-06-09 23:22:58,042 INFO Fetching orders for email: john@example.com
+2024-06-09 23:22:58,066 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-09 23:22:58,116 INFO Fetching all orders.
+2024-06-09 23:22:58,117 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-09 23:22:58,138 INFO Saving orders: [Orders{id=0, orderId='123', userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-09 23:22:58,139 INFO Orders saved successfully.
+2024-06-09 23:22:58,183 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 23:22:58,184 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-09 23:22:58,194 INFO Fetching products by category: Цукерки with limit: true
+2024-06-09 23:22:58,196 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-09 23:22:58,203 INFO Fetching all products.
+2024-06-09 23:22:58,204 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-09 23:22:58,223 INFO Searching products with keyword: Chocolate
+2024-06-09 23:22:58,225 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC
+2024-06-09 23:22:58,233 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-09 23:22:58,235 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 23:22:58,243 INFO Fetching product by ID: 1
+2024-06-09 23:22:58,245 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-09 23:22:58,252 INFO Deleting product by ID: 1
+2024-06-09 23:22:58,253 INFO SQL update executed successfully: DELETE FROM product WHERE productId = ?
+2024-06-09 23:22:58,289 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-09 23:22:58,290 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-09 23:22:58,297 INFO Registering user: User{id=0, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-09 23:22:58,304 INFO SQL update executed successfully: INSERT INTO user (name, email, password) VALUES (?, ?, ?)
+2024-06-09 23:22:58,311 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='123456789', address='null', city='null', zip='null'}
+2024-06-09 23:22:58,312 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-09 23:22:58,319 INFO User login attempt: email=john.doe@example.com
+2024-06-09 23:22:58,321 INFO User fetched successfully: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-09 23:22:58,329 INFO Checking if user exists with email: john.doe@example.com
+2024-06-09 23:22:58,329 WARN User already exists with email: john.doe@example.com
+2024-06-09 23:49:12,180 INFO Fetching products for user ID: 1
+2024-06-09 23:49:12,200 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-09 23:49:12,236 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-09 23:49:12,237 INFO SQL update executed successfully: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-09 23:49:12,255 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Product1', category='Category1', weight=1.0, price=10.0}
+2024-06-09 23:49:12,256 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-09 23:53:42,480 INFO Received a request to add a new product.
+2024-06-09 23:53:42,502 INFO Building product from request parameters.
+2024-06-09 23:53:42,517 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1.0', price='10.0', status='Available', photo='test_image.jpg'}
+2024-06-09 23:53:43,002 INFO Database connection established successfully
+2024-06-09 23:53:43,004 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1.0', price='10.0', status='Available', photo='test_image.jpg'}
+2024-06-09 23:53:43,023 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 23:53:43,023 INFO Product successfully added to the database.
+2024-06-09 23:53:43,024 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-09 23:53:43,051 INFO Received a request to add a new product.
+2024-06-09 23:53:43,053 INFO Building product from request parameters.
+2024-06-09 23:53:43,053 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1.0', price='10.0', status='Available', photo='test_image.jpg'}
+2024-06-09 23:53:43,084 INFO Database connection established successfully
+2024-06-09 23:53:43,084 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1.0', price='10.0', status='Available', photo='test_image.jpg'}
+2024-06-09 23:53:43,091 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 23:53:43,091 INFO Product successfully added to the database.
+2024-06-09 23:53:43,091 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-09 23:53:43,102 INFO Received a request to add a new product.
+2024-06-09 23:53:43,103 INFO Building product from request parameters.
+2024-06-09 23:53:43,103 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1.0', price='10.0', status='Available', photo='test_image.jpg'}
+2024-06-09 23:53:43,122 INFO Database connection established successfully
+2024-06-09 23:53:43,123 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1.0', price='10.0', status='Available', photo='test_image.jpg'}
+2024-06-09 23:53:43,127 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-09 23:53:43,127 INFO Product successfully added to the database.
+2024-06-09 23:53:43,127 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-09 23:59:28,844 INFO Database connection established successfully
+2024-06-09 23:59:28,872 INFO Building product from request parameters.
+2024-06-09 23:59:28,932 INFO Database connection established successfully
+2024-06-10 00:01:51,355 INFO Database connection established successfully
+2024-06-10 00:01:51,434 INFO Database connection established successfully
+2024-06-10 00:01:51,458 INFO Database connection established successfully
+2024-06-10 00:12:59,921 INFO Received a request to delete a product.
+2024-06-10 00:12:59,938 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:12:59,997 INFO Received a request to delete a product.
+2024-06-10 00:12:59,998 INFO Product ID to delete: 1
+2024-06-10 00:13:00,470 INFO Database connection established successfully
+2024-06-10 00:13:00,470 INFO Deleting product by ID: 1
+2024-06-10 00:13:00,490 INFO SQL update executed successfully: DELETE FROM product WHERE productId = ?
+2024-06-10 00:13:00,491 INFO Product successfully deleted.
+2024-06-10 00:13:00,505 INFO Received a request to delete a product.
+2024-06-10 00:13:00,505 INFO Product ID to delete: 1
+2024-06-10 00:13:00,528 INFO Database connection established successfully
+2024-06-10 00:13:00,528 INFO Deleting product by ID: 1
+2024-06-10 00:13:00,534 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:13:00,534 WARN Failed to delete product.
+2024-06-10 00:14:20,631 INFO Received a request to delete a product.
+2024-06-10 00:14:20,643 ERROR Invalid product ID: invalid_id
+2024-06-10 00:15:24,987 INFO Received a request to delete a product.
+2024-06-10 00:15:25,002 ERROR Invalid product ID: invalid_id
+2024-06-10 00:15:25,054 INFO Received a request to delete a product.
+2024-06-10 00:15:25,055 INFO Product ID to delete: 1
+2024-06-10 00:15:25,474 INFO Database connection established successfully
+2024-06-10 00:15:25,475 INFO Deleting product by ID: 1
+2024-06-10 00:15:25,490 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:15:25,490 WARN Failed to delete product.
+2024-06-10 00:15:25,530 INFO Received a request to delete a product.
+2024-06-10 00:15:25,531 INFO Product ID to delete: 1
+2024-06-10 00:15:25,555 INFO Database connection established successfully
+2024-06-10 00:15:25,555 INFO Deleting product by ID: 1
+2024-06-10 00:15:25,558 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:15:25,558 WARN Failed to delete product.
+2024-06-10 00:15:57,549 INFO Received a request to delete a product.
+2024-06-10 00:15:57,559 ERROR Invalid product ID: invalid_id
+2024-06-10 00:15:57,624 INFO Received a request to delete a product.
+2024-06-10 00:15:57,625 INFO Product ID to delete: 1
+2024-06-10 00:15:58,087 INFO Database connection established successfully
+2024-06-10 00:15:58,087 INFO Deleting product by ID: 1
+2024-06-10 00:15:58,104 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:15:58,104 WARN Failed to delete product.
+2024-06-10 00:15:58,137 INFO Received a request to delete a product.
+2024-06-10 00:15:58,137 INFO Product ID to delete: 1
+2024-06-10 00:15:58,165 INFO Database connection established successfully
+2024-06-10 00:15:58,165 INFO Deleting product by ID: 1
+2024-06-10 00:15:58,168 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:15:58,168 WARN Failed to delete product.
+2024-06-10 00:16:21,147 INFO Received a request to delete a product.
+2024-06-10 00:16:21,156 ERROR Invalid product ID: invalid_id
+2024-06-10 00:16:21,211 INFO Received a request to delete a product.
+2024-06-10 00:16:21,212 INFO Product ID to delete: 1
+2024-06-10 00:16:21,689 INFO Database connection established successfully
+2024-06-10 00:16:21,689 INFO Deleting product by ID: 1
+2024-06-10 00:16:21,706 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:16:21,706 WARN Failed to delete product.
+2024-06-10 00:16:21,739 INFO Received a request to delete a product.
+2024-06-10 00:16:21,739 INFO Product ID to delete: 1
+2024-06-10 00:16:21,770 INFO Database connection established successfully
+2024-06-10 00:16:21,770 INFO Deleting product by ID: 1
+2024-06-10 00:16:21,773 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:16:21,773 WARN Failed to delete product.
+2024-06-10 00:16:43,770 INFO Received a request to delete a product.
+2024-06-10 00:16:43,783 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:16:43,850 INFO Received a request to delete a product.
+2024-06-10 00:16:43,850 INFO Product ID to delete: 1
+2024-06-10 00:16:44,320 INFO Database connection established successfully
+2024-06-10 00:16:44,320 INFO Deleting product by ID: 1
+2024-06-10 00:16:44,336 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:16:44,336 WARN Failed to delete product.
+2024-06-10 00:16:44,363 INFO Received a request to delete a product.
+2024-06-10 00:16:44,363 INFO Product ID to delete: 1
+2024-06-10 00:16:44,389 INFO Database connection established successfully
+2024-06-10 00:16:44,389 INFO Deleting product by ID: 1
+2024-06-10 00:16:44,390 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:16:44,390 WARN Failed to delete product.
+2024-06-10 00:17:15,315 INFO Received a request to delete a product.
+2024-06-10 00:17:15,333 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:17:15,388 INFO Received a request to delete a product.
+2024-06-10 00:17:15,389 INFO Product ID to delete: 1
+2024-06-10 00:17:15,861 INFO Database connection established successfully
+2024-06-10 00:17:15,861 INFO Deleting product by ID: 1
+2024-06-10 00:17:15,879 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:17:15,879 WARN Failed to delete product.
+2024-06-10 00:17:15,915 INFO Received a request to delete a product.
+2024-06-10 00:17:15,915 INFO Product ID to delete: 1
+2024-06-10 00:17:15,943 INFO Database connection established successfully
+2024-06-10 00:17:15,943 INFO Deleting product by ID: 1
+2024-06-10 00:17:15,944 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:17:15,944 WARN Failed to delete product.
+2024-06-10 00:19:04,019 INFO Database connection established successfully
+2024-06-10 00:19:04,098 INFO Database connection established successfully
+2024-06-10 00:19:04,130 INFO Database connection established successfully
+2024-06-10 00:20:05,925 INFO Received a request to delete a product.
+2024-06-10 00:20:05,936 INFO Product ID to delete: 1
+2024-06-10 00:20:06,369 INFO Database connection established successfully
+2024-06-10 00:20:06,369 INFO Deleting product by ID: 1
+2024-06-10 00:20:06,387 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:20:06,388 WARN Failed to delete product.
+2024-06-10 00:20:14,441 INFO Received a request to delete a product.
+2024-06-10 00:20:14,453 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:20:14,515 INFO Received a request to delete a product.
+2024-06-10 00:20:14,516 INFO Product ID to delete: 1
+2024-06-10 00:20:14,982 INFO Database connection established successfully
+2024-06-10 00:20:14,982 INFO Deleting product by ID: 1
+2024-06-10 00:20:15,002 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:20:15,003 WARN Failed to delete product.
+2024-06-10 00:20:15,033 INFO Received a request to delete a product.
+2024-06-10 00:20:15,033 INFO Product ID to delete: 1
+2024-06-10 00:20:15,059 INFO Database connection established successfully
+2024-06-10 00:20:15,060 INFO Deleting product by ID: 1
+2024-06-10 00:20:15,061 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:20:15,061 WARN Failed to delete product.
+2024-06-10 00:21:08,773 INFO Received a request to delete a product.
+2024-06-10 00:21:08,784 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:21:08,843 INFO Received a request to delete a product.
+2024-06-10 00:21:08,844 INFO Product ID to delete: 1
+2024-06-10 00:21:09,327 INFO Database connection established successfully
+2024-06-10 00:21:09,328 INFO Deleting product by ID: 1
+2024-06-10 00:21:09,345 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:21:09,345 WARN Failed to delete product.
+2024-06-10 00:21:09,377 INFO Received a request to delete a product.
+2024-06-10 00:21:09,377 INFO Product ID to delete: 1
+2024-06-10 00:21:09,402 INFO Database connection established successfully
+2024-06-10 00:21:09,402 INFO Deleting product by ID: 1
+2024-06-10 00:21:09,403 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:21:09,403 WARN Failed to delete product.
+2024-06-10 00:21:44,770 INFO Received a request to delete a product.
+2024-06-10 00:21:44,792 INFO Product ID to delete: 1
+2024-06-10 00:21:45,254 INFO Database connection established successfully
+2024-06-10 00:21:45,255 INFO Deleting product by ID: 1
+2024-06-10 00:21:45,270 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:21:45,271 WARN Failed to delete product.
+2024-06-10 00:21:45,318 INFO Received a request to delete a product.
+2024-06-10 00:21:45,318 INFO Product ID to delete: 1
+2024-06-10 00:21:45,348 INFO Database connection established successfully
+2024-06-10 00:21:45,348 INFO Deleting product by ID: 1
+2024-06-10 00:21:45,350 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:21:45,351 WARN Failed to delete product.
+2024-06-10 00:21:45,372 INFO Received a request to delete a product.
+2024-06-10 00:21:45,372 INFO Product ID to delete: 1
+2024-06-10 00:21:45,393 INFO Database connection established successfully
+2024-06-10 00:21:45,393 INFO Deleting product by ID: 1
+2024-06-10 00:21:45,394 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:21:45,395 WARN Failed to delete product.
+2024-06-10 00:23:09,062 INFO Received a request to delete a product.
+2024-06-10 00:23:09,084 INFO Product ID to delete: 1
+2024-06-10 00:23:09,085 INFO Product successfully deleted.
+2024-06-10 00:23:09,135 INFO Received a request to delete a product.
+2024-06-10 00:23:09,135 INFO Product ID to delete: 1
+2024-06-10 00:23:09,136 WARN Failed to delete product.
+2024-06-10 00:23:09,151 INFO Received a request to delete a product.
+2024-06-10 00:23:09,151 INFO Product ID to delete: 1
+2024-06-10 00:23:09,152 ERROR Error occurred while deleting product: Database error
+2024-06-10 00:23:40,763 INFO Received a request to delete a product.
+2024-06-10 00:23:40,773 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:23:40,837 INFO Received a request to delete a product.
+2024-06-10 00:23:40,837 INFO Product ID to delete: 1
+2024-06-10 00:23:41,306 INFO Database connection established successfully
+2024-06-10 00:23:41,306 INFO Deleting product by ID: 1
+2024-06-10 00:23:41,323 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:23:41,323 WARN Failed to delete product.
+2024-06-10 00:23:41,360 INFO Received a request to delete a product.
+2024-06-10 00:23:41,360 INFO Product ID to delete: 1
+2024-06-10 00:23:41,383 INFO Database connection established successfully
+2024-06-10 00:23:41,383 INFO Deleting product by ID: 1
+2024-06-10 00:23:41,385 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:23:41,385 WARN Failed to delete product.
+2024-06-10 00:25:11,670 INFO Received a request to delete a product.
+2024-06-10 00:25:11,679 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:25:11,748 INFO Received a request to delete a product.
+2024-06-10 00:25:11,748 INFO Product ID to delete: 1
+2024-06-10 00:25:12,197 INFO Database connection established successfully
+2024-06-10 00:25:12,197 INFO Deleting product by ID: 1
+2024-06-10 00:25:12,214 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:25:12,215 WARN Failed to delete product.
+2024-06-10 00:25:12,230 INFO Received a request to delete a product.
+2024-06-10 00:25:12,230 INFO Product ID to delete: 1
+2024-06-10 00:25:12,258 INFO Database connection established successfully
+2024-06-10 00:25:12,258 INFO Deleting product by ID: 1
+2024-06-10 00:25:12,259 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:25:12,259 WARN Failed to delete product.
+2024-06-10 00:25:12,285 INFO Received a request to delete a product.
+2024-06-10 00:25:12,286 INFO Product ID to delete: 1
+2024-06-10 00:25:12,303 INFO Database connection established successfully
+2024-06-10 00:25:12,303 INFO Deleting product by ID: 1
+2024-06-10 00:25:12,305 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:25:12,305 WARN Failed to delete product.
+2024-06-10 00:26:10,848 INFO Received a request to delete a product.
+2024-06-10 00:26:10,860 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:26:10,922 INFO Received a request to delete a product.
+2024-06-10 00:26:10,922 INFO Product ID to delete: 1
+2024-06-10 00:26:11,353 INFO Database connection established successfully
+2024-06-10 00:26:11,355 INFO Deleting product by ID: 1
+2024-06-10 00:26:11,371 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:26:11,371 WARN Failed to delete product.
+2024-06-10 00:26:11,407 INFO Received a request to delete a product.
+2024-06-10 00:26:11,407 INFO Product ID to delete: 1
+2024-06-10 00:26:11,432 INFO Database connection established successfully
+2024-06-10 00:26:11,432 INFO Deleting product by ID: 1
+2024-06-10 00:26:11,433 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:26:11,433 WARN Failed to delete product.
+2024-06-10 00:27:00,408 INFO Received a request to delete a product.
+2024-06-10 00:27:00,421 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:27:00,482 INFO Received a request to delete a product.
+2024-06-10 00:27:00,482 INFO Product ID to delete: 1
+2024-06-10 00:27:00,941 INFO Database connection established successfully
+2024-06-10 00:27:00,941 INFO Deleting product by ID: 1
+2024-06-10 00:27:00,957 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:27:00,958 WARN Failed to delete product.
+2024-06-10 00:27:00,993 INFO Received a request to delete a product.
+2024-06-10 00:27:00,993 INFO Product ID to delete: 1
+2024-06-10 00:27:01,019 INFO Database connection established successfully
+2024-06-10 00:27:01,019 INFO Deleting product by ID: 1
+2024-06-10 00:27:01,022 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:27:01,022 WARN Failed to delete product.
+2024-06-10 00:28:12,037 INFO Received a request to delete a product.
+2024-06-10 00:28:12,051 INFO Product ID to delete: 1
+2024-06-10 00:28:12,525 INFO Database connection established successfully
+2024-06-10 00:28:12,525 INFO Deleting product by ID: 1
+2024-06-10 00:28:12,543 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:28:12,543 WARN Failed to delete product.
+2024-06-10 00:28:12,593 INFO Received a request to delete a product.
+2024-06-10 00:28:12,593 INFO Product ID to delete: 1
+2024-06-10 00:28:12,618 INFO Database connection established successfully
+2024-06-10 00:28:12,618 INFO Deleting product by ID: 1
+2024-06-10 00:28:12,619 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:28:12,620 WARN Failed to delete product.
+2024-06-10 00:28:51,103 INFO Received a request to delete a product.
+2024-06-10 00:28:51,115 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:28:51,188 INFO Received a request to delete a product.
+2024-06-10 00:28:51,188 INFO Product ID to delete: 1
+2024-06-10 00:28:51,640 INFO Database connection established successfully
+2024-06-10 00:28:51,641 INFO Deleting product by ID: 1
+2024-06-10 00:28:51,655 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:28:51,655 WARN Failed to delete product.
+2024-06-10 00:28:51,684 INFO Received a request to delete a product.
+2024-06-10 00:28:51,684 INFO Product ID to delete: 1
+2024-06-10 00:28:51,714 INFO Database connection established successfully
+2024-06-10 00:28:51,714 INFO Deleting product by ID: 1
+2024-06-10 00:28:51,715 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:28:51,716 WARN Failed to delete product.
+2024-06-10 00:29:16,632 INFO Received a request to delete a product.
+2024-06-10 00:29:16,645 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:29:16,707 INFO Received a request to delete a product.
+2024-06-10 00:29:16,707 INFO Product ID to delete: 1
+2024-06-10 00:29:17,167 INFO Database connection established successfully
+2024-06-10 00:29:17,167 INFO Deleting product by ID: 1
+2024-06-10 00:29:17,181 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:29:17,181 WARN Failed to delete product.
+2024-06-10 00:29:17,217 INFO Received a request to delete a product.
+2024-06-10 00:29:17,217 INFO Product ID to delete: 1
+2024-06-10 00:29:17,247 INFO Database connection established successfully
+2024-06-10 00:29:17,247 INFO Deleting product by ID: 1
+2024-06-10 00:29:17,248 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:29:17,248 WARN Failed to delete product.
+2024-06-10 00:31:09,430 INFO Received a request to delete a product.
+2024-06-10 00:31:09,443 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:31:09,507 INFO Received a request to delete a product.
+2024-06-10 00:31:09,508 INFO Product ID to delete: 1
+2024-06-10 00:31:09,962 INFO Database connection established successfully
+2024-06-10 00:31:09,962 INFO Deleting product by ID: 1
+2024-06-10 00:31:09,984 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:31:09,984 WARN Failed to delete product.
+2024-06-10 00:31:10,013 INFO Received a request to delete a product.
+2024-06-10 00:31:10,013 INFO Product ID to delete: 1
+2024-06-10 00:31:10,046 INFO Database connection established successfully
+2024-06-10 00:31:10,046 INFO Deleting product by ID: 1
+2024-06-10 00:31:10,048 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:31:10,048 WARN Failed to delete product.
+2024-06-10 00:31:29,192 INFO Received a request to delete a product.
+2024-06-10 00:31:29,205 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:31:29,265 INFO Received a request to delete a product.
+2024-06-10 00:31:29,265 INFO Product ID to delete: 1
+2024-06-10 00:31:29,715 INFO Database connection established successfully
+2024-06-10 00:31:29,715 INFO Deleting product by ID: 1
+2024-06-10 00:31:29,731 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:31:29,731 WARN Failed to delete product.
+2024-06-10 00:31:29,761 INFO Received a request to delete a product.
+2024-06-10 00:31:29,761 INFO Product ID to delete: 1
+2024-06-10 00:31:29,788 INFO Database connection established successfully
+2024-06-10 00:31:29,788 INFO Deleting product by ID: 1
+2024-06-10 00:31:29,789 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:31:29,789 WARN Failed to delete product.
+2024-06-10 00:34:42,863 INFO Received a request to delete a product.
+2024-06-10 00:34:42,876 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:34:42,942 INFO Received a request to delete a product.
+2024-06-10 00:34:42,943 INFO Product ID to delete: 1
+2024-06-10 00:34:43,390 INFO Database connection established successfully
+2024-06-10 00:34:43,390 INFO Deleting product by ID: 1
+2024-06-10 00:34:43,406 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:34:43,406 WARN Failed to delete product.
+2024-06-10 00:34:43,448 INFO Received a request to delete a product.
+2024-06-10 00:34:43,448 INFO Product ID to delete: 1
+2024-06-10 00:34:43,474 INFO Database connection established successfully
+2024-06-10 00:34:43,474 INFO Deleting product by ID: 1
+2024-06-10 00:34:43,475 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:34:43,475 WARN Failed to delete product.
+2024-06-10 00:35:49,390 INFO Received a request to delete a product.
+2024-06-10 00:35:49,404 ERROR Error parsing product ID: Invalid product ID format: invalid_id
+2024-06-10 00:35:49,468 INFO Received a request to delete a product.
+2024-06-10 00:35:49,468 INFO Product ID to delete: 1
+2024-06-10 00:35:49,957 INFO Database connection established successfully
+2024-06-10 00:35:49,958 INFO Deleting product by ID: 1
+2024-06-10 00:35:49,974 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:35:49,974 WARN Failed to delete product.
+2024-06-10 00:35:50,006 INFO Received a request to delete a product.
+2024-06-10 00:35:50,006 INFO Product ID to delete: 1
+2024-06-10 00:35:50,034 INFO Database connection established successfully
+2024-06-10 00:35:50,035 INFO Deleting product by ID: 1
+2024-06-10 00:35:50,036 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:35:50,036 WARN Failed to delete product.
+2024-06-10 00:36:51,892 INFO Received a request to delete a product.
+2024-06-10 00:36:51,906 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 00:36:51,966 INFO Received a request to delete a product.
+2024-06-10 00:36:51,966 INFO Product ID to delete: 1
+2024-06-10 00:36:52,424 INFO Database connection established successfully
+2024-06-10 00:36:52,426 INFO Deleting product by ID: 1
+2024-06-10 00:36:52,439 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:36:52,440 WARN Failed to delete product.
+2024-06-10 00:36:52,471 INFO Received a request to delete a product.
+2024-06-10 00:36:52,472 INFO Product ID to delete: 1
+2024-06-10 00:36:52,505 INFO Database connection established successfully
+2024-06-10 00:36:52,505 INFO Deleting product by ID: 1
+2024-06-10 00:36:52,506 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 00:36:52,507 WARN Failed to delete product.
+2024-06-10 00:38:55,428 INFO Received a request to edit a product.
+2024-06-10 00:38:55,455 INFO Built product from request parameters: Product{productId=1, productName='Test Product', category='Test Category', weight='1.5', price='100', status='available', photo='null'}
+2024-06-10 00:38:55,455 INFO Product details extracted from request: Product{productId=1, productName='Test Product', category='Test Category', weight='1.5', price='100', status='available', photo='null'}
+2024-06-10 00:38:55,919 INFO Database connection established successfully
+2024-06-10 00:38:55,919 INFO Fetching product by ID: 1
+2024-06-10 00:38:55,953 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-10 00:38:55,954 ERROR Error occurred while updating product: Cannot invoke "javax.servlet.http.Part.getSubmittedFileName()" because "part" is null
+2024-06-10 00:39:55,084 INFO Image update status: true
+2024-06-10 00:39:55,127 INFO Built product from request parameters: Product{productId=1, productName='Test Product', category='TestCategory', weight='10', price='100', status='Active', photo='null'}
+2024-06-10 00:39:55,133 INFO Image update status: false
+2024-06-10 00:41:07,994 INFO Building product from request parameters.
+2024-06-10 00:42:07,991 INFO Building product from request parameters.
+2024-06-10 00:43:12,790 INFO Building product from request parameters.
+2024-06-10 00:48:43,136 INFO Address details updated for user ID: 1
+2024-06-10 00:58:14,644 INFO Received request to add product to cart
+2024-06-10 00:58:14,661 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 00:58:14,665 INFO Fetching product by ID: 1
+2024-06-10 00:58:14,665 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 00:58:14,668 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 00:58:14,708 INFO Received request to add product to cart
+2024-06-10 00:58:14,710 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 00:58:14,710 INFO Fetching product by ID: 1
+2024-06-10 00:58:14,710 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 00:58:14,711 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 00:58:14,746 INFO Received request to add product to cart
+2024-06-10 00:58:14,747 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 00:58:14,747 INFO Fetching product by ID: 1
+2024-06-10 00:58:14,747 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 00:58:14,748 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 00:59:10,493 INFO Received login request
+2024-06-10 00:59:10,516 INFO Attempting login for email: user@giftshop.com
+2024-06-10 00:59:10,516 INFO User login attempt for email: user@giftshop.com
+2024-06-10 00:59:10,517 INFO User login attempt: email=user@giftshop.com
+2024-06-10 00:59:10,518 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 00:59:10,604 INFO Received login request
+2024-06-10 00:59:10,605 INFO Attempting login for email: invalid@giftshop.com
+2024-06-10 00:59:10,605 INFO User login attempt for email: invalid@giftshop.com
+2024-06-10 00:59:10,605 INFO User login attempt: email=invalid@giftshop.com
+2024-06-10 00:59:10,606 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 00:59:10,617 INFO Received login request
+2024-06-10 00:59:10,618 INFO Attempting login for email: user@giftshop.com
+2024-06-10 00:59:10,618 INFO User login attempt for email: user@giftshop.com
+2024-06-10 00:59:10,618 INFO User login attempt: email=user@giftshop.com
+2024-06-10 00:59:10,619 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 00:59:10,631 INFO Received login request
+2024-06-10 00:59:10,632 INFO Attempting login for email: admin@giftshop.com
+2024-06-10 00:59:10,632 INFO Admin login successful for email: admin@giftshop.com
+2024-06-10 00:59:10,632 INFO Admin logged in, redirecting to admin/home.jsp
+2024-06-10 00:59:47,360 INFO Received login request
+2024-06-10 00:59:47,384 INFO Attempting login for email: user@example.com
+2024-06-10 00:59:47,384 INFO User login attempt for email: user@example.com
+2024-06-10 00:59:47,385 INFO User login attempt: email=user@example.com
+2024-06-10 00:59:47,385 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 00:59:47,459 INFO Received login request
+2024-06-10 00:59:47,459 INFO Attempting login for email: user@example.com
+2024-06-10 00:59:47,459 INFO User login attempt for email: user@example.com
+2024-06-10 00:59:47,459 INFO User login attempt: email=user@example.com
+2024-06-10 00:59:47,459 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 00:59:47,470 INFO Received login request
+2024-06-10 00:59:47,470 INFO Attempting login for email: user@example.com
+2024-06-10 00:59:47,470 INFO User login attempt for email: user@example.com
+2024-06-10 00:59:47,471 INFO User login attempt: email=user@example.com
+2024-06-10 00:59:47,471 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 00:59:47,479 INFO Received login request
+2024-06-10 00:59:47,479 INFO Attempting login for email: admin@giftshop.com
+2024-06-10 00:59:47,481 INFO Admin login successful for email: admin@giftshop.com
+2024-06-10 00:59:47,481 INFO Admin logged in, redirecting to admin/home.jsp
+2024-06-10 01:00:25,233 INFO Logout request received
+2024-06-10 01:00:25,248 INFO User testUser logging out
+2024-06-10 01:00:25,250 ERROR Logout error: Test Exception
+2024-06-10 01:00:25,279 INFO Logout request received
+2024-06-10 01:00:25,279 WARN No user found in session during logout
+2024-06-10 01:00:25,286 INFO Logout request received
+2024-06-10 01:00:25,287 INFO User testUser logging out
+2024-06-10 01:00:25,287 INFO User successfully logged out
+2024-06-10 01:01:23,739 INFO Order request received
+2024-06-10 01:01:23,760 INFO User details: userId=1, userName=null, email=null, phone=null
+2024-06-10 01:01:24,235 INFO Database connection established successfully
+2024-06-10 01:01:24,236 INFO Fetching products for user ID: 1
+2024-06-10 01:01:24,278 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:01:24,307 INFO Database connection established successfully
+2024-06-10 01:01:24,323 INFO Saving orders: [Orders{id=0, orderId='null', userName='null', email='null', phone='null', address='null, null, null', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='null'}]
+2024-06-10 01:01:24,335 INFO Orders saved successfully.
+2024-06-10 01:01:24,335 INFO Order successfully placed for userId=1
+2024-06-10 01:01:24,396 INFO Order request received
+2024-06-10 01:01:24,397 INFO User details: userId=1, userName=Test User, email=test@example.com, phone=1234567890
+2024-06-10 01:01:24,415 INFO Database connection established successfully
+2024-06-10 01:01:24,416 INFO Fetching products for user ID: 1
+2024-06-10 01:01:24,418 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:01:24,433 INFO Database connection established successfully
+2024-06-10 01:01:24,433 INFO Saving orders: [Orders{id=0, orderId='null', userName='Test User', email='test@example.com', phone='1234567890', address='Test Address, Test City, 12345', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='Credit Card'}]
+2024-06-10 01:01:24,443 INFO Orders saved successfully.
+2024-06-10 01:01:24,443 INFO Order successfully placed for userId=1
+2024-06-10 01:01:24,453 INFO Order request received
+2024-06-10 01:01:24,454 INFO User details: userId=1, userName=Test User, email=test@example.com, phone=1234567890
+2024-06-10 01:01:24,469 INFO Database connection established successfully
+2024-06-10 01:01:24,469 INFO Fetching products for user ID: 1
+2024-06-10 01:01:24,472 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:01:24,489 INFO Database connection established successfully
+2024-06-10 01:01:24,489 INFO Saving orders: [Orders{id=0, orderId='null', userName='Test User', email='test@example.com', phone='1234567890', address='Test Address, Test City, 12345', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='Credit Card'}]
+2024-06-10 01:01:24,497 INFO Orders saved successfully.
+2024-06-10 01:01:24,497 INFO Order successfully placed for userId=1
+2024-06-10 01:01:24,503 INFO Order request received
+2024-06-10 01:01:24,503 INFO User details: userId=1, userName=null, email=null, phone=null
+2024-06-10 01:01:24,521 INFO Database connection established successfully
+2024-06-10 01:01:24,521 INFO Fetching products for user ID: 1
+2024-06-10 01:01:24,523 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:01:24,523 WARN Payment method not selected for userId=1
+2024-06-10 01:02:03,597 INFO Registration request received
+2024-06-10 01:02:03,607 INFO Created user from request: test@example.com
+2024-06-10 01:02:04,074 INFO Database connection established successfully
+2024-06-10 01:02:04,075 INFO Checking if user exists with email: test@example.com
+2024-06-10 01:02:04,110 WARN User already exists with email: test@example.com
+2024-06-10 01:02:04,110 WARN User already exists with email: test@example.com
+2024-06-10 01:02:04,179 INFO Registration request received
+2024-06-10 01:02:04,179 INFO Created user from request: test@example.com
+2024-06-10 01:02:04,206 INFO Database connection established successfully
+2024-06-10 01:02:04,206 INFO Checking if user exists with email: test@example.com
+2024-06-10 01:02:04,208 WARN User already exists with email: test@example.com
+2024-06-10 01:02:04,209 WARN User already exists with email: test@example.com
+2024-06-10 01:02:04,216 INFO Registration request received
+2024-06-10 01:02:04,216 INFO Created user from request: test@example.com
+2024-06-10 01:02:04,217 WARN User did not agree to the privacy policy
+2024-06-10 01:03:02,262 ERROR Invalid parameter format for removing product from cart
+2024-06-10 01:03:02,323 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:03:02,828 INFO Database connection established successfully
+2024-06-10 01:03:02,828 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:03:02,842 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:03:02,842 ERROR Failed to remove product from cart
+2024-06-10 01:03:02,852 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:03:02,881 INFO Database connection established successfully
+2024-06-10 01:03:02,881 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:03:02,882 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:03:02,882 ERROR Failed to remove product from cart
+2024-06-10 01:03:02,888 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:03:02,906 INFO Database connection established successfully
+2024-06-10 01:03:02,907 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:03:02,907 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:03:02,908 ERROR Failed to remove product from cart
+2024-06-10 01:04:49,926 INFO Received a request to add a new product.
+2024-06-10 01:04:49,948 INFO Building product from request parameters.
+2024-06-10 01:04:49,959 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:04:50,428 INFO Database connection established successfully
+2024-06-10 01:04:50,429 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:04:50,446 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:04:50,446 INFO Product successfully added to the database.
+2024-06-10 01:04:50,447 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:04:50,500 INFO Received a request to add a new product.
+2024-06-10 01:04:50,501 INFO Building product from request parameters.
+2024-06-10 01:04:50,501 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:04:50,528 INFO Database connection established successfully
+2024-06-10 01:04:50,528 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:04:50,534 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:04:50,534 INFO Product successfully added to the database.
+2024-06-10 01:04:50,534 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:05:36,902 INFO Received a request to add a new product.
+2024-06-10 01:05:36,914 INFO Building product from request parameters.
+2024-06-10 01:05:36,926 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.99', status='Available', photo='test_image.jpg'}
+2024-06-10 01:05:37,416 INFO Database connection established successfully
+2024-06-10 01:05:37,417 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.99', status='Available', photo='test_image.jpg'}
+2024-06-10 01:05:37,436 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:05:37,436 INFO Product successfully added to the database.
+2024-06-10 01:05:37,436 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:05:37,467 INFO Received a request to add a new product.
+2024-06-10 01:05:37,468 INFO Building product from request parameters.
+2024-06-10 01:05:37,468 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.99', status='Available', photo='test_image.jpg'}
+2024-06-10 01:05:37,497 INFO Database connection established successfully
+2024-06-10 01:05:37,498 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.99', status='Available', photo='test_image.jpg'}
+2024-06-10 01:05:37,503 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:05:37,503 INFO Product successfully added to the database.
+2024-06-10 01:05:37,503 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:05:37,510 INFO Received a request to add a new product.
+2024-06-10 01:05:37,511 INFO Building product from request parameters.
+2024-06-10 01:05:37,511 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.99', status='Available', photo='test_image.jpg'}
+2024-06-10 01:05:37,530 INFO Database connection established successfully
+2024-06-10 01:05:37,530 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.99', status='Available', photo='test_image.jpg'}
+2024-06-10 01:05:37,535 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:05:37,536 INFO Product successfully added to the database.
+2024-06-10 01:05:37,536 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:06:09,760 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-10 01:06:09,785 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-10 01:06:09,832 INFO Fetching products by category: Цукерки with limit: true
+2024-06-10 01:06:09,834 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-10 01:06:09,846 INFO Fetching all products.
+2024-06-10 01:06:09,848 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-10 01:06:09,854 INFO Searching products with keyword: Chocolate
+2024-06-10 01:06:09,855 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC
+2024-06-10 01:06:09,860 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-10 01:06:09,860 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:06:09,866 INFO Fetching product by ID: 1
+2024-06-10 01:06:09,867 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-10 01:06:09,875 INFO Deleting product by ID: 1
+2024-06-10 01:06:09,876 INFO SQL update executed successfully: DELETE FROM product WHERE productId = ?
+2024-06-10 01:06:10,093 INFO Logout request received
+2024-06-10 01:06:10,095 INFO User testUser logging out
+2024-06-10 01:06:10,097 ERROR Logout error: Test Exception
+2024-06-10 01:06:10,103 INFO Logout request received
+2024-06-10 01:06:10,104 WARN No user found in session during logout
+2024-06-10 01:06:10,107 INFO Logout request received
+2024-06-10 01:06:10,108 INFO User testUser logging out
+2024-06-10 01:06:10,108 INFO User successfully logged out
+2024-06-10 01:06:10,164 ERROR Invalid parameter format for removing product from cart
+2024-06-10 01:06:10,192 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:06:11,030 INFO Database connection established successfully
+2024-06-10 01:06:11,031 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:06:11,071 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:06:11,072 ERROR Failed to remove product from cart
+2024-06-10 01:06:11,079 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:06:11,108 INFO Database connection established successfully
+2024-06-10 01:06:11,108 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:06:11,109 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:06:11,110 ERROR Failed to remove product from cart
+2024-06-10 01:06:11,116 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:06:11,139 INFO Database connection established successfully
+2024-06-10 01:06:11,139 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:06:11,141 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:06:11,142 ERROR Failed to remove product from cart
+2024-06-10 01:06:11,262 INFO Registration request received
+2024-06-10 01:06:11,263 INFO Created user from request: test@example.com
+2024-06-10 01:06:11,288 INFO Database connection established successfully
+2024-06-10 01:06:11,289 INFO Checking if user exists with email: test@example.com
+2024-06-10 01:06:11,326 WARN User already exists with email: test@example.com
+2024-06-10 01:06:11,326 WARN User already exists with email: test@example.com
+2024-06-10 01:06:11,334 INFO Registration request received
+2024-06-10 01:06:11,335 INFO Created user from request: test@example.com
+2024-06-10 01:06:11,359 INFO Database connection established successfully
+2024-06-10 01:06:11,359 INFO Checking if user exists with email: test@example.com
+2024-06-10 01:06:11,362 WARN User already exists with email: test@example.com
+2024-06-10 01:06:11,362 WARN User already exists with email: test@example.com
+2024-06-10 01:06:11,367 INFO Registration request received
+2024-06-10 01:06:11,367 INFO Created user from request: test@example.com
+2024-06-10 01:06:11,367 WARN User did not agree to the privacy policy
+2024-06-10 01:06:11,640 INFO Received request to add product to cart
+2024-06-10 01:06:11,643 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 01:06:11,643 INFO Fetching product by ID: 1
+2024-06-10 01:06:11,644 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:06:11,646 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 01:06:11,652 INFO Received request to add product to cart
+2024-06-10 01:06:11,653 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 01:06:11,653 INFO Fetching product by ID: 1
+2024-06-10 01:06:11,653 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:06:11,654 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 01:06:11,663 INFO Received request to add product to cart
+2024-06-10 01:06:11,664 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 01:06:11,664 INFO Fetching product by ID: 1
+2024-06-10 01:06:11,665 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:06:11,666 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 01:06:11,713 INFO Fetching orders for email: john@example.com
+2024-06-10 01:06:11,714 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-10 01:06:11,720 INFO Fetching all orders.
+2024-06-10 01:06:11,721 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-10 01:06:11,725 INFO Saving orders: [Orders{id=0, orderId='123', userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-10 01:06:11,726 INFO Orders saved successfully.
+2024-06-10 01:06:11,803 INFO Image update status: true
+2024-06-10 01:06:11,806 INFO Built product from request parameters: Product{productId=1, productName='Test Product', category='TestCategory', weight='10', price='100', status='Active', photo='null'}
+2024-06-10 01:06:11,810 INFO Image update status: false
+2024-06-10 01:06:11,823 INFO Fetching products for user ID: 1
+2024-06-10 01:06:11,824 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:06:11,829 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:06:11,829 INFO SQL update executed successfully: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:06:11,833 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Product1', category='Category1', weight=1.0, price=10.0}
+2024-06-10 01:06:11,834 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-10 01:06:11,878 INFO Order request received
+2024-06-10 01:06:11,882 INFO User details: userId=1, userName=null, email=null, phone=null
+2024-06-10 01:06:11,909 INFO Database connection established successfully
+2024-06-10 01:06:11,910 INFO Fetching products for user ID: 1
+2024-06-10 01:06:11,912 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:06:11,936 INFO Database connection established successfully
+2024-06-10 01:06:11,936 INFO Saving orders: [Orders{id=0, orderId='null', userName='null', email='null', phone='null', address='null, null, null', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='null'}]
+2024-06-10 01:06:11,947 INFO Orders saved successfully.
+2024-06-10 01:06:11,947 INFO Order successfully placed for userId=1
+2024-06-10 01:06:11,955 INFO Order request received
+2024-06-10 01:06:11,956 INFO User details: userId=1, userName=Test User, email=test@example.com, phone=1234567890
+2024-06-10 01:06:11,977 INFO Database connection established successfully
+2024-06-10 01:06:11,977 INFO Fetching products for user ID: 1
+2024-06-10 01:06:11,979 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:06:11,999 INFO Database connection established successfully
+2024-06-10 01:06:11,999 INFO Saving orders: [Orders{id=0, orderId='null', userName='Test User', email='test@example.com', phone='1234567890', address='Test Address, Test City, 12345', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='Credit Card'}]
+2024-06-10 01:06:12,008 INFO Orders saved successfully.
+2024-06-10 01:06:12,008 INFO Order successfully placed for userId=1
+2024-06-10 01:06:12,016 INFO Order request received
+2024-06-10 01:06:12,016 INFO User details: userId=1, userName=Test User, email=test@example.com, phone=1234567890
+2024-06-10 01:06:12,039 INFO Database connection established successfully
+2024-06-10 01:06:12,039 INFO Fetching products for user ID: 1
+2024-06-10 01:06:12,041 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:06:12,061 INFO Database connection established successfully
+2024-06-10 01:06:12,062 INFO Saving orders: [Orders{id=0, orderId='null', userName='Test User', email='test@example.com', phone='1234567890', address='Test Address, Test City, 12345', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='Credit Card'}]
+2024-06-10 01:06:12,071 INFO Orders saved successfully.
+2024-06-10 01:06:12,072 INFO Order successfully placed for userId=1
+2024-06-10 01:06:12,076 INFO Order request received
+2024-06-10 01:06:12,077 INFO User details: userId=1, userName=null, email=null, phone=null
+2024-06-10 01:06:12,102 INFO Database connection established successfully
+2024-06-10 01:06:12,102 INFO Fetching products for user ID: 1
+2024-06-10 01:06:12,104 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:06:12,106 WARN Payment method not selected for userId=1
+2024-06-10 01:06:12,163 INFO Received a request to delete a product.
+2024-06-10 01:06:12,163 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 01:06:12,172 INFO Received a request to delete a product.
+2024-06-10 01:06:12,173 INFO Product ID to delete: 1
+2024-06-10 01:06:12,211 INFO Database connection established successfully
+2024-06-10 01:06:12,211 INFO Deleting product by ID: 1
+2024-06-10 01:06:12,216 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 01:06:12,216 WARN Failed to delete product.
+2024-06-10 01:06:12,223 INFO Received a request to delete a product.
+2024-06-10 01:06:12,224 INFO Product ID to delete: 1
+2024-06-10 01:06:12,250 INFO Database connection established successfully
+2024-06-10 01:06:12,250 INFO Deleting product by ID: 1
+2024-06-10 01:06:12,252 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 01:06:12,253 WARN Failed to delete product.
+2024-06-10 01:06:12,260 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-10 01:06:12,260 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-10 01:06:12,264 INFO Registering user: User{id=0, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-10 01:06:12,264 INFO SQL update executed successfully: INSERT INTO user (name, email, password) VALUES (?, ?, ?)
+2024-06-10 01:06:12,267 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='123456789', address='null', city='null', zip='null'}
+2024-06-10 01:06:12,267 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-10 01:06:12,271 INFO User login attempt: email=john.doe@example.com
+2024-06-10 01:06:12,272 INFO User fetched successfully: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-10 01:06:12,275 INFO Checking if user exists with email: john.doe@example.com
+2024-06-10 01:06:12,275 WARN User already exists with email: john.doe@example.com
+2024-06-10 01:06:12,287 INFO Received login request
+2024-06-10 01:06:12,287 INFO Attempting login for email: user@example.com
+2024-06-10 01:06:12,287 INFO User login attempt for email: user@example.com
+2024-06-10 01:06:12,287 INFO User login attempt: email=user@example.com
+2024-06-10 01:06:12,288 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:06:12,294 INFO Received login request
+2024-06-10 01:06:12,294 INFO Attempting login for email: user@example.com
+2024-06-10 01:06:12,294 INFO User login attempt for email: user@example.com
+2024-06-10 01:06:12,295 INFO User login attempt: email=user@example.com
+2024-06-10 01:06:12,295 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:06:12,301 INFO Received login request
+2024-06-10 01:06:12,302 INFO Attempting login for email: user@example.com
+2024-06-10 01:06:12,302 INFO User login attempt for email: user@example.com
+2024-06-10 01:06:12,302 INFO User login attempt: email=user@example.com
+2024-06-10 01:06:12,302 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:06:12,306 INFO Received login request
+2024-06-10 01:06:12,307 INFO Attempting login for email: admin@giftshop.com
+2024-06-10 01:06:12,307 INFO Admin login successful for email: admin@giftshop.com
+2024-06-10 01:06:12,307 INFO Admin logged in, redirecting to admin/home.jsp
+2024-06-10 01:07:34,541 INFO Received a request to add a new product.
+2024-06-10 01:07:34,552 INFO Building product from request parameters.
+2024-06-10 01:07:34,565 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:07:35,068 INFO Database connection established successfully
+2024-06-10 01:07:35,069 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:07:35,084 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:07:35,084 INFO Product successfully added to the database.
+2024-06-10 01:07:35,086 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:07:35,116 INFO Received a request to add a new product.
+2024-06-10 01:07:35,117 INFO Building product from request parameters.
+2024-06-10 01:07:35,117 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:07:35,142 INFO Database connection established successfully
+2024-06-10 01:07:35,143 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:07:35,148 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:07:35,148 INFO Product successfully added to the database.
+2024-06-10 01:07:35,148 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:07:35,161 INFO Received a request to add a new product.
+2024-06-10 01:07:35,161 INFO Building product from request parameters.
+2024-06-10 01:07:35,162 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:07:35,180 INFO Database connection established successfully
+2024-06-10 01:07:35,181 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:07:35,185 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:07:35,185 INFO Product successfully added to the database.
+2024-06-10 01:07:35,186 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:10:42,021 INFO Received a request to add a new product.
+2024-06-10 01:10:42,033 INFO Building product from request parameters.
+2024-06-10 01:10:42,045 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:10:42,520 INFO Database connection established successfully
+2024-06-10 01:10:42,521 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:10:42,538 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:10:42,538 INFO Product successfully added to the database.
+2024-06-10 01:10:42,538 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:10:42,578 INFO Received a request to add a new product.
+2024-06-10 01:10:42,579 INFO Building product from request parameters.
+2024-06-10 01:10:42,579 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:10:42,602 INFO Database connection established successfully
+2024-06-10 01:10:42,603 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:10:42,607 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:10:42,607 INFO Product successfully added to the database.
+2024-06-10 01:10:42,608 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:10:42,622 INFO Received a request to add a new product.
+2024-06-10 01:10:42,623 INFO Building product from request parameters.
+2024-06-10 01:10:42,623 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:10:42,641 INFO Database connection established successfully
+2024-06-10 01:10:42,642 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:10:42,645 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:10:42,645 INFO Product successfully added to the database.
+2024-06-10 01:10:42,646 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:12:03,997 INFO Received a request to add a new product.
+2024-06-10 01:12:04,008 INFO Building product from request parameters.
+2024-06-10 01:12:04,017 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:12:04,526 INFO Database connection established successfully
+2024-06-10 01:12:04,527 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:12:04,544 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:12:04,544 INFO Product successfully added to the database.
+2024-06-10 01:12:04,545 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:12:04,575 INFO Received a request to add a new product.
+2024-06-10 01:12:04,576 INFO Building product from request parameters.
+2024-06-10 01:12:04,576 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:12:04,604 INFO Database connection established successfully
+2024-06-10 01:12:04,604 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:12:04,608 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:12:04,609 INFO Product successfully added to the database.
+2024-06-10 01:12:04,609 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:12:04,626 INFO Received a request to add a new product.
+2024-06-10 01:12:04,626 INFO Building product from request parameters.
+2024-06-10 01:12:04,626 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:12:04,647 INFO Database connection established successfully
+2024-06-10 01:12:04,647 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:12:04,651 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:12:04,651 INFO Product successfully added to the database.
+2024-06-10 01:12:04,652 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:13:30,993 INFO Received a request to add a new product.
+2024-06-10 01:13:31,008 INFO Building product from request parameters.
+2024-06-10 01:13:31,019 INFO Product details extracted from request: Product{productId=0, productName='null', category='null', weight='null', price='null', status='null', photo='test_image.jpg'}
+2024-06-10 01:13:31,498 INFO Database connection established successfully
+2024-06-10 01:13:31,499 INFO Adding product: Product{productId=0, productName='null', category='null', weight='null', price='null', status='null', photo='test_image.jpg'}
+2024-06-10 01:13:31,516 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:13:31,516 INFO Product successfully added to the database.
+2024-06-10 01:13:31,517 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:13:31,545 INFO Received a request to add a new product.
+2024-06-10 01:13:31,546 INFO Building product from request parameters.
+2024-06-10 01:13:31,546 INFO Product details extracted from request: Product{productId=0, productName='null', category='null', weight='null', price='null', status='null', photo='test_image.jpg'}
+2024-06-10 01:13:31,572 INFO Database connection established successfully
+2024-06-10 01:13:31,572 INFO Adding product: Product{productId=0, productName='null', category='null', weight='null', price='null', status='null', photo='test_image.jpg'}
+2024-06-10 01:13:31,576 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:13:31,576 INFO Product successfully added to the database.
+2024-06-10 01:13:31,576 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:13:31,591 INFO Received a request to add a new product.
+2024-06-10 01:13:31,591 INFO Building product from request parameters.
+2024-06-10 01:13:31,592 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:13:31,612 INFO Database connection established successfully
+2024-06-10 01:13:31,612 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:13:31,616 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:13:31,617 INFO Product successfully added to the database.
+2024-06-10 01:13:31,617 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:14:33,434 INFO Received a request to add a new product.
+2024-06-10 01:14:33,442 INFO Building product from request parameters.
+2024-06-10 01:14:33,454 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:14:33,942 INFO Database connection established successfully
+2024-06-10 01:14:33,943 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:14:33,963 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:14:33,963 INFO Product successfully added to the database.
+2024-06-10 01:14:33,964 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:14:33,992 INFO Received a request to add a new product.
+2024-06-10 01:14:33,993 INFO Building product from request parameters.
+2024-06-10 01:14:33,994 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:14:34,018 INFO Database connection established successfully
+2024-06-10 01:14:34,019 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:14:34,022 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:14:34,022 INFO Product successfully added to the database.
+2024-06-10 01:14:34,022 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:14:34,032 INFO Received a request to add a new product.
+2024-06-10 01:14:34,033 INFO Building product from request parameters.
+2024-06-10 01:14:34,033 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:14:34,052 INFO Database connection established successfully
+2024-06-10 01:14:34,052 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:14:34,056 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:14:34,056 INFO Product successfully added to the database.
+2024-06-10 01:14:34,057 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:15:08,384 INFO Received a request to add a new product.
+2024-06-10 01:15:08,400 INFO Building product from request parameters.
+2024-06-10 01:15:08,420 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:15:08,889 INFO Database connection established successfully
+2024-06-10 01:15:08,890 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:15:08,904 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:15:08,906 INFO Product successfully added to the database.
+2024-06-10 01:15:08,906 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:15:08,934 INFO Received a request to add a new product.
+2024-06-10 01:15:08,936 INFO Building product from request parameters.
+2024-06-10 01:15:08,936 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:15:08,963 INFO Database connection established successfully
+2024-06-10 01:15:08,963 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:15:08,968 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:15:08,968 INFO Product successfully added to the database.
+2024-06-10 01:15:08,968 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:15:08,978 INFO Received a request to add a new product.
+2024-06-10 01:15:08,978 INFO Building product from request parameters.
+2024-06-10 01:15:08,978 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:15:08,996 INFO Database connection established successfully
+2024-06-10 01:15:08,998 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='1.5', price='10.0', status='Active', photo='test_image.jpg'}
+2024-06-10 01:15:09,001 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:15:09,001 INFO Product successfully added to the database.
+2024-06-10 01:15:09,001 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:15:21,916 INFO Received a request to add a new product.
+2024-06-10 01:15:21,927 INFO Building product from request parameters.
+2024-06-10 01:15:21,937 INFO Product details extracted from request: Product{productId=0, productName='null', category='null', weight='null', price='null', status='null', photo='test_image.jpg'}
+2024-06-10 01:15:22,428 INFO Database connection established successfully
+2024-06-10 01:15:22,429 INFO Adding product: Product{productId=0, productName='null', category='null', weight='null', price='null', status='null', photo='test_image.jpg'}
+2024-06-10 01:15:22,446 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:15:22,446 INFO Product successfully added to the database.
+2024-06-10 01:15:22,447 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:15:22,481 INFO Received a request to add a new product.
+2024-06-10 01:15:22,482 INFO Building product from request parameters.
+2024-06-10 01:15:22,482 INFO Product details extracted from request: Product{productId=0, productName='null', category='null', weight='null', price='null', status='null', photo='test_image.jpg'}
+2024-06-10 01:15:22,509 INFO Database connection established successfully
+2024-06-10 01:15:22,509 INFO Adding product: Product{productId=0, productName='null', category='null', weight='null', price='null', status='null', photo='test_image.jpg'}
+2024-06-10 01:15:22,513 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:15:22,513 INFO Product successfully added to the database.
+2024-06-10 01:15:22,514 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:15:22,528 INFO Received a request to add a new product.
+2024-06-10 01:15:22,530 INFO Building product from request parameters.
+2024-06-10 01:15:22,530 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:15:22,553 INFO Database connection established successfully
+2024-06-10 01:15:22,554 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:15:22,559 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:15:22,559 INFO Product successfully added to the database.
+2024-06-10 01:15:22,559 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:15:49,621 INFO Received a request to add a new product.
+2024-06-10 01:15:49,636 INFO Building product from request parameters.
+2024-06-10 01:15:49,653 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:15:50,110 INFO Database connection established successfully
+2024-06-10 01:15:50,111 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:15:50,125 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:15:50,125 INFO Product successfully added to the database.
+2024-06-10 01:15:50,127 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:16:21,075 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-10 01:16:21,091 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-10 01:16:21,160 INFO Fetching products by category: Цукерки with limit: true
+2024-06-10 01:16:21,162 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-10 01:16:21,177 INFO Fetching all products.
+2024-06-10 01:16:21,178 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-10 01:16:21,184 INFO Searching products with keyword: Chocolate
+2024-06-10 01:16:21,186 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC
+2024-06-10 01:16:21,189 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-10 01:16:21,191 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:16:21,197 INFO Fetching product by ID: 1
+2024-06-10 01:16:21,198 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-10 01:16:21,205 INFO Deleting product by ID: 1
+2024-06-10 01:16:21,205 INFO SQL update executed successfully: DELETE FROM product WHERE productId = ?
+2024-06-10 01:16:21,382 INFO Logout request received
+2024-06-10 01:16:21,384 INFO User testUser logging out
+2024-06-10 01:16:21,385 ERROR Logout error: Test Exception
+2024-06-10 01:16:21,393 INFO Logout request received
+2024-06-10 01:16:21,393 WARN No user found in session during logout
+2024-06-10 01:16:21,397 INFO Logout request received
+2024-06-10 01:16:21,397 INFO User testUser logging out
+2024-06-10 01:16:21,398 INFO User successfully logged out
+2024-06-10 01:16:21,443 ERROR Invalid parameter format for removing product from cart
+2024-06-10 01:16:21,471 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:16:21,990 INFO Database connection established successfully
+2024-06-10 01:16:21,991 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:16:22,006 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:16:22,006 ERROR Failed to remove product from cart
+2024-06-10 01:16:22,014 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:16:22,043 INFO Database connection established successfully
+2024-06-10 01:16:22,043 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:16:22,046 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:16:22,046 ERROR Failed to remove product from cart
+2024-06-10 01:16:22,053 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:16:22,077 INFO Database connection established successfully
+2024-06-10 01:16:22,077 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:16:22,079 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:16:22,081 ERROR Failed to remove product from cart
+2024-06-10 01:16:22,208 INFO Received a request to add a new product.
+2024-06-10 01:16:22,210 INFO Building product from request parameters.
+2024-06-10 01:16:22,210 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:16:22,235 INFO Database connection established successfully
+2024-06-10 01:16:22,236 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:16:22,241 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:16:22,242 INFO Product successfully added to the database.
+2024-06-10 01:16:22,243 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:16:22,286 INFO Registration request received
+2024-06-10 01:16:22,287 INFO Created user from request: test@example.com
+2024-06-10 01:16:22,307 INFO Database connection established successfully
+2024-06-10 01:16:22,308 INFO Checking if user exists with email: test@example.com
+2024-06-10 01:16:22,348 WARN User already exists with email: test@example.com
+2024-06-10 01:16:22,349 WARN User already exists with email: test@example.com
+2024-06-10 01:16:22,357 INFO Registration request received
+2024-06-10 01:16:22,358 INFO Created user from request: test@example.com
+2024-06-10 01:16:22,379 INFO Database connection established successfully
+2024-06-10 01:16:22,379 INFO Checking if user exists with email: test@example.com
+2024-06-10 01:16:22,380 WARN User already exists with email: test@example.com
+2024-06-10 01:16:22,380 WARN User already exists with email: test@example.com
+2024-06-10 01:16:22,386 INFO Registration request received
+2024-06-10 01:16:22,386 INFO Created user from request: test@example.com
+2024-06-10 01:16:22,386 WARN User did not agree to the privacy policy
+2024-06-10 01:16:22,562 INFO Received request to add product to cart
+2024-06-10 01:16:22,564 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 01:16:22,565 INFO Fetching product by ID: 1
+2024-06-10 01:16:22,565 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:16:22,566 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 01:16:22,571 INFO Received request to add product to cart
+2024-06-10 01:16:22,571 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 01:16:22,572 INFO Fetching product by ID: 1
+2024-06-10 01:16:22,572 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:16:22,573 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 01:16:22,580 INFO Received request to add product to cart
+2024-06-10 01:16:22,581 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 01:16:22,581 INFO Fetching product by ID: 1
+2024-06-10 01:16:22,581 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:16:22,582 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 01:16:22,624 INFO Fetching orders for email: john@example.com
+2024-06-10 01:16:22,626 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-10 01:16:22,630 INFO Fetching all orders.
+2024-06-10 01:16:22,631 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-10 01:16:22,635 INFO Saving orders: [Orders{id=0, orderId='123', userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-10 01:16:22,637 INFO Orders saved successfully.
+2024-06-10 01:16:22,655 INFO Image update status: true
+2024-06-10 01:16:22,658 INFO Built product from request parameters: Product{productId=1, productName='Test Product', category='TestCategory', weight='10', price='100', status='Active', photo='null'}
+2024-06-10 01:16:22,662 INFO Image update status: false
+2024-06-10 01:16:22,674 INFO Fetching products for user ID: 1
+2024-06-10 01:16:22,675 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:16:22,679 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:16:22,680 INFO SQL update executed successfully: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:16:22,683 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Product1', category='Category1', weight=1.0, price=10.0}
+2024-06-10 01:16:22,683 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-10 01:16:22,725 INFO Order request received
+2024-06-10 01:16:22,733 INFO User details: userId=1, userName=null, email=null, phone=null
+2024-06-10 01:16:22,759 INFO Database connection established successfully
+2024-06-10 01:16:22,759 INFO Fetching products for user ID: 1
+2024-06-10 01:16:22,762 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:16:22,788 INFO Database connection established successfully
+2024-06-10 01:16:22,788 INFO Saving orders: [Orders{id=0, orderId='null', userName='null', email='null', phone='null', address='null, null, null', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='null'}]
+2024-06-10 01:16:22,802 INFO Orders saved successfully.
+2024-06-10 01:16:22,802 INFO Order successfully placed for userId=1
+2024-06-10 01:16:22,813 INFO Order request received
+2024-06-10 01:16:22,814 INFO User details: userId=1, userName=Test User, email=test@example.com, phone=1234567890
+2024-06-10 01:16:22,836 INFO Database connection established successfully
+2024-06-10 01:16:22,836 INFO Fetching products for user ID: 1
+2024-06-10 01:16:22,838 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:16:22,865 INFO Database connection established successfully
+2024-06-10 01:16:22,865 INFO Saving orders: [Orders{id=0, orderId='null', userName='Test User', email='test@example.com', phone='1234567890', address='Test Address, Test City, 12345', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='Credit Card'}]
+2024-06-10 01:16:22,872 INFO Orders saved successfully.
+2024-06-10 01:16:22,872 INFO Order successfully placed for userId=1
+2024-06-10 01:16:22,881 INFO Order request received
+2024-06-10 01:16:22,881 INFO User details: userId=1, userName=Test User, email=test@example.com, phone=1234567890
+2024-06-10 01:16:22,901 INFO Database connection established successfully
+2024-06-10 01:16:22,901 INFO Fetching products for user ID: 1
+2024-06-10 01:16:22,904 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:16:22,925 INFO Database connection established successfully
+2024-06-10 01:16:22,925 INFO Saving orders: [Orders{id=0, orderId='null', userName='Test User', email='test@example.com', phone='1234567890', address='Test Address, Test City, 12345', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='Credit Card'}]
+2024-06-10 01:16:22,935 INFO Orders saved successfully.
+2024-06-10 01:16:22,935 INFO Order successfully placed for userId=1
+2024-06-10 01:16:22,941 INFO Order request received
+2024-06-10 01:16:22,942 INFO User details: userId=1, userName=null, email=null, phone=null
+2024-06-10 01:16:22,964 INFO Database connection established successfully
+2024-06-10 01:16:22,964 INFO Fetching products for user ID: 1
+2024-06-10 01:16:22,967 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:16:22,967 WARN Payment method not selected for userId=1
+2024-06-10 01:16:22,977 INFO Received a request to delete a product.
+2024-06-10 01:16:22,977 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 01:16:22,982 INFO Received a request to delete a product.
+2024-06-10 01:16:22,983 INFO Product ID to delete: 1
+2024-06-10 01:16:23,005 INFO Database connection established successfully
+2024-06-10 01:16:23,006 INFO Deleting product by ID: 1
+2024-06-10 01:16:23,016 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 01:16:23,017 WARN Failed to delete product.
+2024-06-10 01:16:23,028 INFO Received a request to delete a product.
+2024-06-10 01:16:23,029 INFO Product ID to delete: 1
+2024-06-10 01:16:23,047 INFO Database connection established successfully
+2024-06-10 01:16:23,047 INFO Deleting product by ID: 1
+2024-06-10 01:16:23,049 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 01:16:23,049 WARN Failed to delete product.
+2024-06-10 01:16:23,055 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-10 01:16:23,056 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-10 01:16:23,061 INFO Registering user: User{id=0, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-10 01:16:23,061 INFO SQL update executed successfully: INSERT INTO user (name, email, password) VALUES (?, ?, ?)
+2024-06-10 01:16:23,065 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='123456789', address='null', city='null', zip='null'}
+2024-06-10 01:16:23,065 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-10 01:16:23,070 INFO User login attempt: email=john.doe@example.com
+2024-06-10 01:16:23,071 INFO User fetched successfully: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-10 01:16:23,074 INFO Checking if user exists with email: john.doe@example.com
+2024-06-10 01:16:23,075 WARN User already exists with email: john.doe@example.com
+2024-06-10 01:16:23,085 INFO Received login request
+2024-06-10 01:16:23,086 INFO Attempting login for email: user@example.com
+2024-06-10 01:16:23,086 INFO User login attempt for email: user@example.com
+2024-06-10 01:16:23,086 INFO User login attempt: email=user@example.com
+2024-06-10 01:16:23,087 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:16:23,092 INFO Received login request
+2024-06-10 01:16:23,092 INFO Attempting login for email: user@example.com
+2024-06-10 01:16:23,092 INFO User login attempt for email: user@example.com
+2024-06-10 01:16:23,093 INFO User login attempt: email=user@example.com
+2024-06-10 01:16:23,093 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:16:23,098 INFO Received login request
+2024-06-10 01:16:23,098 INFO Attempting login for email: user@example.com
+2024-06-10 01:16:23,098 INFO User login attempt for email: user@example.com
+2024-06-10 01:16:23,098 INFO User login attempt: email=user@example.com
+2024-06-10 01:16:23,098 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:16:23,103 INFO Received login request
+2024-06-10 01:16:23,103 INFO Attempting login for email: admin@giftshop.com
+2024-06-10 01:16:23,103 INFO Admin login successful for email: admin@giftshop.com
+2024-06-10 01:16:23,103 INFO Admin logged in, redirecting to admin/home.jsp
+2024-06-10 01:16:54,078 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-10 01:16:54,105 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-10 01:16:54,159 INFO Fetching products by category: Цукерки with limit: true
+2024-06-10 01:16:54,161 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-10 01:16:54,171 INFO Fetching all products.
+2024-06-10 01:16:54,172 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-10 01:16:54,178 INFO Searching products with keyword: Chocolate
+2024-06-10 01:16:54,180 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC
+2024-06-10 01:16:54,185 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-10 01:16:54,186 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:16:54,191 INFO Fetching product by ID: 1
+2024-06-10 01:16:54,192 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-10 01:16:54,198 INFO Deleting product by ID: 1
+2024-06-10 01:16:54,198 INFO SQL update executed successfully: DELETE FROM product WHERE productId = ?
+2024-06-10 01:16:54,405 INFO Logout request received
+2024-06-10 01:16:54,406 INFO User testUser logging out
+2024-06-10 01:16:54,407 ERROR Logout error: Test Exception
+2024-06-10 01:16:54,413 INFO Logout request received
+2024-06-10 01:16:54,413 WARN No user found in session during logout
+2024-06-10 01:16:54,416 INFO Logout request received
+2024-06-10 01:16:54,416 INFO User testUser logging out
+2024-06-10 01:16:54,417 INFO User successfully logged out
+2024-06-10 01:16:54,477 ERROR Invalid parameter format for removing product from cart
+2024-06-10 01:16:54,504 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:16:55,311 INFO Database connection established successfully
+2024-06-10 01:16:55,312 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:16:55,349 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:16:55,350 ERROR Failed to remove product from cart
+2024-06-10 01:16:55,357 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:16:55,381 INFO Database connection established successfully
+2024-06-10 01:16:55,382 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:16:55,382 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:16:55,384 ERROR Failed to remove product from cart
+2024-06-10 01:16:55,388 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:16:55,413 INFO Database connection established successfully
+2024-06-10 01:16:55,413 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:16:55,415 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:16:55,415 ERROR Failed to remove product from cart
+2024-06-10 01:16:55,629 INFO Received a request to add a new product.
+2024-06-10 01:16:55,630 INFO Building product from request parameters.
+2024-06-10 01:16:55,631 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:16:55,658 INFO Database connection established successfully
+2024-06-10 01:16:55,659 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:16:55,669 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:16:55,669 INFO Product successfully added to the database.
+2024-06-10 01:16:55,670 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:16:55,735 INFO Registration request received
+2024-06-10 01:16:55,736 INFO Created user from request: test@example.com
+2024-06-10 01:16:55,761 INFO Database connection established successfully
+2024-06-10 01:16:55,762 INFO Checking if user exists with email: test@example.com
+2024-06-10 01:16:55,803 WARN User already exists with email: test@example.com
+2024-06-10 01:16:55,803 WARN User already exists with email: test@example.com
+2024-06-10 01:16:55,810 INFO Registration request received
+2024-06-10 01:16:55,811 INFO Created user from request: test@example.com
+2024-06-10 01:16:55,837 INFO Database connection established successfully
+2024-06-10 01:16:55,837 INFO Checking if user exists with email: test@example.com
+2024-06-10 01:16:55,840 WARN User already exists with email: test@example.com
+2024-06-10 01:16:55,840 WARN User already exists with email: test@example.com
+2024-06-10 01:16:55,849 INFO Registration request received
+2024-06-10 01:16:55,849 INFO Created user from request: test@example.com
+2024-06-10 01:16:55,850 WARN User did not agree to the privacy policy
+2024-06-10 01:16:56,056 INFO Received request to add product to cart
+2024-06-10 01:16:56,058 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 01:16:56,059 INFO Fetching product by ID: 1
+2024-06-10 01:16:56,059 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:16:56,061 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 01:16:56,066 INFO Received request to add product to cart
+2024-06-10 01:16:56,067 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 01:16:56,067 INFO Fetching product by ID: 1
+2024-06-10 01:16:56,067 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:16:56,068 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 01:16:56,074 INFO Received request to add product to cart
+2024-06-10 01:16:56,075 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 01:16:56,075 INFO Fetching product by ID: 1
+2024-06-10 01:16:56,075 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:16:56,076 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 01:16:56,120 INFO Fetching orders for email: john@example.com
+2024-06-10 01:16:56,121 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-10 01:16:56,126 INFO Fetching all orders.
+2024-06-10 01:16:56,126 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-10 01:16:56,130 INFO Saving orders: [Orders{id=0, orderId='123', userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-10 01:16:56,131 INFO Orders saved successfully.
+2024-06-10 01:16:56,155 INFO Image update status: true
+2024-06-10 01:16:56,158 INFO Built product from request parameters: Product{productId=1, productName='Test Product', category='TestCategory', weight='10', price='100', status='Active', photo='null'}
+2024-06-10 01:16:56,161 INFO Image update status: false
+2024-06-10 01:16:56,171 INFO Fetching products for user ID: 1
+2024-06-10 01:16:56,172 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:16:56,174 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:16:56,175 INFO SQL update executed successfully: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:16:56,178 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Product1', category='Category1', weight=1.0, price=10.0}
+2024-06-10 01:16:56,178 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-10 01:16:56,219 INFO Order request received
+2024-06-10 01:16:56,224 INFO User details: userId=1, userName=null, email=null, phone=null
+2024-06-10 01:16:56,252 INFO Database connection established successfully
+2024-06-10 01:16:56,252 INFO Fetching products for user ID: 1
+2024-06-10 01:16:56,255 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:16:56,274 INFO Database connection established successfully
+2024-06-10 01:16:56,275 INFO Saving orders: [Orders{id=0, orderId='null', userName='null', email='null', phone='null', address='null, null, null', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='null'}]
+2024-06-10 01:16:56,285 INFO Orders saved successfully.
+2024-06-10 01:16:56,285 INFO Order successfully placed for userId=1
+2024-06-10 01:16:56,292 INFO Order request received
+2024-06-10 01:16:56,292 INFO User details: userId=1, userName=Test User, email=test@example.com, phone=1234567890
+2024-06-10 01:16:56,314 INFO Database connection established successfully
+2024-06-10 01:16:56,315 INFO Fetching products for user ID: 1
+2024-06-10 01:16:56,317 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:16:56,335 INFO Database connection established successfully
+2024-06-10 01:16:56,335 INFO Saving orders: [Orders{id=0, orderId='null', userName='Test User', email='test@example.com', phone='1234567890', address='Test Address, Test City, 12345', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='Credit Card'}]
+2024-06-10 01:16:56,345 INFO Orders saved successfully.
+2024-06-10 01:16:56,345 INFO Order successfully placed for userId=1
+2024-06-10 01:16:56,351 INFO Order request received
+2024-06-10 01:16:56,351 INFO User details: userId=1, userName=Test User, email=test@example.com, phone=1234567890
+2024-06-10 01:16:56,373 INFO Database connection established successfully
+2024-06-10 01:16:56,373 INFO Fetching products for user ID: 1
+2024-06-10 01:16:56,376 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:16:56,401 INFO Database connection established successfully
+2024-06-10 01:16:56,402 INFO Saving orders: [Orders{id=0, orderId='null', userName='Test User', email='test@example.com', phone='1234567890', address='Test Address, Test City, 12345', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='Credit Card'}]
+2024-06-10 01:16:56,412 INFO Orders saved successfully.
+2024-06-10 01:16:56,412 INFO Order successfully placed for userId=1
+2024-06-10 01:16:56,415 INFO Order request received
+2024-06-10 01:16:56,416 INFO User details: userId=1, userName=null, email=null, phone=null
+2024-06-10 01:16:56,440 INFO Database connection established successfully
+2024-06-10 01:16:56,440 INFO Fetching products for user ID: 1
+2024-06-10 01:16:56,443 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:16:56,443 WARN Payment method not selected for userId=1
+2024-06-10 01:16:56,453 INFO Received a request to delete a product.
+2024-06-10 01:16:56,453 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 01:16:56,459 INFO Received a request to delete a product.
+2024-06-10 01:16:56,460 INFO Product ID to delete: 1
+2024-06-10 01:16:56,483 INFO Database connection established successfully
+2024-06-10 01:16:56,483 INFO Deleting product by ID: 1
+2024-06-10 01:16:56,488 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 01:16:56,488 WARN Failed to delete product.
+2024-06-10 01:16:56,494 INFO Received a request to delete a product.
+2024-06-10 01:16:56,494 INFO Product ID to delete: 1
+2024-06-10 01:16:56,516 INFO Database connection established successfully
+2024-06-10 01:16:56,516 INFO Deleting product by ID: 1
+2024-06-10 01:16:56,517 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 01:16:56,518 WARN Failed to delete product.
+2024-06-10 01:16:56,524 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-10 01:16:56,525 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-10 01:16:56,529 INFO Registering user: User{id=0, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-10 01:16:56,529 INFO SQL update executed successfully: INSERT INTO user (name, email, password) VALUES (?, ?, ?)
+2024-06-10 01:16:56,532 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='123456789', address='null', city='null', zip='null'}
+2024-06-10 01:16:56,533 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-10 01:16:56,536 INFO User login attempt: email=john.doe@example.com
+2024-06-10 01:16:56,537 INFO User fetched successfully: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-10 01:16:56,541 INFO Checking if user exists with email: john.doe@example.com
+2024-06-10 01:16:56,542 WARN User already exists with email: john.doe@example.com
+2024-06-10 01:16:56,550 INFO Received login request
+2024-06-10 01:16:56,550 INFO Attempting login for email: user@example.com
+2024-06-10 01:16:56,551 INFO User login attempt for email: user@example.com
+2024-06-10 01:16:56,551 INFO User login attempt: email=user@example.com
+2024-06-10 01:16:56,551 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:16:56,557 INFO Received login request
+2024-06-10 01:16:56,557 INFO Attempting login for email: user@example.com
+2024-06-10 01:16:56,557 INFO User login attempt for email: user@example.com
+2024-06-10 01:16:56,557 INFO User login attempt: email=user@example.com
+2024-06-10 01:16:56,557 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:16:56,563 INFO Received login request
+2024-06-10 01:16:56,563 INFO Attempting login for email: user@example.com
+2024-06-10 01:16:56,563 INFO User login attempt for email: user@example.com
+2024-06-10 01:16:56,563 INFO User login attempt: email=user@example.com
+2024-06-10 01:16:56,564 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:16:56,567 INFO Received login request
+2024-06-10 01:16:56,568 INFO Attempting login for email: admin@giftshop.com
+2024-06-10 01:16:56,568 INFO Admin login successful for email: admin@giftshop.com
+2024-06-10 01:16:56,568 INFO Admin logged in, redirecting to admin/home.jsp
+2024-06-10 01:21:24,813 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-10 01:21:24,834 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-10 01:21:24,878 INFO Fetching products by category: Цукерки with limit: true
+2024-06-10 01:21:24,880 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-10 01:21:24,891 INFO Fetching all products.
+2024-06-10 01:21:24,892 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-10 01:21:24,897 INFO Searching products with keyword: Chocolate
+2024-06-10 01:21:24,898 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC
+2024-06-10 01:21:24,904 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-10 01:21:24,905 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:21:24,910 INFO Fetching product by ID: 1
+2024-06-10 01:21:24,911 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-10 01:21:24,916 INFO Deleting product by ID: 1
+2024-06-10 01:21:24,916 INFO SQL update executed successfully: DELETE FROM product WHERE productId = ?
+2024-06-10 01:21:25,126 INFO Logout request received
+2024-06-10 01:21:25,127 INFO User testUser logging out
+2024-06-10 01:21:25,128 ERROR Logout error: Test Exception
+2024-06-10 01:21:25,132 INFO Logout request received
+2024-06-10 01:21:25,132 WARN No user found in session during logout
+2024-06-10 01:21:25,137 INFO Logout request received
+2024-06-10 01:21:25,137 INFO User testUser logging out
+2024-06-10 01:21:25,138 INFO User successfully logged out
+2024-06-10 01:21:25,190 ERROR Invalid parameter format for removing product from cart
+2024-06-10 01:21:25,222 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:21:26,064 INFO Database connection established successfully
+2024-06-10 01:21:26,065 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:21:26,104 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:21:26,105 ERROR Failed to remove product from cart
+2024-06-10 01:21:26,111 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:21:26,134 INFO Database connection established successfully
+2024-06-10 01:21:26,135 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:21:26,136 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:21:26,136 ERROR Failed to remove product from cart
+2024-06-10 01:21:26,141 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-10 01:21:26,163 INFO Database connection established successfully
+2024-06-10 01:21:26,163 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:21:26,165 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:21:26,165 ERROR Failed to remove product from cart
+2024-06-10 01:21:26,333 INFO Received a request to add a new product.
+2024-06-10 01:21:26,334 INFO Building product from request parameters.
+2024-06-10 01:21:26,334 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:21:26,354 INFO Database connection established successfully
+2024-06-10 01:21:26,355 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-10 01:21:26,361 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-10 01:21:26,361 INFO Product successfully added to the database.
+2024-06-10 01:21:26,362 ERROR Error occurred while adding product: ServletConfig has not been initialized
+2024-06-10 01:21:26,415 INFO Registration request received
+2024-06-10 01:21:26,417 INFO Created user from request: test@example.com
+2024-06-10 01:21:26,438 INFO Database connection established successfully
+2024-06-10 01:21:26,438 INFO Checking if user exists with email: test@example.com
+2024-06-10 01:21:26,483 WARN User already exists with email: test@example.com
+2024-06-10 01:21:26,483 WARN User already exists with email: test@example.com
+2024-06-10 01:21:26,490 INFO Registration request received
+2024-06-10 01:21:26,490 INFO Created user from request: test@example.com
+2024-06-10 01:21:26,512 INFO Database connection established successfully
+2024-06-10 01:21:26,512 INFO Checking if user exists with email: test@example.com
+2024-06-10 01:21:26,513 WARN User already exists with email: test@example.com
+2024-06-10 01:21:26,514 WARN User already exists with email: test@example.com
+2024-06-10 01:21:26,518 INFO Registration request received
+2024-06-10 01:21:26,518 INFO Created user from request: test@example.com
+2024-06-10 01:21:26,519 WARN User did not agree to the privacy policy
+2024-06-10 01:21:26,725 INFO Received request to add product to cart
+2024-06-10 01:21:26,729 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 01:21:26,730 INFO Fetching product by ID: 1
+2024-06-10 01:21:26,730 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:21:26,732 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 01:21:26,737 INFO Received request to add product to cart
+2024-06-10 01:21:26,738 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 01:21:26,738 INFO Fetching product by ID: 1
+2024-06-10 01:21:26,739 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:21:26,740 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 01:21:26,748 INFO Received request to add product to cart
+2024-06-10 01:21:26,748 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-10 01:21:26,748 INFO Fetching product by ID: 1
+2024-06-10 01:21:26,748 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:21:26,749 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-10 01:21:26,785 INFO Fetching orders for email: john@example.com
+2024-06-10 01:21:26,786 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-10 01:21:26,791 INFO Fetching all orders.
+2024-06-10 01:21:26,791 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-10 01:21:26,795 INFO Saving orders: [Orders{id=0, orderId='123', userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-10 01:21:26,795 INFO Orders saved successfully.
+2024-06-10 01:21:26,815 INFO Image update status: true
+2024-06-10 01:21:26,818 INFO Built product from request parameters: Product{productId=1, productName='Test Product', category='TestCategory', weight='10', price='100', status='Active', photo='null'}
+2024-06-10 01:21:26,822 INFO Image update status: false
+2024-06-10 01:21:26,831 INFO Fetching products for user ID: 1
+2024-06-10 01:21:26,831 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:21:26,835 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-10 01:21:26,835 INFO SQL update executed successfully: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-10 01:21:26,839 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Product1', category='Category1', weight=1.0, price=10.0}
+2024-06-10 01:21:26,839 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-10 01:21:26,883 INFO Order request received
+2024-06-10 01:21:26,888 INFO User details: userId=1, userName=null, email=null, phone=null
+2024-06-10 01:21:26,926 INFO Database connection established successfully
+2024-06-10 01:21:26,926 INFO Fetching products for user ID: 1
+2024-06-10 01:21:26,928 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:21:26,947 INFO Database connection established successfully
+2024-06-10 01:21:26,948 INFO Saving orders: [Orders{id=0, orderId='null', userName='null', email='null', phone='null', address='null, null, null', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='null'}]
+2024-06-10 01:21:26,958 INFO Orders saved successfully.
+2024-06-10 01:21:26,959 INFO Order successfully placed for userId=1
+2024-06-10 01:21:26,966 INFO Order request received
+2024-06-10 01:21:26,966 INFO User details: userId=1, userName=Test User, email=test@example.com, phone=1234567890
+2024-06-10 01:21:26,986 INFO Database connection established successfully
+2024-06-10 01:21:26,986 INFO Fetching products for user ID: 1
+2024-06-10 01:21:26,989 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:21:27,007 INFO Database connection established successfully
+2024-06-10 01:21:27,007 INFO Saving orders: [Orders{id=0, orderId='null', userName='Test User', email='test@example.com', phone='1234567890', address='Test Address, Test City, 12345', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='Credit Card'}]
+2024-06-10 01:21:27,015 INFO Orders saved successfully.
+2024-06-10 01:21:27,015 INFO Order successfully placed for userId=1
+2024-06-10 01:21:27,021 INFO Order request received
+2024-06-10 01:21:27,022 INFO User details: userId=1, userName=Test User, email=test@example.com, phone=1234567890
+2024-06-10 01:21:27,043 INFO Database connection established successfully
+2024-06-10 01:21:27,043 INFO Fetching products for user ID: 1
+2024-06-10 01:21:27,045 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:21:27,064 INFO Database connection established successfully
+2024-06-10 01:21:27,064 INFO Saving orders: [Orders{id=0, orderId='null', userName='Test User', email='test@example.com', phone='1234567890', address='Test Address, Test City, 12345', productName='Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); Kinder Surprise (Цукерки); ', price='244.45', weight='100.0', payment='Credit Card'}]
+2024-06-10 01:21:27,071 INFO Orders saved successfully.
+2024-06-10 01:21:27,072 INFO Order successfully placed for userId=1
+2024-06-10 01:21:27,075 INFO Order request received
+2024-06-10 01:21:27,076 INFO User details: userId=1, userName=null, email=null, phone=null
+2024-06-10 01:21:27,097 INFO Database connection established successfully
+2024-06-10 01:21:27,097 INFO Fetching products for user ID: 1
+2024-06-10 01:21:27,099 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-10 01:21:27,100 WARN Payment method not selected for userId=1
+2024-06-10 01:21:27,108 INFO Received a request to delete a product.
+2024-06-10 01:21:27,109 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-10 01:21:27,113 INFO Received a request to delete a product.
+2024-06-10 01:21:27,113 INFO Product ID to delete: 1
+2024-06-10 01:21:27,133 INFO Database connection established successfully
+2024-06-10 01:21:27,134 INFO Deleting product by ID: 1
+2024-06-10 01:21:27,138 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 01:21:27,138 WARN Failed to delete product.
+2024-06-10 01:21:27,144 INFO Received a request to delete a product.
+2024-06-10 01:21:27,144 INFO Product ID to delete: 1
+2024-06-10 01:21:27,164 INFO Database connection established successfully
+2024-06-10 01:21:27,164 INFO Deleting product by ID: 1
+2024-06-10 01:21:27,165 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-10 01:21:27,165 WARN Failed to delete product.
+2024-06-10 01:21:27,173 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-10 01:21:27,175 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-10 01:21:27,178 INFO Registering user: User{id=0, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-10 01:21:27,178 INFO SQL update executed successfully: INSERT INTO user (name, email, password) VALUES (?, ?, ?)
+2024-06-10 01:21:27,182 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='123456789', address='null', city='null', zip='null'}
+2024-06-10 01:21:27,183 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-10 01:21:27,188 INFO User login attempt: email=john.doe@example.com
+2024-06-10 01:21:27,189 INFO User fetched successfully: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-10 01:21:27,191 INFO Checking if user exists with email: john.doe@example.com
+2024-06-10 01:21:27,192 WARN User already exists with email: john.doe@example.com
+2024-06-10 01:21:27,199 INFO Received login request
+2024-06-10 01:21:27,199 INFO Attempting login for email: user@example.com
+2024-06-10 01:21:27,199 INFO User login attempt for email: user@example.com
+2024-06-10 01:21:27,200 INFO User login attempt: email=user@example.com
+2024-06-10 01:21:27,200 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:21:27,205 INFO Received login request
+2024-06-10 01:21:27,206 INFO Attempting login for email: user@example.com
+2024-06-10 01:21:27,206 INFO User login attempt for email: user@example.com
+2024-06-10 01:21:27,206 INFO User login attempt: email=user@example.com
+2024-06-10 01:21:27,206 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:21:27,212 INFO Received login request
+2024-06-10 01:21:27,212 INFO Attempting login for email: user@example.com
+2024-06-10 01:21:27,212 INFO User login attempt for email: user@example.com
+2024-06-10 01:21:27,212 INFO User login attempt: email=user@example.com
+2024-06-10 01:21:27,212 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-10 01:21:27,217 INFO Received login request
+2024-06-10 01:21:27,217 INFO Attempting login for email: admin@giftshop.com
+2024-06-10 01:21:27,218 INFO Admin login successful for email: admin@giftshop.com
+2024-06-10 01:21:27,218 INFO Admin logged in, redirecting to admin/home.jsp

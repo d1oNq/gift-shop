@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <File name="FileAppender" fileName="C:/Users/surzh/Desktop/gift-shop/gift.log" append="true">
+            <PatternLayout>
+                <Pattern>%d %p %m%n</Pattern>
+            </PatternLayout>
+        </File>
+        <SMTP
+            name="EmailAppender"
+            subject="Critical Error in Gift Shop"
+            to="vitaliysurzhykyvych@gmail.com"
+            from="novaposhta42@gmail.com"
+            smtpProtocol="smtps"
+            smtpHost="smtp.gmail.com"
+            smtpPort="465"
+            smtpUsername="novaposhta42@gmail.com"
+            smtpPassword="woko mikj xddz bnrg">
+            <PatternLayout pattern="%d %p %m%n"/>
+            <ThresholdFilter level="FATAL" onMatch="ACCEPT" onMismatch="DENY"/>
+        </SMTP>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="EmailAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
