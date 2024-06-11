@@ -6809,3 +6809,104 @@ Hints:
 2024-06-11 22:58:50,208 INFO Attempting login for email: admin@giftshop.com
 2024-06-11 22:58:50,210 INFO Admin login successful for email: admin@giftshop.com
 2024-06-11 22:58:50,210 INFO Admin logged in, redirecting to admin/home.jsp
+2024-06-12 00:02:54,349 INFO Database connection established successfully
+2024-06-12 00:02:54,390 INFO Fetching products by category: Цукерки with limit: true
+2024-06-12 00:02:54,538 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 00:02:54,539 INFO Fetching products by category: Печиво with limit: true
+2024-06-12 00:02:54,542 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 00:02:54,545 INFO Fetching products by category: Подарункові Набори with limit: true
+2024-06-12 00:02:54,549 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 00:03:03,726 INFO Received login request
+2024-06-12 00:03:03,730 INFO Attempting login for email: admin@giftshop.com
+2024-06-12 00:03:03,731 INFO User login attempt for email: admin@giftshop.com
+2024-06-12 00:03:03,793 INFO Database connection established successfully
+2024-06-12 00:03:03,794 INFO User login attempt: email=admin@giftshop.com
+2024-06-12 00:03:03,799 WARN No user found for the provided query: SELECT * FROM user WHERE email = ? AND password = ?
+2024-06-12 00:03:03,799 WARN Failed login attempt for email: admin@giftshop.com
+2024-06-12 00:03:10,062 INFO Received login request
+2024-06-12 00:03:10,065 INFO Attempting login for email: admin@giftshop.com
+2024-06-12 00:03:10,065 INFO Admin login successful for email: admin@giftshop.com
+2024-06-12 00:03:10,065 INFO Admin logged in, redirecting to admin/home.jsp
+2024-06-12 00:03:19,105 INFO Database connection established successfully
+2024-06-12 00:03:19,105 INFO Fetching all products.
+2024-06-12 00:03:19,118 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-12 00:03:23,796 INFO Database connection established successfully
+2024-06-12 00:03:23,797 INFO Fetching all orders.
+2024-06-12 00:03:23,800 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-12 00:03:33,543 INFO Received a request to delete an order.
+2024-06-12 00:03:33,545 INFO Order ID to delete: 38
+2024-06-12 00:03:33,593 INFO Database connection established successfully
+2024-06-12 00:03:33,594 INFO Deleting order by ID: 38
+2024-06-12 00:03:33,615 INFO SQL update executed successfully: DELETE FROM orders WHERE orderId = ?
+2024-06-12 00:03:33,615 INFO Order successfully deleted.
+2024-06-12 00:03:33,690 INFO Database connection established successfully
+2024-06-12 00:03:33,690 INFO Fetching all orders.
+2024-06-12 00:03:33,699 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-12 00:11:11,540 INFO Database connection established successfully
+2024-06-12 00:11:11,580 INFO Fetching products by category: Цукерки with limit: true
+2024-06-12 00:11:11,690 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 00:11:11,690 INFO Fetching products by category: Печиво with limit: true
+2024-06-12 00:11:11,694 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 00:11:11,694 INFO Fetching products by category: Подарункові Набори with limit: true
+2024-06-12 00:11:11,701 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 00:11:15,129 INFO Database connection established successfully
+2024-06-12 00:11:15,129 INFO Fetching products by category: Цукерки with limit: false
+2024-06-12 00:11:15,140 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 00:36:06,081 INFO Received login request
+2024-06-12 00:36:06,081 INFO Attempting login for email: admin@giftshop.com
+2024-06-12 00:36:06,081 INFO Admin login successful for email: admin@giftshop.com
+2024-06-12 00:36:06,081 INFO Admin logged in, redirecting to admin/home.jsp
+2024-06-12 00:36:10,485 INFO Database connection established successfully
+2024-06-12 00:36:10,485 INFO Fetching all orders.
+2024-06-12 00:36:10,487 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-12 00:36:13,568 INFO Database connection established successfully
+2024-06-12 00:36:13,569 INFO Fetching order by ID: 37
+2024-06-12 00:36:13,572 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:37:04,468 INFO Database connection established successfully
+2024-06-12 00:37:04,468 INFO Fetching order by ID: 37
+2024-06-12 00:37:04,470 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:37:06,201 INFO Database connection established successfully
+2024-06-12 00:37:06,201 INFO Fetching order by ID: 37
+2024-06-12 00:37:06,204 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:37:07,093 INFO Database connection established successfully
+2024-06-12 00:37:07,093 INFO Fetching order by ID: 37
+2024-06-12 00:37:07,094 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:39:50,896 INFO Database connection established successfully
+2024-06-12 00:39:50,896 INFO Fetching order by ID: 37
+2024-06-12 00:39:50,898 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:43:06,205 INFO Database connection established successfully
+2024-06-12 00:43:06,205 INFO Fetching all orders.
+2024-06-12 00:43:06,207 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-12 00:44:48,493 INFO Database connection established successfully
+2024-06-12 00:44:48,493 INFO Fetching order by ID: 37
+2024-06-12 00:44:48,494 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:47:22,084 INFO Database connection established successfully
+2024-06-12 00:47:22,084 INFO Fetching order by ID: 37
+2024-06-12 00:47:22,086 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:47:24,899 INFO Database connection established successfully
+2024-06-12 00:47:24,900 INFO Fetching order by ID: 37
+2024-06-12 00:47:24,901 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:48:11,968 INFO Database connection established successfully
+2024-06-12 00:48:11,968 INFO Fetching order by ID: 37
+2024-06-12 00:48:11,970 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:49:01,027 INFO Database connection established successfully
+2024-06-12 00:49:01,027 INFO Fetching order by ID: 37
+2024-06-12 00:49:01,028 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:49:55,530 INFO Database connection established successfully
+2024-06-12 00:49:55,530 INFO Fetching order by ID: 37
+2024-06-12 00:49:55,531 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:51:06,722 INFO Database connection established successfully
+2024-06-12 00:51:06,722 INFO Fetching order by ID: 37
+2024-06-12 00:51:06,723 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:54:35,551 INFO Database connection established successfully
+2024-06-12 00:54:35,551 INFO Fetching order by ID: 37
+2024-06-12 00:54:35,552 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:54:58,938 INFO Database connection established successfully
+2024-06-12 00:54:58,938 INFO Fetching order by ID: 37
+2024-06-12 00:54:58,939 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 00:55:46,088 INFO Database connection established successfully
+2024-06-12 00:55:46,088 INFO Fetching all orders.
+2024-06-12 00:55:46,088 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-12 00:58:27,988 INFO Database connection established successfully
+2024-06-12 00:58:27,988 INFO Fetching all orders.
+2024-06-12 00:58:27,990 INFO SQL query executed successfully: SELECT * FROM orders

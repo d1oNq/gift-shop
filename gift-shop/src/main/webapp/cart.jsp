@@ -158,6 +158,12 @@
                                     </select>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="areaWishes">напишіть ваші побажання до замовлення</label>
+                                    <textarea name="wishes" id="areaWishes" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
                             <div class="text-center">
                                 <button class="btn btn-primary">Оформити Замовлення</button>
                                 <a class="btn btn-success" href="index.jsp">Продовжити Покупки</a>

@@ -11,6 +11,50 @@
     <title>Редагувати замовлення</title>
     <%@ include file="../components/allCss.jsp" %>
     <link rel="stylesheet" href="../components/style.css">
+    <style>
+        textarea {
+            resize: none;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .toggle-button {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const textarea = document.getElementById('areaProductName');
+            const toggleButton = document.getElementById('toggleButton');
+            let isExpanded = false;
+
+            function autoResizeTextarea(textarea) {
+                textarea.style.height = 'auto';
+                textarea.style.height = textarea.scrollHeight + 'px';
+            }
+
+            textarea.style.height = '100px';
+            textarea.style.overflowY = 'scroll';
+
+            toggleButton.addEventListener('click', function () {
+                if (isExpanded) {
+                    textarea.style.height = '100px';
+                    textarea.style.overflowY = 'scroll';
+                    toggleButton.textContent = 'Розгорнути';
+                } else {
+                    textarea.style.overflowY = 'hidden';
+                    autoResizeTextarea(textarea);
+                    toggleButton.textContent = 'Згорнути';
+                }
+                isExpanded = !isExpanded;
+            });
+        });
+    </script>
 </head>
 <body>
 <div class="wrapper">
@@ -59,10 +103,12 @@
                                        value="<%=order.getAddress() %>">
                             </div>
                             <div class="form-group">
-                                <label for="areaProductName">Назва продукту</label>
+                                <label for="areaProductName">Товари</label>
+                                <span id="toggleButton" class="toggle-button">Розгорнути</span>
                                 <textarea class="form-control" id="areaProductName" required="required"
-                                          placeholder="Назва продукту" name="productName"
-                                          style="resize: none; overflow-y: hidden; "><%=order.getProductName() %></textarea>
+                                          placeholder="Назва продукту"
+                                          name="productName"><%=order.getProductName() %>
+                                </textarea>
                             </div>
                             <div class="form-group">
                                 <label for="inputPrice">Ціна</label>
