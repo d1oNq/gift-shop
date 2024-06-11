@@ -1,8 +1,7 @@
 package com.giftshop.entity;
 
 public class Orders {
-    private int id;
-    private String orderId;
+    private int orderId;
     private String userName;
     private String email;
     private String phone;
@@ -16,19 +15,11 @@ public class Orders {
         super();
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getOrderId() {
+    public int getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(String orderId) {
+    public void setOrderId(int orderId) {
         this.orderId = orderId;
     }
 
@@ -99,8 +90,7 @@ public class Orders {
     @Override
     public String toString() {
         return "Orders{" +
-                "id=" + id +
-                ", orderId='" + orderId + '\'' +
+                "orderId=" + orderId +
                 ", userName='" + userName + '\'' +
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +

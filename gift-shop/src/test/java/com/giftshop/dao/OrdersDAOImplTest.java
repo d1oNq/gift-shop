@@ -13,7 +13,8 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 
@@ -39,7 +40,7 @@ class OrdersDAOImplTest {
     @Test
     void testSaveOrder() throws Exception {
         Orders order = new Orders();
-        order.setOrderId("123");
+        order.setOrderId(123); // Оновлення відповідно до нового типу orderId
         order.setUserName("John Doe");
         order.setEmail("john@example.com");
         order.setPhone("1234567890");
@@ -68,7 +69,7 @@ class OrdersDAOImplTest {
         when(conn.prepareStatement(anyString())).thenReturn(ps);
         when(ps.executeQuery()).thenReturn(rs);
         when(rs.next()).thenReturn(true).thenReturn(false);
-        when(rs.getString(1)).thenReturn("123");
+        when(rs.getInt(1)).thenReturn(123); // Оновлення відповідно до нового типу orderId
         when(rs.getString(2)).thenReturn("John Doe");
         when(rs.getString(3)).thenReturn(email);
         when(rs.getString(4)).thenReturn("1234567890");
@@ -89,7 +90,7 @@ class OrdersDAOImplTest {
         when(conn.prepareStatement(anyString())).thenReturn(ps);
         when(ps.executeQuery()).thenReturn(rs);
         when(rs.next()).thenReturn(true).thenReturn(false);
-        when(rs.getString(1)).thenReturn("123");
+        when(rs.getInt(1)).thenReturn(123); // Оновлення відповідно до нового типу orderId
         when(rs.getString(2)).thenReturn("John Doe");
         when(rs.getString(3)).thenReturn("john@example.com");
         when(rs.getString(4)).thenReturn("1234567890");

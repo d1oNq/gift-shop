@@ -39,6 +39,13 @@ public class CartDAOImpl implements CartDAO {
         return executeUpdate(sql, productId, userId, cartId);
     }
 
+    @Override
+    public boolean clearCart(int userId) {
+        String sql = "DELETE FROM cart WHERE userID = ?";
+        GiftLogger.logInfo("Clearing cart for user ID: " + userId);
+        return executeUpdate(sql, userId);
+    }
+
     private boolean executeUpdate(String sql, Object... params) {
         boolean success = false;
         try {

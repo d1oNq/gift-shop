@@ -6,13 +6,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page isELIgnored="false" %>
+
 <html>
 <head>
+    <meta charset="UTF-8">
     <%
+        request.setCharacterEncoding("UTF-8");
         String search = request.getParameter("search");
     %>
     <title><%=search%></title>
     <%@include file="components/allCss.jsp" %>
+    <link rel="stylesheet" href="components/cards.css">
 </head>
 <body>
 
@@ -39,42 +43,42 @@
     </script>
     <c:remove var="cart" scope="session" />
 </c:if>
-
+<div class="wrapper">
 <%@include file="components/navbar.jsp" %>
 
-<div class="container-fluid text-center">
-    <div class="row p-3">
+<div class="container-fluid text-center content">
+    <h2 class="text-center mt-4 mb-2"><%=search%></h2>
+    <div class="row p-3 product-container">
         <%
             ProductDAOImpl dao = new ProductDAOImpl(DBConnect.getConn());
             List<Product> searchList = dao.getProductBySearch(search);
             for (Product product : searchList) {
         %>
-        <div class="col-md-2">
-            <div class="card card--hover mb-4">
+        <div class="col-md-2 mb-4">
+            <div class="card card--hover">
                 <a href="product.jsp?id=<%=product.getProductId()%>">
                     <div class="card-body text-center">
                         <img src="product/<%=product.getPhoto() %>" alt="" style="width: 150px; height: 150px;">
-                        <p style="font-weight: 700;"><%=product.getProductName() %>, <%=product.getWeight() %>
-                            г</p>
-                        <p><%=product.getPrice()%> грн.</p>
-                        <div class="row text-center">
+                        <div class="card-text">
+                            <p class="mb-2" style="font-weight: 700;"><%=product.getProductName() %>, <%=product.getWeight() %>г</p>
+                            <p><%=product.getPrice()%> грн.</p>
+                        </div>
+                        <div class="card-footer">
                             <%
                                 if (user == null) {
                             %>
-                            <a href="login.jsp" class="btn btn-danger btn-sm ml-4">
-                                <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                            <a href="login.jsp" class="btn btn-outline-primary btn-sm">
+                                <i class="fa-solid fa-cart-shopping"></i> Додати в кошик
                             </a>
                             <%
                             } else {
                             %>
-                            <a  href="cart?productId=<%=product.getProductId()%>&&userId=<%=user.getId()%>" class="btn btn-danger btn-sm ml-4">
-                                <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                            <a href="cart?productId=<%=product.getProductId()%>&&userId=<%=user.getId()%>" class="btn btn-outline-primary btn-sm">
+                                <i class="fa-solid fa-cart-shopping"></i> Додати в кошик
                             </a>
                             <%
                                 }
                             %>
-                            <a href="product.jsp?id=<%=product.getProductId()%>"
-                               class="btn btn-success btn-sm ml-auto mr-4">Details</a>
                         </div>
                     </div>
                 </a>
@@ -87,5 +91,7 @@
 </div>
 
 <%@include file="components/footer.jsp" %>
+</div>
+
 </body>
 </html>

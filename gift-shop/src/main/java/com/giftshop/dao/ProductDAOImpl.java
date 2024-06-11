@@ -40,7 +40,7 @@ public class ProductDAOImpl implements ProductDAO {
     }
 
     @Override
-    public boolean updateEditProduct(Product product) {
+    public boolean editProduct(Product product) {
         String sql = "UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?";
         GiftLogger.logInfo("Updating product: " + product.toString());
         return executeUpdate(sql, product.getProductName(), product.getCategory(), product.getWeight(), product.getPrice(), product.getStatus(), product.getPhoto(), product.getProductId());
@@ -85,7 +85,7 @@ public class ProductDAOImpl implements ProductDAO {
 
     @Override
     public List<Product> getProductBySearch(String search) {
-        String sql = "SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'active' ORDER BY productId DESC";
+        String sql = "SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'Активний' ORDER BY productId DESC";
         GiftLogger.logInfo("Searching products with keyword: " + search);
         return executeQuery(sql, "%" + search + "%", "%" + search + "%");
     }

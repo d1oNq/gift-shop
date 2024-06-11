@@ -1,5 +1,4 @@
 <%@ page import="com.giftshop.db.DBConnect" %>
-<%@ page import="java.sql.Connection" %>
 <%@ page import="com.giftshop.dao.ProductDAOImpl" %>
 <%@ page import="com.giftshop.entity.Product" %>
 <%@ page import="java.util.List" %>
@@ -50,20 +49,19 @@
 </div>
 
 <div class="container text-center">
-    <h2 class="text-center">Цукерки</h2>
+    <h2 class="text-center mb-4">Цукерки</h2>
     <div class="row">
         <%
             ProductDAOImpl dao = new ProductDAOImpl(DBConnect.getConn());
             List<Product> candies = dao.getCandy();
             for (Product product : candies) {
         %>
-        <div class="col-md-3">
+        <div class="col-md-3 mb-3">
             <div class="card h-100 card--hover">
                 <a href="product.jsp?id=<%=product.getProductId()%>">
                     <div class="card-body text-center">
                         <img src="product/<%=product.getPhoto() %>" alt="" style="width: 150px; height: 150px;">
-                        <p style="font-weight: 700;"><%=product.getProductName() %>, <%=product.getWeight() %>
-                            г</p>
+                        <p style="font-weight: 700;"><%=product.getProductName() %>, <%=product.getWeight() %>г</p>
                         <p><%=product.getPrice()%> грн.</p>
                         <div class="text-center">
                             <%
@@ -91,26 +89,25 @@
         %>
     </div>
     <div class="text-center mt-3">
-        <a href="all_candy.jsp" class="button btn btn-outline-dark dtn-sm">Переглянути Всі</a>
+        <a href="candies.jsp" class="button btn btn-outline-dark dtn-sm">Переглянути Всі</a>
     </div>
 </div>
 
 <hr>
 
 <div class="container text-center">
-    <h2 class="text-center">Cookies</h2>
+    <h2 class="text-center mb-4">Печиво</h2>
     <div class="row">
         <%
             List<Product> cookies = dao.getCookies();
             for (Product product : cookies) {
         %>
-        <div class="col-md-3">
-            <div class="card card--hover">
+        <div class="col-md-3 mb-3">
+            <div class="card h-100 card--hover">
                 <a href="product.jsp?id=<%=product.getProductId()%>">
                     <div class="card-body text-center">
                         <img src="product/<%=product.getPhoto() %>" alt="" style="width: 150px; height: 150px;">
-                        <p style="font-weight: 700;"><%=product.getProductName() %>, <%=product.getWeight() %>
-                            г</p>
+                        <p style="font-weight: 700;"><%=product.getProductName() %>, <%=product.getWeight() %>г</p>
                         <p><%=product.getPrice()%> грн.</p>
                         <div class="text-center">
                             <%
@@ -138,26 +135,25 @@
         %>
     </div>
     <div class="text-center mt-3">
-        <a href="all_cookies.jsp" class="button btn btn-outline-dark dtn-sm">Переглянути Всі</a>
+        <a href="cookies.jsp" class="button btn btn-outline-dark dtn-sm">Переглянути Всі</a>
     </div>
 </div>
 
 <hr>
 
 <div class="container text-center">
-    <h2 class="text-center">Gift Boxes</h2>
+    <h2 class="text-center mb-4">Подарункові Набори</h2>
     <div class="row">
         <%
             List<Product> giftBoxes = dao.getGiftBox();
             for (Product product : giftBoxes) {
         %>
-        <div class="col-md-3">
-            <div class="card card--hover">
+        <div class="col-md-3 mb-3">
+            <div class="card h-100 card--hover">
                 <a href="product.jsp?id=<%=product.getProductId()%>">
                     <div class="card-body text-center">
                         <img src="product/<%=product.getPhoto() %>" alt="" style="width: 150px; height: 150px;">
-                        <p style="font-weight: 700;"><%=product.getProductName() %>, <%=product.getWeight() %>
-                            г</p>
+                        <p style="font-weight: 700;"><%=product.getProductName() %>, <%=product.getWeight() %>г</p>
                         <p><%=product.getPrice()%> грн.</p>
                         <div class="text-center">
                             <%
@@ -185,7 +181,7 @@
         %>
     </div>
     <div class="text-center mt-3">
-        <a href="all_gift_boxes.jsp" class="button btn btn-outline-dark dtn-sm">Переглянути Всі</a>
+        <a href="gift_boxes.jsp" class="button btn btn-outline-dark dtn-sm">Переглянути Всі</a>
     </div>
 </div>
 

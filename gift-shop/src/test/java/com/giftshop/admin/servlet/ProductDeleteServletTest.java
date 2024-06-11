@@ -48,7 +48,7 @@ public class ProductDeleteServletTest {
         servlet.doGet(request, response);
 
         verify(session).setAttribute("successMsg", "Товар успішно видалено");
-        verify(response).sendRedirect("admin/all_products.jsp");
+        verify(response).sendRedirect("admin/products.jsp");
         verify(productDAO).deleteProduct(1);
     }
 
@@ -61,7 +61,7 @@ public class ProductDeleteServletTest {
         servlet.doGet(request, response);
 
         verify(session).setAttribute("failedMsg", "Щось пішло не так");
-        verify(response).sendRedirect("admin/all_products.jsp");
+        verify(response).sendRedirect("admin/products.jsp");
         verify(productDAO).deleteProduct(1);
     }
 

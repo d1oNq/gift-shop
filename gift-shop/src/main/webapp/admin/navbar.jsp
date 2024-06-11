@@ -20,7 +20,7 @@
                         class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="all_products.jsp"><i class="fa-solid fa-gift"></i> Усі товари <span
+                <a class="nav-link" href="products.jsp"><i class="fa-solid fa-gift"></i> Усі товари <span
                         class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">

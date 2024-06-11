@@ -37,7 +37,7 @@ public class ProductEditServlet extends HttpServlet {
                 GiftLogger.logInfo("Product image remains the same: " + existingProduct.getPhoto());
             }
 
-            boolean isUpdated = dao.updateEditProduct(product);
+            boolean isUpdated = dao.editProduct(product);
             HttpSession session = req.getSession();
 
             if (isUpdated) {
@@ -47,7 +47,7 @@ public class ProductEditServlet extends HttpServlet {
                 GiftLogger.logWarning("Failed to update product.");
                 session.setAttribute("failedMsg", "Щось пішло не так. Спробуйте ще раз");
             }
-            resp.sendRedirect("admin/all_products.jsp");
+            resp.sendRedirect("admin/products.jsp");
 
         } catch (Exception e) {
             GiftLogger.logError("Error occurred while updating product: " + e.getMessage());

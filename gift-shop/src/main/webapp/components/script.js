@@ -9,3 +9,12 @@ function togglePasswordVisibility() {
         toggleButton.textContent = 'Show';
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const textarea = document.getElementById('areaProductName');
+
+    textarea.addEventListener('input', function() {
+        this.style.height = 'auto';
+        this.style.height = this.scrollHeight + 'px';
+    });
+});

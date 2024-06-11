@@ -11,7 +11,7 @@ public interface ProductDAO {
 
     Product getProductById(int id);
 
-    boolean updateEditProduct(Product product);
+    boolean editProduct(Product product);
 
     boolean deleteProduct(int id);
 

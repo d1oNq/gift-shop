@@ -9,13 +9,14 @@
     <%@include file="components/allCss.jsp" %>
 </head>
 <body>
+<div class="wrapper">
 <%@include file="components/navbar.jsp" %>
 
 <c:if test="${empty user}">
     <c:redirect url="login.jsp"/>
 </c:if>
 
-<div class="container">
+<div class="container content">
     <div class="row p-5">
         <div class="col-md-3 d-flex align-items-stretch">
             <a href="edit_profile.jsp" class="w-100">
@@ -69,6 +70,6 @@
 </div>
 
 <%@include file="components/footer.jsp" %>
-
+</div>
 </body>
 </html>

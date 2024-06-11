@@ -16,6 +16,8 @@
       crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
 
+<link rel="stylesheet" href="components/snackbar.css">
+
 <link rel="stylesheet" href="components/style.css">
 
 <script src="components/script.js"></script>

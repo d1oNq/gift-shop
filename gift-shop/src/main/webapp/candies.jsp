@@ -6,11 +6,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page isELIgnored="false" %>
-
 <html>
 <head>
-    <title>ALL Cookies</title>
+    <title>Цукерки</title>
     <%@include file="components/allCss.jsp" %>
+    <link rel="stylesheet" href="components/cards.css">
 </head>
 <body>
 
@@ -41,21 +41,22 @@
 <%@include file="components/navbar.jsp" %>
 
 <div class="container-fluid text-center">
-    <div class="row p-3">
+    <div class="row p-3 product-container">
         <%
             ProductDAOImpl dao = new ProductDAOImpl(DBConnect.getConn());
-            List<Product> candies = dao.getAllCookies();
+            List<Product> candies = dao.getAllCandy();
             for (Product product : candies) {
         %>
-        <div class="col-md-2">
-            <div class="card card--hover mb-4">
+        <div class="col-md-2 mb-4">
+            <div class="card card--hover">
                 <a href="product.jsp?id=<%=product.getProductId()%>">
                     <div class="card-body text-center">
                         <img src="product/<%=product.getPhoto() %>" alt="" style="width: 150px; height: 150px;">
-                        <p style="font-weight: 700;"><%=product.getProductName() %>, <%=product.getWeight() %>
-                            г</p>
-                        <p><%=product.getPrice()%> грн.</p>
-                        <div class="text-center">
+                        <div class="card-text">
+                            <p style="font-weight: 700;"><%=product.getProductName() %>, <%=product.getWeight() %>г</p>
+                            <p><%=product.getPrice()%> грн.</p>
+                        </div>
+                        <div class="card-footer">
                             <%
                                 if (user == null) {
                             %>
@@ -65,7 +66,7 @@
                             <%
                             } else {
                             %>
-                            <a  href="cart?productId=<%=product.getProductId()%>&&userId=<%=user.getId()%>" class="btn btn-outline-primary btn-sm">
+                            <a href="cart?productId=<%=product.getProductId()%>&&userId=<%=user.getId()%>" class="btn btn-outline-primary btn-sm">
                                 <i class="fa-solid fa-cart-shopping"></i> Додати в кошик
                             </a>
                             <%

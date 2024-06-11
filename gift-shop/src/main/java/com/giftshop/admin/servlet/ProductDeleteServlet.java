@@ -34,7 +34,7 @@ public class ProductDeleteServlet extends HttpServlet {
                 GiftLogger.logWarning("Failed to delete product.");
                 session.setAttribute("failedMsg", "Щось пішло не так");
             }
-            resp.sendRedirect("admin/all_products.jsp");
+            resp.sendRedirect("admin/products.jsp");
 
         } catch (Exception e) {
             GiftLogger.logError("Error occurred while deleting product: " + e.getMessage());

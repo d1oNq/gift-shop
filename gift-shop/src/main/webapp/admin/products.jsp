@@ -3,14 +3,12 @@
 <%@ page import="com.giftshop.entity.Product" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <%@page isELIgnored="false" %>
 
 <html>
 <head>
-    <title>Admin: View All Products</title>
+    <title>Усі товари</title>
     <%@include file="../components/allCss.jsp" %>
     <link rel="stylesheet" href="../components/style.css">
 </head>
@@ -34,13 +32,13 @@
     <thead class="bg-primary text-white">
     <tr>
         <th scope="col">Id</th>
-        <th scope="col">Image</th>
-        <th scope="col">Name</th>
-        <th scope="col">Category</th>
-        <th scope="col">Weight</th>
-        <th scope="col">Price</th>
-        <th scope="col">Status</th>
-        <th scope="col">Action</th>
+        <th scope="col">Фото</th>
+        <th scope="col">Назва</th>
+        <th scope="col">Категорія</th>
+        <th scope="col">Вага</th>
+        <th scope="col">Ціна</th>
+        <th scope="col">Статус</th>
+        <th scope="col"></th>
     </tr>
     </thead>
     <tbody>

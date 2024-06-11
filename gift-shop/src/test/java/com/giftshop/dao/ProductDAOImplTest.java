@@ -95,7 +95,7 @@ class ProductDAOImplTest {
 
 
     @Test
-    void testUpdateEditProduct() throws Exception {
+    void testEditProduct() throws Exception {
         Product product = new Product();
         product.setProductId(1);
         product.setProductName("Chocolate");
@@ -108,7 +108,7 @@ class ProductDAOImplTest {
         when(conn.prepareStatement(anyString())).thenReturn(ps);
         when(ps.executeUpdate()).thenReturn(1);
 
-        boolean result = productDAO.updateEditProduct(product);
+        boolean result = productDAO.editProduct(product);
         assertTrue(result);
         verify(ps, times(1)).executeUpdate();
     }

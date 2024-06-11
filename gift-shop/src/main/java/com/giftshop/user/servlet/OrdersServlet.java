@@ -57,6 +57,15 @@ public class OrdersServlet extends HttpServlet {
 
             if (isOrderSaved) {
                 GiftLogger.logInfo("Order successfully placed for userId=" + userId);
+
+                CartDAOImpl cartDAO = new CartDAOImpl(DBConnect.getConn());
+                boolean isCartCleared = cartDAO.clearCart(userId);
+                if (isCartCleared) {
+                    GiftLogger.logInfo("Cart successfully cleared for userId=" + userId);
+                } else {
+                    GiftLogger.logWarning("Failed to clear cart for userId=" + userId);
+                }
+
                 setSessionMessage(session, "successMsg", "Замовлення оформлено успішно", resp, "order_success.jsp");
             } else {
                 GiftLogger.logError("Order not saved for userId=" + userId);

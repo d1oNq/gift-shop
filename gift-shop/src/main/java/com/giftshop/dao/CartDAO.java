@@ -10,4 +10,6 @@ public interface CartDAO {
     List<Cart> getProductByUser(int userId);
 
     boolean removeFromCart(int productId, int userId, int cartId);
+
+    boolean clearCart(int userId);
 }

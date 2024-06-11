@@ -12,7 +12,7 @@ public class DBConnect {
     public static Connection getConn() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:3306/giftshop";
+            String url = "jdbc:mysql://localhost:3306/giftshop?useUnicode=true&characterEncoding=utf8";
             conn = DriverManager.getConnection(url, "root", "3216549870");
             GiftLogger.logInfo("Database connection established successfully");
         } catch (ClassNotFoundException e) {

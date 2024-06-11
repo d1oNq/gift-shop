@@ -42,9 +42,9 @@
                                    required="required" placeholder="Ім'я" name="name" value="<%=user.getName()%>">
                         </div>
                         <div class="form-group">
-                            <label for="inputEmail">Email</label>
+                            <label for="inputEmail">Електронна пошта</label>
                             <input type="email" class="form-control" id="inputEmail"
-                                   aria-describedby="emailHelp" required="required" placeholder="Email" name="email"
+                                   aria-describedby="emailHelp" required="required" placeholder="Електронна пошта" name="email"
                                    value="<%=user.getEmail()%>">
                         </div>
                         <div class="form-group">

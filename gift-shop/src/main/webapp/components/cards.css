@@ -1,0 +1,39 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 10px;
+    flex: 1 0 21%;
+    box-sizing: border-box;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.card-body img {
+    max-width: 100%;
+    height: auto;
+}
+.card-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-text p {
+    margin: 0;
+}
+.card-footer {
+    text-align: center;
+    margin-top: auto;
+    background-color: inherit;
+    border-top: none;
+}
