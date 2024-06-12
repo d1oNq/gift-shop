@@ -12,13 +12,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="all_candy.jsp"><i class="fa-solid fa-candy-cane"></i> Цукерки</a>
+                <a class="nav-link" href="candies.jsp"><i class="fa-solid fa-candy-cane"></i> Цукерки</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="all_cookies.jsp"><i class="fa-solid fa-cookie-bite"></i> Печиво</a>
+                <a class="nav-link" href="cookies.jsp"><i class="fa-solid fa-cookie-bite"></i> Печиво</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="all_gift_boxes.jsp"><i class="fa-solid fa-gifts"></i> Подарункові Набори</a>
+                <a class="nav-link" href="gift_boxes.jsp"><i class="fa-solid fa-gifts"></i> Подарункові Набори</a>
             </li>
         </ul>
         <div class="col-md-6">

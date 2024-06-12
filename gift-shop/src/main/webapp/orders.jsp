@@ -20,7 +20,7 @@
     <%@include file="components/navbar.jsp" %>
 
     <div class="content">
-        <h3 class="text-center mb-4">Мої Замовлення</h3>
+        <h3 class="text-center mt-4 mb-4">Мої Замовлення</h3>
         <table class="table table-striped">
             <thead class="bg-primary text-white">
             <tr>

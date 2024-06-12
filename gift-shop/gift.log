@@ -6910,3 +6910,574 @@ Hints:
 2024-06-12 00:58:27,988 INFO Database connection established successfully
 2024-06-12 00:58:27,988 INFO Fetching all orders.
 2024-06-12 00:58:27,990 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-12 15:36:14,767 INFO Database connection established successfully
+2024-06-12 15:36:14,791 INFO Fetching products by category: Цукерки with limit: true
+2024-06-12 15:36:14,862 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:36:14,862 INFO Fetching products by category: Печиво with limit: true
+2024-06-12 15:36:14,865 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:36:14,867 INFO Fetching products by category: Подарункові Набори with limit: true
+2024-06-12 15:36:14,869 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:37:43,703 INFO Database connection established successfully
+2024-06-12 15:37:43,703 INFO Fetching products by category: Цукерки with limit: true
+2024-06-12 15:37:43,707 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:37:43,707 INFO Fetching products by category: Печиво with limit: true
+2024-06-12 15:37:43,709 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:37:43,709 INFO Fetching products by category: Подарункові Набори with limit: true
+2024-06-12 15:37:43,711 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:38:50,185 INFO Received login request
+2024-06-12 15:38:50,187 INFO Attempting login for email: vitalik@gmail.com
+2024-06-12 15:38:50,187 INFO User login attempt for email: vitalik@gmail.com
+2024-06-12 15:38:50,209 INFO Database connection established successfully
+2024-06-12 15:38:50,209 INFO User login attempt: email=vitalik@gmail.com
+2024-06-12 15:38:50,211 WARN No user found for the provided query: SELECT * FROM user WHERE email = ? AND password = ?
+2024-06-12 15:38:50,211 WARN Failed login attempt for email: vitalik@gmail.com
+2024-06-12 15:38:55,098 INFO Received login request
+2024-06-12 15:38:55,098 INFO Attempting login for email: vitalik@gmail.com
+2024-06-12 15:38:55,098 INFO User login attempt for email: vitalik@gmail.com
+2024-06-12 15:38:55,116 INFO Database connection established successfully
+2024-06-12 15:38:55,116 INFO User login attempt: email=vitalik@gmail.com
+2024-06-12 15:38:55,117 WARN No user found for the provided query: SELECT * FROM user WHERE email = ? AND password = ?
+2024-06-12 15:38:55,117 WARN Failed login attempt for email: vitalik@gmail.com
+2024-06-12 15:39:01,368 INFO Received login request
+2024-06-12 15:39:01,368 INFO Attempting login for email: vitalik@gmail.com
+2024-06-12 15:39:01,370 INFO User login attempt for email: vitalik@gmail.com
+2024-06-12 15:39:01,385 INFO Database connection established successfully
+2024-06-12 15:39:01,385 INFO User login attempt: email=vitalik@gmail.com
+2024-06-12 15:39:01,395 INFO User fetched successfully: User{id=2, name='Vitalik S', email='vitalik@gmail.com', password='q123', phone='+380632491323', address='Скрипника 1', city='Львів', zip='79012'}
+2024-06-12 15:39:01,395 INFO User login successful for email: vitalik@gmail.com
+2024-06-12 15:39:01,441 INFO Database connection established successfully
+2024-06-12 15:39:01,441 INFO Fetching products by category: Цукерки with limit: true
+2024-06-12 15:39:01,443 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:39:01,445 INFO Fetching products by category: Печиво with limit: true
+2024-06-12 15:39:01,446 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:39:01,446 INFO Fetching products by category: Подарункові Набори with limit: true
+2024-06-12 15:39:01,447 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:09,032 INFO Database connection established successfully
+2024-06-12 15:43:09,034 INFO Fetching products for user ID: 2
+2024-06-12 15:43:09,037 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 15:43:10,965 INFO Database connection established successfully
+2024-06-12 15:43:10,965 INFO Fetching products by category: Цукерки with limit: true
+2024-06-12 15:43:10,966 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:10,968 INFO Fetching products by category: Печиво with limit: true
+2024-06-12 15:43:10,970 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:10,970 INFO Fetching products by category: Подарункові Набори with limit: true
+2024-06-12 15:43:10,971 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:15,607 INFO Received request to add product to cart
+2024-06-12 15:43:15,609 INFO Creating cart item for product ID: 80 and user ID: 2
+2024-06-12 15:43:15,618 INFO Database connection established successfully
+2024-06-12 15:43:15,618 INFO Fetching product by ID: 80
+2024-06-12 15:43:15,618 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:43:15,636 INFO Cart item created: Cart{cartId=0, productId=80, userId=2, productName='Тенеріфе', category='Подарункові Набори', weight=640.0, price=1840.0}
+2024-06-12 15:43:15,653 INFO Database connection established successfully
+2024-06-12 15:43:15,653 INFO Adding to cart: Cart{cartId=0, productId=80, userId=2, productName='Тенеріфе', category='Подарункові Набори', weight=640.0, price=1840.0}
+2024-06-12 15:43:15,658 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 15:43:15,659 INFO Product successfully added to cart
+2024-06-12 15:43:15,688 INFO Database connection established successfully
+2024-06-12 15:43:15,688 INFO Fetching products by category: Цукерки with limit: true
+2024-06-12 15:43:15,690 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:15,690 INFO Fetching products by category: Печиво with limit: true
+2024-06-12 15:43:15,691 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:15,691 INFO Fetching products by category: Подарункові Набори with limit: true
+2024-06-12 15:43:15,694 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:18,537 INFO Received request to add product to cart
+2024-06-12 15:43:18,537 INFO Creating cart item for product ID: 142 and user ID: 2
+2024-06-12 15:43:18,553 INFO Database connection established successfully
+2024-06-12 15:43:18,554 INFO Fetching product by ID: 142
+2024-06-12 15:43:18,555 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:43:18,555 INFO Cart item created: Cart{cartId=0, productId=142, userId=2, productName='Ferrero Rocher «Діамант»', category='Цукерки', weight=300.0, price=659.0}
+2024-06-12 15:43:18,569 INFO Database connection established successfully
+2024-06-12 15:43:18,569 INFO Adding to cart: Cart{cartId=0, productId=142, userId=2, productName='Ferrero Rocher «Діамант»', category='Цукерки', weight=300.0, price=659.0}
+2024-06-12 15:43:18,574 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 15:43:18,574 INFO Product successfully added to cart
+2024-06-12 15:43:18,595 INFO Database connection established successfully
+2024-06-12 15:43:18,596 INFO Fetching products by category: Цукерки with limit: true
+2024-06-12 15:43:18,598 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:18,598 INFO Fetching products by category: Печиво with limit: true
+2024-06-12 15:43:18,600 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:18,600 INFO Fetching products by category: Подарункові Набори with limit: true
+2024-06-12 15:43:18,602 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:20,653 INFO Received request to add product to cart
+2024-06-12 15:43:20,653 INFO Creating cart item for product ID: 139 and user ID: 2
+2024-06-12 15:43:20,666 INFO Database connection established successfully
+2024-06-12 15:43:20,666 INFO Fetching product by ID: 139
+2024-06-12 15:43:20,666 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:43:20,666 INFO Cart item created: Cart{cartId=0, productId=139, userId=2, productName='Ritter Sport з ямайським ромом, родзинками та горіхами', category='Цукерки', weight=100.0, price=113.0}
+2024-06-12 15:43:20,683 INFO Database connection established successfully
+2024-06-12 15:43:20,683 INFO Adding to cart: Cart{cartId=0, productId=139, userId=2, productName='Ritter Sport з ямайським ромом, родзинками та горіхами', category='Цукерки', weight=100.0, price=113.0}
+2024-06-12 15:43:20,693 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 15:43:20,693 INFO Product successfully added to cart
+2024-06-12 15:43:20,715 INFO Database connection established successfully
+2024-06-12 15:43:20,715 INFO Fetching products by category: Цукерки with limit: true
+2024-06-12 15:43:20,715 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:20,715 INFO Fetching products by category: Печиво with limit: true
+2024-06-12 15:43:20,715 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:20,715 INFO Fetching products by category: Подарункові Набори with limit: true
+2024-06-12 15:43:20,715 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 15:43:23,518 INFO Database connection established successfully
+2024-06-12 15:43:23,518 INFO Fetching products by category: Цукерки with limit: false
+2024-06-12 15:43:23,521 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 15:43:25,684 INFO Received request to add product to cart
+2024-06-12 15:43:25,685 INFO Creating cart item for product ID: 140 and user ID: 2
+2024-06-12 15:43:25,698 INFO Database connection established successfully
+2024-06-12 15:43:25,698 INFO Fetching product by ID: 140
+2024-06-12 15:43:25,698 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:43:25,698 INFO Cart item created: Cart{cartId=0, productId=140, userId=2, productName='Kit Kat вафельний темний шоколад-м'ята', category='Цукерки', weight=42.0, price=129.0}
+2024-06-12 15:43:25,715 INFO Database connection established successfully
+2024-06-12 15:43:25,715 INFO Adding to cart: Cart{cartId=0, productId=140, userId=2, productName='Kit Kat вафельний темний шоколад-м'ята', category='Цукерки', weight=42.0, price=129.0}
+2024-06-12 15:43:25,725 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 15:43:25,725 INFO Product successfully added to cart
+2024-06-12 15:43:25,749 INFO Database connection established successfully
+2024-06-12 15:43:25,749 INFO Fetching products by category: Цукерки with limit: false
+2024-06-12 15:43:25,753 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 15:43:34,564 INFO Received request to add product to cart
+2024-06-12 15:43:34,565 INFO Creating cart item for product ID: 103 and user ID: 2
+2024-06-12 15:43:34,577 INFO Database connection established successfully
+2024-06-12 15:43:34,577 INFO Fetching product by ID: 103
+2024-06-12 15:43:34,580 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:43:34,580 INFO Cart item created: Cart{cartId=0, productId=103, userId=2, productName='Kinder Bueno шоколадно-вафельний', category='Цукерки', weight=43.0, price=34.99}
+2024-06-12 15:43:34,593 INFO Database connection established successfully
+2024-06-12 15:43:34,594 INFO Adding to cart: Cart{cartId=0, productId=103, userId=2, productName='Kinder Bueno шоколадно-вафельний', category='Цукерки', weight=43.0, price=34.99}
+2024-06-12 15:43:34,599 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 15:43:34,599 INFO Product successfully added to cart
+2024-06-12 15:43:34,627 INFO Database connection established successfully
+2024-06-12 15:43:34,627 INFO Fetching products by category: Цукерки with limit: false
+2024-06-12 15:43:34,631 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 15:43:41,832 INFO Received request to add product to cart
+2024-06-12 15:43:41,833 INFO Creating cart item for product ID: 87 and user ID: 2
+2024-06-12 15:43:41,845 INFO Database connection established successfully
+2024-06-12 15:43:41,845 INFO Fetching product by ID: 87
+2024-06-12 15:43:41,846 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:43:41,846 INFO Cart item created: Cart{cartId=0, productId=87, userId=2, productName='Kinder Chocolate Maxi', category='Цукерки', weight=84.0, price=80.99}
+2024-06-12 15:43:41,858 INFO Database connection established successfully
+2024-06-12 15:43:41,858 INFO Adding to cart: Cart{cartId=0, productId=87, userId=2, productName='Kinder Chocolate Maxi', category='Цукерки', weight=84.0, price=80.99}
+2024-06-12 15:43:41,861 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 15:43:41,861 INFO Product successfully added to cart
+2024-06-12 15:43:41,892 INFO Database connection established successfully
+2024-06-12 15:43:41,893 INFO Fetching products by category: Цукерки with limit: false
+2024-06-12 15:43:41,896 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 15:43:46,169 INFO Received request to add product to cart
+2024-06-12 15:43:46,169 INFO Creating cart item for product ID: 91 and user ID: 2
+2024-06-12 15:43:46,180 INFO Database connection established successfully
+2024-06-12 15:43:46,180 INFO Fetching product by ID: 91
+2024-06-12 15:43:46,181 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:43:46,182 INFO Cart item created: Cart{cartId=0, productId=91, userId=2, productName='Nutella', category='Цукерки', weight=450.0, price=199.0}
+2024-06-12 15:43:46,193 INFO Database connection established successfully
+2024-06-12 15:43:46,195 INFO Adding to cart: Cart{cartId=0, productId=91, userId=2, productName='Nutella', category='Цукерки', weight=450.0, price=199.0}
+2024-06-12 15:43:46,204 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 15:43:46,204 INFO Product successfully added to cart
+2024-06-12 15:43:46,228 INFO Database connection established successfully
+2024-06-12 15:43:46,228 INFO Fetching products by category: Цукерки with limit: false
+2024-06-12 15:43:46,230 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 15:43:50,423 INFO Received request to add product to cart
+2024-06-12 15:43:50,423 INFO Creating cart item for product ID: 84 and user ID: 2
+2024-06-12 15:43:50,436 INFO Database connection established successfully
+2024-06-12 15:43:50,436 INFO Fetching product by ID: 84
+2024-06-12 15:43:50,438 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:43:50,438 INFO Cart item created: Cart{cartId=0, productId=84, userId=2, productName='Kinder Joy', category='Цукерки', weight=20.0, price=59.49}
+2024-06-12 15:43:50,452 INFO Database connection established successfully
+2024-06-12 15:43:50,452 INFO Adding to cart: Cart{cartId=0, productId=84, userId=2, productName='Kinder Joy', category='Цукерки', weight=20.0, price=59.49}
+2024-06-12 15:43:50,460 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 15:43:50,460 INFO Product successfully added to cart
+2024-06-12 15:43:50,487 INFO Database connection established successfully
+2024-06-12 15:43:50,487 INFO Fetching products by category: Цукерки with limit: false
+2024-06-12 15:43:50,487 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 15:43:57,356 INFO Received request to add product to cart
+2024-06-12 15:43:57,356 INFO Creating cart item for product ID: 122 and user ID: 2
+2024-06-12 15:43:57,368 INFO Database connection established successfully
+2024-06-12 15:43:57,368 INFO Fetching product by ID: 122
+2024-06-12 15:43:57,369 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:43:57,369 INFO Cart item created: Cart{cartId=0, productId=122, userId=2, productName='Milka зі шматочками карамелі з мигдалем', category='Цукерки', weight=100.0, price=62.99}
+2024-06-12 15:43:57,382 INFO Database connection established successfully
+2024-06-12 15:43:57,382 INFO Adding to cart: Cart{cartId=0, productId=122, userId=2, productName='Milka зі шматочками карамелі з мигдалем', category='Цукерки', weight=100.0, price=62.99}
+2024-06-12 15:43:57,392 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 15:43:57,392 INFO Product successfully added to cart
+2024-06-12 15:43:57,419 INFO Database connection established successfully
+2024-06-12 15:43:57,419 INFO Fetching products by category: Цукерки with limit: false
+2024-06-12 15:43:57,421 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 15:43:59,438 INFO Database connection established successfully
+2024-06-12 15:43:59,438 INFO Fetching products for user ID: 2
+2024-06-12 15:43:59,439 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 15:44:33,747 INFO Database connection established successfully
+2024-06-12 15:44:33,747 INFO Fetching products for user ID: 2
+2024-06-12 15:44:33,749 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 15:44:37,552 INFO Database connection established successfully
+2024-06-12 15:44:37,552 INFO Fetching products for user ID: 2
+2024-06-12 15:44:37,554 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 15:44:39,765 INFO Database connection established successfully
+2024-06-12 15:44:39,766 INFO Fetching products for user ID: 2
+2024-06-12 15:44:39,767 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 15:44:41,804 INFO Database connection established successfully
+2024-06-12 15:44:41,804 INFO Fetching products for user ID: 2
+2024-06-12 15:44:41,806 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 15:44:55,582 INFO Database connection established successfully
+2024-06-12 15:44:55,583 INFO Fetching products for user ID: 2
+2024-06-12 15:44:55,584 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 15:45:05,670 INFO Database connection established successfully
+2024-06-12 15:45:05,671 INFO Fetching products for user ID: 2
+2024-06-12 15:45:05,672 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 15:45:38,478 INFO Database connection established successfully
+2024-06-12 15:45:38,478 INFO Fetching products for user ID: 2
+2024-06-12 15:45:38,479 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 15:45:40,190 INFO Database connection established successfully
+2024-06-12 15:45:40,191 INFO Fetching products by category: Печиво with limit: false
+2024-06-12 15:45:40,192 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 15:45:42,897 INFO Received request to add product to cart
+2024-06-12 15:45:42,897 INFO Creating cart item for product ID: 165 and user ID: 2
+2024-06-12 15:45:42,908 INFO Database connection established successfully
+2024-06-12 15:45:42,908 INFO Fetching product by ID: 165
+2024-06-12 15:45:42,909 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:45:42,909 INFO Cart item created: Cart{cartId=0, productId=165, userId=2, productName='Печиво Nutella', category='Печиво', weight=304.0, price=249.0}
+2024-06-12 15:45:42,922 INFO Database connection established successfully
+2024-06-12 15:45:42,922 INFO Adding to cart: Cart{cartId=0, productId=165, userId=2, productName='Печиво Nutella', category='Печиво', weight=304.0, price=249.0}
+2024-06-12 15:45:42,932 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 15:45:42,932 INFO Product successfully added to cart
+2024-06-12 15:45:42,955 INFO Database connection established successfully
+2024-06-12 15:45:42,955 INFO Fetching products by category: Печиво with limit: false
+2024-06-12 15:45:42,958 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 15:45:44,575 INFO Received request to add product to cart
+2024-06-12 15:45:44,575 INFO Creating cart item for product ID: 166 and user ID: 2
+2024-06-12 15:45:44,587 INFO Database connection established successfully
+2024-06-12 15:45:44,587 INFO Fetching product by ID: 166
+2024-06-12 15:45:44,587 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:45:44,588 INFO Cart item created: Cart{cartId=0, productId=166, userId=2, productName='Вафлі Kinder Happy Hippo Hazelnut', category='Печиво', weight=103.5, price=149.0}
+2024-06-12 15:45:44,599 INFO Database connection established successfully
+2024-06-12 15:45:44,599 INFO Adding to cart: Cart{cartId=0, productId=166, userId=2, productName='Вафлі Kinder Happy Hippo Hazelnut', category='Печиво', weight=103.5, price=149.0}
+2024-06-12 15:45:44,609 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 15:45:44,610 INFO Product successfully added to cart
+2024-06-12 15:45:44,636 INFO Database connection established successfully
+2024-06-12 15:45:44,636 INFO Fetching products by category: Печиво with limit: false
+2024-06-12 15:45:44,638 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 15:45:46,292 INFO Received request to add product to cart
+2024-06-12 15:45:46,293 INFO Creating cart item for product ID: 164 and user ID: 2
+2024-06-12 15:45:46,305 INFO Database connection established successfully
+2024-06-12 15:45:46,305 INFO Fetching product by ID: 164
+2024-06-12 15:45:46,306 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:45:46,306 INFO Cart item created: Cart{cartId=0, productId=164, userId=2, productName='Печиво Bounty з кокосом', category='Печиво', weight=180.0, price=149.0}
+2024-06-12 15:45:46,320 INFO Database connection established successfully
+2024-06-12 15:45:46,320 INFO Adding to cart: Cart{cartId=0, productId=164, userId=2, productName='Печиво Bounty з кокосом', category='Печиво', weight=180.0, price=149.0}
+2024-06-12 15:45:46,329 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 15:45:46,329 INFO Product successfully added to cart
+2024-06-12 15:45:46,351 INFO Database connection established successfully
+2024-06-12 15:45:46,351 INFO Fetching products by category: Печиво with limit: false
+2024-06-12 15:45:46,353 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 15:45:49,012 INFO Database connection established successfully
+2024-06-12 15:45:49,012 INFO Fetching products for user ID: 2
+2024-06-12 15:45:49,015 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 15:46:18,241 INFO Database connection established successfully
+2024-06-12 15:46:18,241 INFO Fetching products for user ID: 2
+2024-06-12 15:46:18,242 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 15:47:05,154 INFO Order request received
+2024-06-12 15:47:05,157 INFO User details: userId=2, userName=Vitalik S, email=vitalik@gmail.com, phone=+380632491323
+2024-06-12 15:47:05,167 INFO Database connection established successfully
+2024-06-12 15:47:05,167 INFO Fetching products for user ID: 2
+2024-06-12 15:47:05,167 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 15:47:05,182 INFO Database connection established successfully
+2024-06-12 15:47:05,197 INFO Saving orders: [Orders{orderId=0, userName='Vitalik S', email='vitalik@gmail.com', phone='+380632491323', address='Скрипника 1, Львів, 79012', productName='Тенеріфе (Подарункові Набори); Ferrero Rocher «Діамант» (Цукерки); Ritter Sport з ямайським ромом, родзинками та горіхами (Цукерки); Kit Kat вафельний темний шоколад-м'ята (Цукерки); Kinder Bueno шоколадно-вафельний (Цукерки); Kinder Chocolate Maxi (Цукерки); Nutella (Цукерки); Kinder Joy (Цукерки); Milka зі шматочками карамелі з мигдалем (Цукерки); Печиво Nutella (Печиво); Вафлі Kinder Happy Hippo Hazelnut (Печиво); Печиво Bounty з кокосом (Печиво); ', price='3725.459999999999', weight='2366.5', payment='Готівка'}]
+2024-06-12 15:47:05,210 INFO Orders saved successfully.
+2024-06-12 15:47:05,211 INFO Order successfully placed for userId=2
+2024-06-12 15:47:05,221 INFO Database connection established successfully
+2024-06-12 15:47:05,222 INFO Clearing cart for user ID: 2
+2024-06-12 15:47:05,227 WARN SQL update failed: DELETE FROM cart WHERE userID = ?
+2024-06-12 15:47:05,227 WARN Failed to clear cart for userId=2
+2024-06-12 15:50:33,341 INFO Database connection established successfully
+2024-06-12 15:50:33,342 INFO Fetching orders for email: vitalik@gmail.com
+2024-06-12 15:50:33,343 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-12 15:51:03,337 INFO Database connection established successfully
+2024-06-12 15:51:03,337 INFO Fetching orders for email: vitalik@gmail.com
+2024-06-12 15:51:03,338 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-12 15:52:00,401 INFO Logout request received
+2024-06-12 15:52:00,403 INFO User User{id=2, name='Vitalik S', email='vitalik@gmail.com', password='q123', phone='+380632491323', address='Скрипника 1', city='Львів', zip='79012'} logging out
+2024-06-12 15:52:00,403 INFO User successfully logged out
+2024-06-12 15:52:05,261 INFO Received login request
+2024-06-12 15:52:05,261 INFO Attempting login for email: admin@giftshop.com
+2024-06-12 15:52:05,261 INFO User login attempt for email: admin@giftshop.com
+2024-06-12 15:52:05,274 INFO Database connection established successfully
+2024-06-12 15:52:05,274 INFO User login attempt: email=admin@giftshop.com
+2024-06-12 15:52:05,275 WARN No user found for the provided query: SELECT * FROM user WHERE email = ? AND password = ?
+2024-06-12 15:52:05,275 WARN Failed login attempt for email: admin@giftshop.com
+2024-06-12 15:52:10,438 INFO Received login request
+2024-06-12 15:52:10,438 INFO Attempting login for email: admin@giftshop.com
+2024-06-12 15:52:10,438 INFO User login attempt for email: admin@giftshop.com
+2024-06-12 15:52:10,452 INFO Database connection established successfully
+2024-06-12 15:52:10,452 INFO User login attempt: email=admin@giftshop.com
+2024-06-12 15:52:10,454 WARN No user found for the provided query: SELECT * FROM user WHERE email = ? AND password = ?
+2024-06-12 15:52:10,454 WARN Failed login attempt for email: admin@giftshop.com
+2024-06-12 15:52:16,960 INFO Received login request
+2024-06-12 15:52:16,960 INFO Attempting login for email: admin@giftshop.com
+2024-06-12 15:52:16,960 INFO Admin login successful for email: admin@giftshop.com
+2024-06-12 15:52:16,960 INFO Admin logged in, redirecting to admin/home.jsp
+2024-06-12 15:53:03,191 INFO Database connection established successfully
+2024-06-12 15:53:03,191 INFO Fetching all products.
+2024-06-12 15:53:03,194 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-12 15:53:04,272 INFO Database connection established successfully
+2024-06-12 15:53:04,272 INFO Fetching all orders.
+2024-06-12 15:53:04,274 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-12 15:54:35,450 INFO Database connection established successfully
+2024-06-12 15:54:35,450 INFO Fetching all orders.
+2024-06-12 15:54:35,451 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-12 15:54:44,500 INFO Database connection established successfully
+2024-06-12 15:54:44,501 INFO Fetching all products.
+2024-06-12 15:54:44,502 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-12 15:54:47,039 INFO Database connection established successfully
+2024-06-12 15:54:47,040 INFO Fetching product by ID: 2
+2024-06-12 15:54:47,040 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 15:56:11,920 INFO Database connection established successfully
+2024-06-12 15:56:11,920 INFO Fetching order by ID: 39
+2024-06-12 15:56:11,922 INFO SQL query executed successfully: SELECT * FROM orders WHERE orderId = ?
+2024-06-12 17:23:39,370 INFO Fetching products by category: Цукерки with limit: true
+2024-06-12 17:23:39,399 INFO SQL query executed successfully: SELECT * FROM product WHERE category = ? AND status = 'Активний' ORDER BY productId DESC LIMIT 4
+2024-06-12 17:23:39,452 INFO Fetching all products.
+2024-06-12 17:23:39,453 INFO SQL query executed successfully: SELECT * FROM product
+2024-06-12 17:23:39,462 INFO Searching products with keyword: Chocolate
+2024-06-12 17:23:39,464 INFO SQL query executed successfully: SELECT * FROM product WHERE (productName LIKE ? OR category LIKE ?) AND status = 'Активний' ORDER BY productId DESC
+2024-06-12 17:23:39,478 INFO Adding product: Product{productId=0, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-12 17:23:39,479 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-12 17:23:39,488 INFO Fetching product by ID: 1
+2024-06-12 17:23:39,489 INFO SQL query executed successfully: SELECT * FROM product WHERE productId = ?
+2024-06-12 17:23:39,499 INFO Updating product: Product{productId=1, productName='Chocolate', category='Candy', weight='100g', price='10.00', status='active', photo='photo.jpg'}
+2024-06-12 17:23:39,500 INFO SQL update executed successfully: UPDATE product SET productName = ?, category = ?, weight = ?, price = ?, status = ?, photo = ? WHERE productId = ?
+2024-06-12 17:23:39,509 INFO Deleting product by ID: 1
+2024-06-12 17:23:39,509 INFO SQL update executed successfully: DELETE FROM product WHERE productId = ?
+2024-06-12 17:23:39,756 INFO Logout request received
+2024-06-12 17:23:39,757 INFO User testUser logging out
+2024-06-12 17:23:39,758 ERROR Logout error: Test Exception
+2024-06-12 17:23:39,767 INFO Logout request received
+2024-06-12 17:23:39,768 WARN No user found in session during logout
+2024-06-12 17:23:39,772 INFO Logout request received
+2024-06-12 17:23:39,773 INFO User testUser logging out
+2024-06-12 17:23:39,773 INFO User successfully logged out
+2024-06-12 17:23:39,839 ERROR Invalid parameter format for removing product from cart
+2024-06-12 17:23:39,869 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-12 17:23:40,909 INFO Database connection established successfully
+2024-06-12 17:23:40,910 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-12 17:23:40,963 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-12 17:23:40,964 ERROR Failed to remove product from cart
+2024-06-12 17:23:40,973 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-12 17:23:41,004 INFO Database connection established successfully
+2024-06-12 17:23:41,004 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-12 17:23:41,005 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-12 17:23:41,006 ERROR Failed to remove product from cart
+2024-06-12 17:23:41,016 INFO Removing product from cart: Product ID - 1, User ID - 1, Cart ID - 1
+2024-06-12 17:23:41,055 INFO Database connection established successfully
+2024-06-12 17:23:41,055 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-12 17:23:41,056 WARN SQL update failed: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-12 17:23:41,057 ERROR Failed to remove product from cart
+2024-06-12 17:23:41,384 INFO Received a request to add a new product.
+2024-06-12 17:23:41,386 INFO Building product from request parameters.
+2024-06-12 17:23:41,386 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-12 17:23:41,415 INFO Database connection established successfully
+2024-06-12 17:23:41,416 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-12 17:23:41,423 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-12 17:23:41,423 INFO Product successfully added to the database.
+2024-06-12 17:23:41,425 INFO Product image written to: test/pathproduct\test_image.jpg
+2024-06-12 17:23:41,425 INFO Product image saved successfully.
+2024-06-12 17:23:41,435 INFO Received a request to add a new product.
+2024-06-12 17:23:41,436 INFO Building product from request parameters.
+2024-06-12 17:23:41,436 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-12 17:23:41,457 INFO Database connection established successfully
+2024-06-12 17:23:41,457 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-12 17:23:41,462 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-12 17:23:41,463 INFO Product successfully added to the database.
+2024-06-12 17:23:41,463 INFO Product image written to: test/pathproduct\test_image.jpg
+2024-06-12 17:23:41,463 INFO Product image saved successfully.
+2024-06-12 17:23:41,479 INFO Received a request to add a new product.
+2024-06-12 17:23:41,479 INFO Building product from request parameters.
+2024-06-12 17:23:41,481 INFO Product details extracted from request: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-12 17:23:41,502 INFO Database connection established successfully
+2024-06-12 17:23:41,503 INFO Adding product: Product{productId=0, productName='Test Product', category='Test Category', weight='10', price='50', status='Active', photo='test_image.jpg'}
+2024-06-12 17:23:41,509 INFO SQL update executed successfully: INSERT INTO product (productName, category, weight, price, status, photo) VALUES (?, ?, ?, ?, ?, ?)
+2024-06-12 17:23:41,509 INFO Product successfully added to the database.
+2024-06-12 17:23:41,511 INFO Created directory for product images: nullproduct
+2024-06-12 17:23:41,511 INFO Product image written to: nullproduct\test_image.jpg
+2024-06-12 17:23:41,511 INFO Product image saved successfully.
+2024-06-12 17:23:41,607 INFO Registration request received
+2024-06-12 17:23:41,608 INFO Created user from request: test@example.com
+2024-06-12 17:23:41,635 INFO Database connection established successfully
+2024-06-12 17:23:41,635 INFO Checking if user exists with email: test@example.com
+2024-06-12 17:23:41,675 WARN User already exists with email: test@example.com
+2024-06-12 17:23:41,676 WARN User already exists with email: test@example.com
+2024-06-12 17:23:41,684 INFO Registration request received
+2024-06-12 17:23:41,684 INFO Created user from request: test@example.com
+2024-06-12 17:23:41,705 INFO Database connection established successfully
+2024-06-12 17:23:41,705 INFO Checking if user exists with email: test@example.com
+2024-06-12 17:23:41,708 WARN User already exists with email: test@example.com
+2024-06-12 17:23:41,708 WARN User already exists with email: test@example.com
+2024-06-12 17:23:41,713 INFO Registration request received
+2024-06-12 17:23:41,714 INFO Created user from request: test@example.com
+2024-06-12 17:23:41,714 WARN User did not agree to the privacy policy
+2024-06-12 17:23:41,727 INFO Character encoding set to UTF-8
+2024-06-12 17:23:41,728 INFO Address details updated for user ID: 1
+2024-06-12 17:23:41,729 INFO Updating address details for user ID: 1
+2024-06-12 17:23:41,747 INFO Database connection established successfully
+2024-06-12 17:23:41,756 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-12 17:23:41,757 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-12 17:23:41,758 INFO Адресу успішно змінено for user ID: 1
+2024-06-12 17:23:41,777 INFO Character encoding set to UTF-8
+2024-06-12 17:23:41,778 INFO Address details updated for user ID: 1
+2024-06-12 17:23:41,778 INFO Updating address details for user ID: 1
+2024-06-12 17:23:41,802 INFO Database connection established successfully
+2024-06-12 17:23:41,803 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-12 17:23:41,805 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-12 17:23:41,805 INFO Адресу успішно змінено for user ID: 1
+2024-06-12 17:23:41,903 INFO Received request to update address
+2024-06-12 17:23:41,911 INFO Character encoding set to UTF-8
+2024-06-12 17:23:41,912 INFO Address details updated for user ID: 1
+2024-06-12 17:23:41,913 INFO Updating address details for user ID: 1
+2024-06-12 17:23:41,935 INFO Database connection established successfully
+2024-06-12 17:23:41,935 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-12 17:23:41,937 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-12 17:23:41,937 INFO Адресу успішно змінено for user ID: 1
+2024-06-12 17:23:41,937 INFO Address update request processed
+2024-06-12 17:23:42,148 INFO Received request to add product to cart
+2024-06-12 17:23:42,153 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-12 17:23:42,153 INFO Fetching product by ID: 1
+2024-06-12 17:23:42,155 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-12 17:23:42,156 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-12 17:23:42,165 INFO Received request to add product to cart
+2024-06-12 17:23:42,166 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-12 17:23:42,166 INFO Fetching product by ID: 1
+2024-06-12 17:23:42,166 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-12 17:23:42,168 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-12 17:23:42,180 INFO Received request to add product to cart
+2024-06-12 17:23:42,181 INFO Creating cart item for product ID: 1 and user ID: 1
+2024-06-12 17:23:42,181 INFO Fetching product by ID: 1
+2024-06-12 17:23:42,181 ERROR Error executing SQL query: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-12 17:23:42,183 ERROR Error adding product to cart: Cannot invoke "com.giftshop.entity.Product.getProductName()" because "product" is null
+2024-06-12 17:23:42,250 INFO Built order from request parameters: Orders{orderId=1, userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Test Product', price='100', weight='1kg', payment='Credit Card'}
+2024-06-12 17:23:42,257 INFO Built order from request parameters: Orders{orderId=1, userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Test Product', price='100', weight='1kg', payment='Credit Card'}
+2024-06-12 17:23:42,259 INFO Received a request to update an order.
+2024-06-12 17:23:42,260 INFO Built order from request parameters: Orders{orderId=1, userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Test Product', price='100', weight='1kg', payment='Credit Card'}
+2024-06-12 17:23:42,260 INFO Order details extracted from request: Orders{orderId=1, userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Test Product', price='100', weight='1kg', payment='Credit Card'}
+2024-06-12 17:23:42,284 INFO Database connection established successfully
+2024-06-12 17:23:42,285 INFO Updating order: Orders{orderId=1, userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Test Product', price='100', weight='1kg', payment='Credit Card'}
+2024-06-12 17:23:42,292 WARN SQL update affected 0 rows: UPDATE orders SET userName = ?, email = ?, phone = ?, address = ?, productName = ?, price = ?, weight = ?, payment = ? WHERE orderId = ?
+2024-06-12 17:23:42,292 WARN Failed to update order.
+2024-06-12 17:23:42,302 INFO Built order from request parameters: Orders{orderId=1, userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Test Product', price='100', weight='1kg', payment='Credit Card'}
+2024-06-12 17:23:42,303 INFO Received a request to update an order.
+2024-06-12 17:23:42,303 INFO Built order from request parameters: Orders{orderId=1, userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Test Product', price='100', weight='1kg', payment='Credit Card'}
+2024-06-12 17:23:42,304 INFO Order details extracted from request: Orders{orderId=1, userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Test Product', price='100', weight='1kg', payment='Credit Card'}
+2024-06-12 17:23:42,329 INFO Database connection established successfully
+2024-06-12 17:23:42,330 INFO Updating order: Orders{orderId=1, userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Test Product', price='100', weight='1kg', payment='Credit Card'}
+2024-06-12 17:23:42,332 WARN SQL update affected 0 rows: UPDATE orders SET userName = ?, email = ?, phone = ?, address = ?, productName = ?, price = ?, weight = ?, payment = ? WHERE orderId = ?
+2024-06-12 17:23:42,333 WARN Failed to update order.
+2024-06-12 17:23:42,341 INFO Received a request to update an order.
+2024-06-12 17:23:42,342 ERROR Error occurred while updating order: For input string: "invalid_id"
+2024-06-12 17:23:42,354 INFO Character encoding set to UTF-8
+2024-06-12 17:23:42,354 INFO Profile details updated for user ID: 1
+2024-06-12 17:23:42,356 INFO Updating profile details for user ID: 1
+2024-06-12 17:23:42,384 INFO Database connection established successfully
+2024-06-12 17:23:42,384 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password123', phone='1234567890', address='null', city='null', zip='null'}
+2024-06-12 17:23:42,386 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-12 17:23:42,387 INFO Профіль успішно оновлено for user ID: 1
+2024-06-12 17:23:42,393 INFO Character encoding set to UTF-8
+2024-06-12 17:23:42,394 INFO Profile details updated for user ID: 1
+2024-06-12 17:23:42,394 INFO Updating profile details for user ID: 1
+2024-06-12 17:23:42,421 INFO Database connection established successfully
+2024-06-12 17:23:42,421 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password123', phone='1234567890', address='null', city='null', zip='null'}
+2024-06-12 17:23:42,423 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-12 17:23:42,423 INFO Профіль успішно оновлено for user ID: 1
+2024-06-12 17:23:42,474 INFO Received request to update profile
+2024-06-12 17:23:42,474 INFO Character encoding set to UTF-8
+2024-06-12 17:23:42,475 INFO Profile details updated for user ID: 1
+2024-06-12 17:23:42,475 INFO Updating profile details for user ID: 1
+2024-06-12 17:23:42,505 INFO Database connection established successfully
+2024-06-12 17:23:42,505 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password123', phone='1234567890', address='null', city='null', zip='null'}
+2024-06-12 17:23:42,507 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-12 17:23:42,507 INFO Профіль успішно оновлено for user ID: 1
+2024-06-12 17:23:42,508 INFO Profile update request processed
+2024-06-12 17:23:42,516 INFO Fetching orders for email: john@example.com
+2024-06-12 17:23:42,517 INFO SQL query executed successfully: SELECT * FROM orders WHERE email = ?
+2024-06-12 17:23:42,522 INFO Fetching all orders.
+2024-06-12 17:23:42,524 INFO SQL query executed successfully: SELECT * FROM orders
+2024-06-12 17:23:42,530 INFO Saving orders: [Orders{orderId=123, userName='John Doe', email='john@example.com', phone='1234567890', address='123 Street', productName='Chocolate', price='10.00', weight='100g', payment='Credit Card'}]
+2024-06-12 17:23:42,531 INFO Orders saved successfully.
+2024-06-12 17:23:42,608 INFO Received a request to delete an order.
+2024-06-12 17:23:42,609 ERROR Error occurred while deleting order: For input string: "invalid_id"
+2024-06-12 17:23:42,617 INFO Received a request to delete an order.
+2024-06-12 17:23:42,617 INFO Order ID to delete: 1
+2024-06-12 17:23:42,638 INFO Database connection established successfully
+2024-06-12 17:23:42,639 INFO Deleting order by ID: 1
+2024-06-12 17:23:42,641 WARN SQL update affected 0 rows: DELETE FROM orders WHERE orderId = ?
+2024-06-12 17:23:42,642 WARN Failed to delete order.
+2024-06-12 17:23:42,651 INFO Received a request to delete an order.
+2024-06-12 17:23:42,652 INFO Order ID to delete: 1
+2024-06-12 17:23:42,680 INFO Database connection established successfully
+2024-06-12 17:23:42,681 INFO Deleting order by ID: 1
+2024-06-12 17:23:42,684 WARN SQL update affected 0 rows: DELETE FROM orders WHERE orderId = ?
+2024-06-12 17:23:42,684 WARN Failed to delete order.
+2024-06-12 17:23:42,699 INFO Image update status: true
+2024-06-12 17:23:42,704 INFO Built product from request parameters: Product{productId=1, productName='Test Product', category='TestCategory', weight='10', price='100', status='Active', photo='null'}
+2024-06-12 17:23:42,710 INFO Image update status: false
+2024-06-12 17:23:42,723 INFO Fetching products for user ID: 1
+2024-06-12 17:23:42,724 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 17:23:42,729 INFO Removing from cart - Product ID: 1, User ID: 1, Cart ID: 1
+2024-06-12 17:23:42,730 INFO SQL update executed successfully: DELETE FROM cart WHERE productID = ? AND userID = ? AND cartID = ?
+2024-06-12 17:23:42,734 INFO Adding to cart: Cart{cartId=0, productId=1, userId=1, productName='Product1', category='Category1', weight=1.0, price=10.0}
+2024-06-12 17:23:42,735 INFO SQL update executed successfully: INSERT INTO cart(productID, userID, productName, category, weight, price) VALUES(?, ?, ?, ?, ?, ?)
+2024-06-12 17:23:42,749 INFO Order request received
+2024-06-12 17:23:42,757 INFO User details: userId=1, userName=null, email=null, phone=null
+2024-06-12 17:23:42,782 INFO Database connection established successfully
+2024-06-12 17:23:42,783 INFO Fetching products for user ID: 1
+2024-06-12 17:23:42,785 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 17:23:42,786 WARN Cart is empty for userId=1
+2024-06-12 17:23:42,792 INFO Order request received
+2024-06-12 17:23:42,793 INFO User details: userId=1, userName=Test User, email=test@example.com, phone=1234567890
+2024-06-12 17:23:42,814 INFO Database connection established successfully
+2024-06-12 17:23:42,815 INFO Fetching products for user ID: 1
+2024-06-12 17:23:42,816 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 17:23:42,816 WARN Cart is empty for userId=1
+2024-06-12 17:23:42,823 INFO Order request received
+2024-06-12 17:23:42,823 INFO User details: userId=1, userName=Test User, email=test@example.com, phone=1234567890
+2024-06-12 17:23:42,839 INFO Database connection established successfully
+2024-06-12 17:23:42,839 INFO Fetching products for user ID: 1
+2024-06-12 17:23:42,842 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 17:23:42,843 WARN Cart is empty for userId=1
+2024-06-12 17:23:42,849 INFO Order request received
+2024-06-12 17:23:42,850 INFO User details: userId=1, userName=null, email=null, phone=null
+2024-06-12 17:23:42,872 INFO Database connection established successfully
+2024-06-12 17:23:42,872 INFO Fetching products for user ID: 1
+2024-06-12 17:23:42,874 INFO SQL query executed successfully: SELECT * FROM cart WHERE userID = ?
+2024-06-12 17:23:42,875 WARN Cart is empty for userId=1
+2024-06-12 17:23:42,885 INFO Received a request to delete a product.
+2024-06-12 17:23:42,886 ERROR Error occurred while deleting product: For input string: "invalid_id"
+2024-06-12 17:23:42,893 INFO Received a request to delete a product.
+2024-06-12 17:23:42,894 INFO Product ID to delete: 1
+2024-06-12 17:23:42,916 INFO Database connection established successfully
+2024-06-12 17:23:42,917 INFO Deleting product by ID: 1
+2024-06-12 17:23:42,919 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-12 17:23:42,919 WARN Failed to delete product.
+2024-06-12 17:23:42,929 INFO Received a request to delete a product.
+2024-06-12 17:23:42,929 INFO Product ID to delete: 1
+2024-06-12 17:23:42,955 INFO Database connection established successfully
+2024-06-12 17:23:42,956 INFO Deleting product by ID: 1
+2024-06-12 17:23:42,958 WARN SQL update affected 0 rows: DELETE FROM product WHERE productId = ?
+2024-06-12 17:23:42,959 WARN Failed to delete product.
+2024-06-12 17:23:42,968 INFO Updating address for user: User{id=1, name='null', email='null', password='null', phone='null', address='123 Main St', city='Springfield', zip='12345'}
+2024-06-12 17:23:42,970 INFO SQL update executed successfully: UPDATE user SET address=?, city=?, zip=? WHERE id=?
+2024-06-12 17:23:42,976 INFO Registering user: User{id=0, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-12 17:23:42,976 INFO SQL update executed successfully: INSERT INTO user (name, email, password) VALUES (?, ?, ?)
+2024-06-12 17:23:42,981 INFO Updating profile for user: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='123456789', address='null', city='null', zip='null'}
+2024-06-12 17:23:42,982 INFO SQL update executed successfully: UPDATE user SET name=?, email=?, phone=?, password=? WHERE id=?
+2024-06-12 17:23:42,986 INFO User login attempt: email=john.doe@example.com
+2024-06-12 17:23:42,988 INFO User fetched successfully: User{id=1, name='John Doe', email='john.doe@example.com', password='password', phone='null', address='null', city='null', zip='null'}
+2024-06-12 17:23:42,993 INFO Checking if user exists with email: john.doe@example.com
+2024-06-12 17:23:42,994 WARN User already exists with email: john.doe@example.com
+2024-06-12 17:23:43,003 INFO Received login request
+2024-06-12 17:23:43,003 INFO Attempting login for email: user@example.com
+2024-06-12 17:23:43,004 INFO User login attempt for email: user@example.com
+2024-06-12 17:23:43,004 INFO User login attempt: email=user@example.com
+2024-06-12 17:23:43,004 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-12 17:23:43,011 INFO Received login request
+2024-06-12 17:23:43,011 INFO Attempting login for email: user@example.com
+2024-06-12 17:23:43,012 INFO User login attempt for email: user@example.com
+2024-06-12 17:23:43,012 INFO User login attempt: email=user@example.com
+2024-06-12 17:23:43,012 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-12 17:23:43,019 INFO Received login request
+2024-06-12 17:23:43,019 INFO Attempting login for email: user@example.com
+2024-06-12 17:23:43,019 INFO User login attempt for email: user@example.com
+2024-06-12 17:23:43,019 INFO User login attempt: email=user@example.com
+2024-06-12 17:23:43,020 ERROR Login error: Cannot invoke "java.sql.PreparedStatement.setObject(int, Object)" because "ps" is null
+2024-06-12 17:23:43,027 INFO Received login request
+2024-06-12 17:23:43,027 INFO Attempting login for email: admin@giftshop.com
+2024-06-12 17:23:43,027 INFO Admin login successful for email: admin@giftshop.com
+2024-06-12 17:23:43,027 INFO Admin logged in, redirecting to admin/home.jsp

@@ -46,8 +46,8 @@
                             <tr>
                                 <th scope="col">Назва</th>
                                 <th scope="col">Категорія</th>
-                                <th scope="col">Вага</th>
-                                <th scope="col">Ціна</th>
+                                <th scope="col" style="width: 20%;">Вага</th>
+                                <th scope="col" style="width: 20%;">Ціна</th>
                                 <th scope="col"></th>
                             </tr>
                             </thead>
@@ -156,12 +156,6 @@
                                         <option value="Готівка">Готівкою при отримані</option>
                                         <option value="Карта">На карту</option>
                                     </select>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <label for="areaWishes">напишіть ваші побажання до замовлення</label>
-                                    <textarea name="wishes" id="areaWishes" cols="30" rows="10"></textarea>
                                 </div>
                             </div>
                             <div class="text-center">
