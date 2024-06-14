@@ -121,9 +121,10 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="inputPhone">Телефон</label>
-                                    <input type="tel" class="form-control" id="inputPhone" placeholder="Телефон"
-                                           name="phone" required="required"
-                                           value="<%= user.getPhone() != null ? user.getPhone() : "" %>">
+                                    <input type="tel" class="form-control" id="inputPhone" required="required"
+                                            placeholder="Телефон" name="phone"
+                                            value="<%= user.getPhone() != null ? user.getPhone() : "" %>"
+                                            oninput="validatePhoneInput(this)">
                                 </div>
                             </div>
 

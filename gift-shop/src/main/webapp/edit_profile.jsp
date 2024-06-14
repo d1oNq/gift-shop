@@ -55,7 +55,8 @@
                                     <label for="inputPhone">Телефон</label>
                                     <input type="tel" class="form-control" id="inputPhone" required="required"
                                            placeholder="Телефон" name="phone"
-                                           value="<%= user.getPhone() != null ? user.getPhone() : "" %>">
+                                           value="<%= user.getPhone() != null ? user.getPhone() : "" %>"
+                                           oninput="validatePhoneInput(this)">
                                 </div>
                                 <label for="inputPassword">Пароль</label>
                                 <div class="form-group password-container">

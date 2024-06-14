@@ -9,3 +9,12 @@ function togglePasswordVisibility() {
         toggleButton.textContent = 'Show';
     }
 }
+
+function validatePhoneInput(input) {
+    const phonePattern = /^\+?[0-9]{13}$/;
+    if (!phonePattern.test(input.value)) {
+        input.setCustomValidity("Невірний формат телефону. Використовуйте лише цифри та символ '+'. Довжина повинна бути 13 символів.");
+    } else {
+        input.setCustomValidity("");
+    }
+}
